@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Route-AC4", "Route-AC4.csproj", "{796F0CE4-4998-4ECD-BDDE-55E4FA083861}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Route-Plugin-Base", "..\Route-Plugin-Base\Route-Plugin-Base.csproj", "{5144C127-3BA8-8337-A05D-34D607E9EEBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{796F0CE4-4998-4ECD-BDDE-55E4FA083861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{796F0CE4-4998-4ECD-BDDE-55E4FA083861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{796F0CE4-4998-4ECD-BDDE-55E4FA083861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{796F0CE4-4998-4ECD-BDDE-55E4FA083861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5144C127-3BA8-8337-A05D-34D607E9EEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5144C127-3BA8-8337-A05D-34D607E9EEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5144C127-3BA8-8337-A05D-34D607E9EEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5144C127-3BA8-8337-A05D-34D607E9EEBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA48D7F5-DE71-45EA-B9DC-F1627482D035}
+	EndGlobalSection
+EndGlobal
