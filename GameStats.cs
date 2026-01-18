@@ -1,6 +1,8 @@
-﻿namespace Route_AC4
+﻿using Route_Plugin_Base;
+
+namespace Route_AC4
 {
-    public unsafe class GameStats
+    public unsafe class GameStats: GameStatsBase
     {
         #region Memory Offsets Arrays
         // Offsets for direct memory reads (special cases)
@@ -11,6 +13,10 @@
         private readonly int[] percentPtrOffsets = [0x284];
         private readonly int[] loadingPtrOffsets = [0x7D8];
         private readonly int[] fortsPtrOffsets = [0x7F0, 0xD68, 0xD70, 0x30];
+        private readonly int[] xCoordPtrOffsets = [0x40];
+        private readonly int[] yxCoordPtrOffsets = [0x44];
+        private readonly int[] zCoordPtrOffsets = [0x48];
+
         #endregion
 
         #region Game State Flag
@@ -24,6 +30,7 @@
         private readonly nint collectiblesBaseAddress;
         private readonly nint missionBaseAddress;
         private readonly nint resourcesBaseAddress;
+        private readonly nint XYZBaseAddress;
         #endregion
 
         #region Collectible/Progress Offsets
@@ -45,10 +52,10 @@
         private const int LastOffset = 0x18;
         private const int OffsetStep = 0x14;
         // Shared offsets for different Missions
-        private const int MissionFirstOffset = -0x850;
-        private const int MissionEndOffset = -0x3D0;
-        private const int TemplarHuntFirstOffset = -0x370;
-        private const int TemplarHuntEndOffset = -0x250;
+        private const int MissionFirstOffset = 0x1C8;
+        private const int MissionEndOffset = 0x648;
+        private const int TemplarHuntFirstOffset = 0x6A8;
+        private const int TemplarHuntEndOffset = 0x7C8;
         private const int MissionOffsetStep = 0x60;
 
         // Ranges for flag-based collectibles
@@ -60,11 +67,11 @@
         private const int TavernEndOffset = 0x3228;
         private const int TreasureMapsStartOffset = 0x3250;
         private const int TreasureMapsEndOffset = 0x3408;
-        private static readonly int [] SpecialTreasureMapOffsets = [0x33F4]; // Special treasure map offset we dont count
+        private static readonly int[] SpecialTreasureMapOffsets = [0x33F4]; // Special treasure map offset we dont count
         private const int ViewpointStartOffset = 0x2BAC;
         private const int ViewpointEndOffset = 0x2EE0;
-        private static readonly int[] SpecialViewpointOffsets = [0x2D8C, 0x2DA0, 
-        0x2DB4, 0x2DC8, 0x2DDC, 0x2DF0, 0x2E04, 0x2E18, 0x2E2C, 0x2E40, 0x2E54, 
+        private static readonly int[] SpecialViewpointOffsets = [0x2D8C, 0x2DA0,
+        0x2DB4, 0x2DC8, 0x2DDC, 0x2DF0, 0x2E04, 0x2E18, 0x2E2C, 0x2E40, 0x2E54,
         0x2E68, 0x2E7C]; // Special viewpoint offsets we dont count
         #endregion
 
@@ -92,13 +99,16 @@
 
         // Sets up our tracker to read AC4's memory
         // Calculates the starting point for finding all the collectibles
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0290", Justification = "NO")]
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0079", Justification = "because i said so")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0290",
+        Justification = "NO")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0079",
+        Justification = "because i said so")]
         public GameStats(IntPtr processHandle, IntPtr baseAddress)
+    : base(processHandle, baseAddress)
         {
             this.collectiblesBaseAddress = (nint)baseAddress + 0x026BEAC0;
-            this.resourcesBaseAddress = (nint)baseAddress + 0x00E88810;
-            this.missionBaseAddress = (nint)baseAddress + 0x00A0E21C;
+            this.missionBaseAddress = (nint)baseAddress + 0x0137D9F8;
+            this.XYZBaseAddress = (nint)baseAddress + 0x026C16A0;
         }
 
         #region Memory Reading Methods
@@ -112,7 +122,7 @@
 
         // function made by me
         private int ReadMission(int missionOffset)
-        {   
+        {
             string cacheKey = $"mission_{missionOffset}";
             return ReadWithCache<int>(cacheKey, missionBaseAddress, [missionOffset]);
         }
@@ -141,23 +151,23 @@
                 int value = ReadCollectible(thirdOffset);
                 count += value;
 
-                if (AC4CollectibleOffsets.ChestOffsetToLocation.TryGetValue(thirdOffset, out string? LocationNameChest))
+                if (CollectibleOffsets.ChestOffsetToLocation.TryGetValue(thirdOffset, out string? LocationNameChest))
                 {
                     LocationChestCounts[LocationNameChest] = value;
-                } 
-                if (AC4CollectibleOffsets.FragmentOffsetToLocation.TryGetValue(thirdOffset, out string? LocationNameFragment))
+                }
+                if (CollectibleOffsets.FragmentOffsetToLocation.TryGetValue(thirdOffset, out string? LocationNameFragment))
                 {
                     LocationFragmentCounts[LocationNameFragment] = value;
                 }
-                if (AC4CollectibleOffsets.TavernOffsetToLocation.TryGetValue(thirdOffset, out string? LocationNameTavern))
+                if (CollectibleOffsets.TavernOffsetToLocation.TryGetValue(thirdOffset, out string? LocationNameTavern))
                 {
                     LocationTavernCounts[LocationNameTavern] = value;
                 }
-                if (AC4CollectibleOffsets.TreasureMapOffsetToLocation.TryGetValue(thirdOffset, out string? LocationNameTreasureMap))
+                if (CollectibleOffsets.TreasureMapOffsetToLocation.TryGetValue(thirdOffset, out string? LocationNameTreasureMap))
                 {
                     LocationTreasureMapCounts[LocationNameTreasureMap] = value;
                 }
-                if (AC4CollectibleOffsets.ViewpointOffsetToLocation.TryGetValue(thirdOffset, out string? LocationNameViewpoint))
+                if (CollectibleOffsets.ViewpointOffsetToLocation.TryGetValue(thirdOffset, out string? LocationNameViewpoint))
                 {
                     LocationViewpointsCounts[LocationNameViewpoint] = value;
                 }
@@ -170,7 +180,7 @@
 
         // startOffset and endOffset comes from getstats() we pass them through lol
         // function made by me
-        private int CountMissions(int startOffset, int endOffset) 
+        private int CountMissions(int startOffset, int endOffset)
         {
             string cacheKey = $"count_{startOffset}_{endOffset}";
 
@@ -197,10 +207,11 @@
         // Also checks if you've completed any special activities
         public (int Percent, float PercentFloat, int Viewpoints, int Myan, int Treasure,
             int Fragments, int Assassin, int Naval, int Letters, int Manuscripts, int Music,
-            int Forts, int Taverns, int TotalChests) GetStats()
+            int Forts, int Taverns, int TotalChests, float xCoord, float yCoord, float zCoord) 
+            GetStats()
         {
             // Reading collectibles using existing methods
-            int percent = ReadWithCache<int>("percent",(nint)baseAddress + 0x49D9774, percentPtrOffsets);
+            int percent = ReadWithCache<int>("percent", (nint)baseAddress + 0x49D9774, percentPtrOffsets);
             float percentFloat = ReadWithCache<float>("percentFloat", (nint)baseAddress + 0x049F1EE8, percentFtPtrOffsets);
             int forts = ReadWithCache<int>("forts", (nint)baseAddress + 0x026C0A28, fortsPtrOffsets);
 
@@ -234,10 +245,15 @@
             // DetectStatuses
             DetectStatuses(mainmenu, loading);
 
+            // Read XYZ coordinates
+            float xCoord = ReadWithCache<float>("Xcoord", XYZBaseAddress, xCoordPtrOffsets);
+            float yCoord = ReadWithCache<float>("Ycoord", XYZBaseAddress, yxCoordPtrOffsets);
+            float zCoord = ReadWithCache<float>("Zcoord", XYZBaseAddress, zCoordPtrOffsets);
+
             //Debug.WriteLine($"AC4 PercentFloat: {percentFloat:F5}");
             // Return all the stats (including the basic ones that we got from memory)
             return (percent, percentFloat, viewpoints, myan, treasure, fragments, assassin, naval,
-                letters, manuscripts, music, forts, taverns, totalChests);
+                letters, manuscripts, music, forts, taverns, totalChests, xCoord, yCoord, zCoord);
         }
         #endregion
 
@@ -245,7 +261,7 @@
         private void DetectStatuses(int mainmenu, bool loading)
         {
             //loading status
-            if(loading)
+            if (loading)
             {
                 isLoading = true;
             }
@@ -255,7 +271,7 @@
             }
 
             //main menu status
-            if(mainmenu == 65540)
+            if (mainmenu == 65540)
             {
                 isMainMenu = true;
             }
@@ -275,17 +291,17 @@
             return (completedStoryMissions, totalTemplarHunts, legendaryShips, treasuremaps);
         }
 
-        public (bool IsLoading, bool IsMainMenu) GetGameStatus()
+        public override (bool IsLoading, bool IsMainMenu) GetGameStatus()
         {
             return (isLoading, isMainMenu);
         }
 
         // This is the primary method that the UI uses to get all stats
         // Returns everything in a dictionary so different games can have different stats
-        public Dictionary<string, object> GetStatsAsDictionary()
+        public override Dictionary<string, object> GetStatsAsDictionary()
         {
             // Get stats using existing methods
-            var (Percent, PercentFloat, Viewpoints, Myan, Treasure, Fragments, Assassin, Naval, Letters, Manuscripts, Music, Forts, Taverns, TotalChests) = GetStats();
+            var (Percent, PercentFloat, Viewpoints, Myan, Treasure, Fragments, Assassin, Naval, Letters, Manuscripts, Music, Forts, Taverns, TotalChests, xCoord, yCoord, zCoord) = GetStats();
             var (StoryMissions, TemplarHunts, LegendaryShips, TreasureMaps) = GetSpecialActivityCounts();
             var (IsLoading, IsMainMenu) = GetGameStatus();
 
@@ -319,7 +335,12 @@
 
                 // Game state
                 ["Is Loading"] = IsLoading,
-                ["Is Main Menu"] = IsMainMenu
+                ["Is Main Menu"] = IsMainMenu,
+
+                // Coordinates
+                ["X Coordinate"] = xCoord,
+                ["Y Coordinate"] = yCoord,
+                ["Z Coordinate"] = zCoord
             };
         }
         #endregion

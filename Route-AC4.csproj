@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Route-Plugin-Base\Route-Plugin-Base.csproj" />
+    <ProjectReference Include="..\PluginBase\Route-Plugin-Base.csproj" />
   </ItemGroup>
 
 </Project>
