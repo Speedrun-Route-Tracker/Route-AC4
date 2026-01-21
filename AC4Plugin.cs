@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Route_Plugin_Base;
+﻿using Route_Plugin_Base;
 
 namespace Route_AC4
 {
@@ -73,7 +66,7 @@ namespace Route_AC4
                 return result;
             }
 
-            Debug.WriteLine($"Unknown entry type: '{normalizedType}' for entry '{entry.Name}'");
+            //Debug.WriteLine($"Unknown entry type: '{normalizedType}' for entry '{entry.Name}'");
             return false;
         }
     }

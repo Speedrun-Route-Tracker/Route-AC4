@@ -9,13 +9,13 @@ namespace Route_AC4
         private readonly int[] characterPtrOffsets = []; // has no offsets
         private readonly int[] mainMenuPtrOffsets = []; // has no offsets
         private readonly int[] percentFtPtrOffsets = [0x74];
-        private readonly int[] legendaryShipPtrOffsets = [0x170];
+        private readonly int[] legendaryShipPtrOffsets = [0xBB8];
         private readonly int[] percentPtrOffsets = [0x284];
         private readonly int[] loadingPtrOffsets = [0x7D8];
-        private readonly int[] fortsPtrOffsets = [0x7F0, 0xD68, 0xD70, 0x30];
-        private readonly int[] xCoordPtrOffsets = [0x40];
-        private readonly int[] yxCoordPtrOffsets = [0x44];
-        private readonly int[] zCoordPtrOffsets = [0x48];
+        private readonly int[] fortsPtrOffsets = [0xA08];
+        private readonly int[] xCoordPtrOffsets = [0x0, 0x40];
+        private readonly int[] yCoordPtrOffsets = [0x0, 0x44];
+        private readonly int[] zCoordPtrOffsets = [0x0, 0x48];
 
         #endregion
 
@@ -29,7 +29,6 @@ namespace Route_AC4
         // Pre-calculated base addresses for memory reads
         private readonly nint collectiblesBaseAddress;
         private readonly nint missionBaseAddress;
-        private readonly nint resourcesBaseAddress;
         private readonly nint XYZBaseAddress;
         #endregion
 
@@ -48,7 +47,7 @@ namespace Route_AC4
 
         // Shared offsets for pointer traversal
         private const int FirstOffset = 0x2D0;
-        private const int SecondOffset = 0x8BC;
+        private int SecondOffset = 0x8BC;
         private const int LastOffset = 0x18;
         private const int OffsetStep = 0x14;
         // Shared offsets for different Missions
@@ -114,6 +113,22 @@ namespace Route_AC4
         #region Memory Reading Methods
         // Simplifies reading collectibles that follow the standard pattern
         // Makes the code cleaner by removing duplicated memory reading logic
+        private void CheckSecondOffset(int mainmenu, bool loading)
+        {
+            DetectStatuses(mainmenu, loading);
+            int temppointer = ReadWithCache<int>("checksecondoffset", collectiblesBaseAddress, [FirstOffset, SecondOffset, 0x67C, LastOffset]);
+            if (isMainMenu && temppointer == IntPtr.Zero)
+            {
+               // Debug.WriteLine("Swapped to 0x90C");
+                SecondOffset = 0x90C;
+            }
+            else
+            {
+               // Debug.WriteLine("Swapped to 0x8BC");
+                SecondOffset = 0x8BC;
+            }
+        }
+
         private int ReadCollectible(int thirdOffset)
         {
             string cacheKey = $"collectible_{thirdOffset}";
@@ -210,14 +225,17 @@ namespace Route_AC4
             int Forts, int Taverns, int TotalChests, float xCoord, float yCoord, float zCoord) 
             GetStats()
         {
+            // check second offset first before reading collectibles
+            
             // Reading collectibles using existing methods
             int percent = ReadWithCache<int>("percent", (nint)baseAddress + 0x49D9774, percentPtrOffsets);
             float percentFloat = ReadWithCache<float>("percentFloat", (nint)baseAddress + 0x049F1EE8, percentFtPtrOffsets);
-            int forts = ReadWithCache<int>("forts", (nint)baseAddress + 0x026C0A28, fortsPtrOffsets);
+            int forts = ReadWithCache<int>("forts", missionBaseAddress, fortsPtrOffsets);
 
             // for other functions
             int mainmenu = ReadWithCache<int>("mainmenu", (nint)baseAddress + 0x49D2204, mainMenuPtrOffsets);
             bool loading = ReadWithCache<bool>("loading", (nint)baseAddress + 0x04A1A6CC, loadingPtrOffsets);
+            CheckSecondOffset(mainmenu, loading);
             //int character = ReadWithCache<int>("character", (nint)baseAddress + 0x23485C0, characterPtrOffsets);
 
             // Read all other collectibles
@@ -237,7 +255,7 @@ namespace Route_AC4
             totalUpgrades = ReadCollectible(HeroUpgradeThirdOffset);
 
             // legendary ship,templar hunt, storymissions, and treasuremaps counts
-            legendaryShips = ReadWithCache<int>("legendaryships", (nint)baseAddress + 0x00A0E21C, legendaryShipPtrOffsets);
+            legendaryShips = ReadWithCache<int>("legendaryships", missionBaseAddress, legendaryShipPtrOffsets);
             totalTemplarHunts = CountMissions(TemplarHuntFirstOffset, TemplarHuntEndOffset);
             completedStoryMissions = CountMissions(MissionFirstOffset, MissionEndOffset);
             treasuremaps = CountCollectibles(TreasureMapsStartOffset, TreasureMapsEndOffset);
@@ -247,7 +265,7 @@ namespace Route_AC4
 
             // Read XYZ coordinates
             float xCoord = ReadWithCache<float>("Xcoord", XYZBaseAddress, xCoordPtrOffsets);
-            float yCoord = ReadWithCache<float>("Ycoord", XYZBaseAddress, yxCoordPtrOffsets);
+            float yCoord = ReadWithCache<float>("Ycoord", XYZBaseAddress, yCoordPtrOffsets);
             float zCoord = ReadWithCache<float>("Zcoord", XYZBaseAddress, zCoordPtrOffsets);
 
             //Debug.WriteLine($"AC4 PercentFloat: {percentFloat:F5}");
