@@ -1,4 +1,5 @@
 ﻿using Route_Plugin_Base;
+using System.Diagnostics;
 
 namespace Route_AC4
 {
@@ -54,7 +55,7 @@ namespace Route_AC4
                 bool result = locationChecker(ac4Stats, entry.Location, entry.LocationCondition);
                 if (!result)
                 {
-                    //Debug.WriteLine($"Location '{entry.Location}' check failed for {normalizedType} '{entry.Name}' - needed: {entry.LocationCondition}");
+                    Debug.WriteLine($"Location '{entry.Location}' check failed for {normalizedType} '{entry.Name}' - needed: {entry.LocationCondition}");
                 }
                 return result;
             }
@@ -66,7 +67,7 @@ namespace Route_AC4
                 return result;
             }
 
-            //Debug.WriteLine($"Unknown entry type: '{normalizedType}' for entry '{entry.Name}'");
+            Debug.WriteLine($"Unknown entry type: '{normalizedType}' for entry '{entry.Name}'");
             return false;
         }
     }
