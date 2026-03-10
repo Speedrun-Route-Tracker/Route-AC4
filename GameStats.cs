@@ -1,9 +1,22 @@
 ﻿using Route_Plugin_Base;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace Route_AC4
 {
     public unsafe class GameStats: GameStatsBase
     {
+        #region alt pointer offset
+        /* Variable of the hex value to add to the original offset when
+         * the default offset doesnt work for the user, This is because of reasons 
+         * but so i dont have to change the 2nd offset we keep it and just add 
+         * this hex value to the original offset so we dont need a complicated system
+        */
+        static bool useAltOffset = false;
+        private const int altOffsetHexValueOffset = 0x11F8;
+        #endregion
+
         #region Memory Offsets Arrays
         // Offsets for direct memory reads (special cases)
         private readonly int[] characterPtrOffsets = []; // has no offsets
@@ -16,7 +29,6 @@ namespace Route_AC4
         private readonly int[] xCoordPtrOffsets = [0x0, 0x40];
         private readonly int[] yCoordPtrOffsets = [0x0, 0x44];
         private readonly int[] zCoordPtrOffsets = [0x0, 0x48];
-
         #endregion
 
         #region Game State Flag
@@ -115,16 +127,18 @@ namespace Route_AC4
         // Makes the code cleaner by removing duplicated memory reading logic
         private void CheckSecondOffset(int mainmenu, bool loading)
         {
+            //Debug.WriteLine($"using alt offset?: {useAltOffset}");
             DetectStatuses(mainmenu, loading);
             int temppointer = ReadWithCache<int>("checksecondoffset", collectiblesBaseAddress, [FirstOffset, SecondOffset, 0x67C, LastOffset]);
-            if (isMainMenu && temppointer == IntPtr.Zero)
+            if (temppointer == IntPtr.Zero)
             {
-               // Debug.WriteLine("Swapped to 0x90C");
+                Debug.WriteLine("Swapped to 0x90C");
                 SecondOffset = 0x90C;
+                useAltOffset = true;
             }
-            else
+            else if (!useAltOffset && temppointer == IntPtr.Zero)
             {
-               // Debug.WriteLine("Swapped to 0x8BC");
+                Debug.WriteLine("Swapped to 0x8BC");
                 SecondOffset = 0x8BC;
             }
         }
@@ -328,7 +342,7 @@ namespace Route_AC4
             {
                 // Core stats
                 ["Completion Percentage"] = Percent,
-                ["Exact Percentage"] = Math.Round(PercentFloat, 2),
+                ["Exact Percentage"] = (float)Math.Round(PercentFloat, 2),
                 ["Viewpoints"] = Viewpoints,
                 ["Myan Stones"] = Myan,
                 ["Buried Treasure"] = Treasure,
