@@ -1,19 +1,27 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>Route_AC4</RootNamespace>
+    <AssemblyName>Route-AC4</AssemblyName>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!-- Shown in the plugin list and compared against the latest release. Bump on every release. -->
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ProcessMemory64" Version="4.0.7-beta" />
+    <!-- Private=false: the host app already ships Route-Plugin-Base.dll, a second copy would break type identity. -->
+    <ProjectReference Include="..\..\Route-Plugin-Base\Route-Plugin-Base.csproj">
+      <Private>false</Private>
+    </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PluginBase\Route-Plugin-Base.csproj" />
+    <None Update="Routes\**\*.tsv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
