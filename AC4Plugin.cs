@@ -1,21 +1,85 @@
-﻿using Route_Plugin_Base;
-using System.Diagnostics;
+using Route_Plugin_Base;
+using Route_Plugin_Base.Utils;
 
 namespace Route_AC4
 {
-    public class AC4Plugin : IGamePlugin
+    public class AC4Plugin : IPluginBase
     {
-        public string GameName => "Assassin's Creed 4";
+        private const string ProcessName = "AC4BFSP";
+        private const string RouteFileName = "AC4 100 % Route - Main Route.tsv";
 
-        public GameStatsBase Create(
-            IntPtr processHandle,
-            IntPtr baseAddress)
+        private static readonly IReadOnlyDictionary<string, object> NoStats = new Dictionary<string, object>();
+
+        private readonly GameConnection _connection = new(ProcessName);
+        private GameStats? _gameStats;
+        private IReadOnlyDictionary<string, object> _lastStats = NoStats;
+
+        public AC4Plugin()
         {
-            return new GameStats(processHandle, baseAddress);
+            _connection.Log += Log;
+            _connection.Disconnected += () =>
+            {
+                _gameStats?.Dispose();
+                _gameStats = null;
+                _lastStats = NoStats;
+            };
         }
 
-        // ==========MY NOTES==============
-        // Centralized mappings to eliminate repetitive code and improve maintainability
+        public override string Name => "Assassin's Creed 4";
+        public override string GameName => "Assassin's Creed 4: Black Flag";
+        public override Version Version => typeof(AC4Plugin).Assembly.GetName().Version ?? new Version(1, 0, 0);
+
+        public override bool IsConnected => _connection.IsConnected;
+        public override string Status => _connection.Status;
+        public override IReadOnlyDictionary<string, object> Stats => _lastStats;
+
+        public override void Initialize()
+        {
+            string pluginDirectory = Path.GetDirectoryName(typeof(AC4Plugin).Assembly.Location) is { Length: > 0 } dir
+                ? dir
+                : AppContext.BaseDirectory;
+
+            Route.Clear();
+            Route.AddRange(Ac4RouteLoader.Load(Path.Combine(pluginDirectory, "Routes", RouteFileName), Log));
+            Log($"Loaded {Route.Count} route entries.");
+
+            IsInitialized = true;
+        }
+
+        public override void Shutdown()
+        {
+            _connection.Disconnect();
+            IsInitialized = false;
+        }
+
+        public override void Tick()
+        {
+            if (!_connection.EnsureConnected())
+                return;
+
+            _gameStats ??= new GameStats(_connection.Memory!);
+
+            Dictionary<string, object> stats = _gameStats.GetStatsAsDictionary();
+            _lastStats = stats;
+
+            // Pointers are not valid on loading screens and in the main menu. Reading them then would
+            // look like every collectible was lost, so leave the route alone until gameplay resumes.
+            (bool isLoading, bool isMainMenu) = _gameStats.GetGameStatus();
+            if (isLoading || isMainMenu)
+                return;
+
+            bool gameFinished = stats.TryGetValue("Exact Percentage", out object? percent)
+                && percent is float exact
+                && Math.Round(exact, 2) >= 100f;
+
+            foreach (RoutePart part in Route)
+            {
+                bool done = gameFinished || (part is Ac4RoutePart ac4Part && IsComplete(ac4Part, stats, _gameStats));
+                part.ApplyGameCompletion(done);
+            }
+        }
+
+        // Collectibles that are tracked per location (chest in a specific area, viewpoint in a specific area, ...)
         private static readonly Dictionary<string, Func<GameStats, string, int, bool>> LocationCheckers = new(StringComparer.OrdinalIgnoreCase)
         {
             ["Chest"] = (stats, location, condition) => stats.LocationChestCounts.TryGetValue(location, out int count) && count >= condition,
@@ -25,11 +89,12 @@ namespace Route_AC4
             ["Viewpoint"] = (stats, location, condition) => stats.LocationViewpointsCounts.TryGetValue(location, out int count) && count >= condition
         };
 
+        // Route file type -> key in the stats dictionary
         private static readonly Dictionary<string, string> StatKeyMappings = new(StringComparer.OrdinalIgnoreCase)
         {
             ["Story"] = "Story Missions",
             ["Myan Stones"] = "Myan Stones",
-            ["Burired Treasure"] = "Buried Treasure",  // Keeping your intentional route file typo -> correct stat name
+            ["Burired Treasure"] = "Buried Treasure",  // the route file really is spelled "Burired"
             ["Assassin Contracts"] = "Assassin Contracts",
             ["Naval Contracts"] = "Naval Contracts",
             ["Letters"] = "Letter Bottles",
@@ -38,36 +103,20 @@ namespace Route_AC4
             ["Forts"] = "Forts",
             ["Legendary Ships"] = "Legendary Ships",
             ["Templar Hunts"] = "Templar Hunts",
-            ["Upgrades"] = "Hero Upgrades"
+            ["Upgrades"] = "Hero Upgrades",
+            ["Modern Day"] = "ModernDay Missions"
         };
 
-        public bool CheckCompletion(RouteEntry entry, GameStatsEventArgs stats, GameStatsBase Stats)
+        private static bool IsComplete(Ac4RoutePart part, Dictionary<string, object> stats, GameStats gameStats)
         {
-            string normalizedType = entry.Type.Trim();
-            if (Stats is not Route_AC4.GameStats ac4Stats)
-            {
-                return false;
-            }
+            string type = part.Type.Trim();
 
-            // Handle location-based collectibles using centralized mapping
-            if (!string.IsNullOrEmpty(entry.Location) && LocationCheckers.TryGetValue(normalizedType, out var locationChecker))
-            {
-                bool result = locationChecker(ac4Stats, entry.Location, entry.LocationCondition);
-                if (!result)
-                {
-                    //Debug.WriteLine($"Location '{entry.Location}' check failed for {normalizedType} '{entry.Name}' - needed: {entry.LocationCondition}");
-                }
-                return result;
-            }
+            if (!string.IsNullOrEmpty(part.Location) && LocationCheckers.TryGetValue(type, out var locationChecker))
+                return locationChecker(gameStats, part.Location, part.LocationCondition);
 
-            // Handle general stat-based completion using centralized mapping
-            if (StatKeyMappings.TryGetValue(normalizedType, out string? statKey))
-            {
-                bool result = stats.GetValue<int>(statKey, 0) >= entry.Condition;
-                return result;
-            }
+            if (StatKeyMappings.TryGetValue(type, out string? statKey))
+                return stats.TryGetValue(statKey, out object? value) && value is int count && count >= part.Condition;
 
-            //Debug.WriteLine($"Unknown entry type: '{normalizedType}' for entry '{entry.Name}' location '{entry.Location}' location condition '{entry.LocationCondition}'");
             return false;
         }
     }

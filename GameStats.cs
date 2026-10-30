@@ -1,7 +1,5 @@
-﻿using Route_Plugin_Base;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+using Route_Plugin_Base;
+using Route_Plugin_Base.Utils;
 
 namespace Route_AC4
 {
@@ -13,7 +11,7 @@ namespace Route_AC4
          * but so i dont have to change the 2nd offset we keep it and just add 
          * this hex value to the original offset so we dont need a complicated system
         */
-        static bool useAltOffset = false;
+        private bool hasbeenused = false;
         private const int altOffsetHexValueOffset = 0x11F8;
         #endregion
 
@@ -22,10 +20,8 @@ namespace Route_AC4
         private readonly int[] characterPtrOffsets = []; // has no offsets
         private readonly int[] mainMenuPtrOffsets = []; // has no offsets
         private readonly int[] percentFtPtrOffsets = [0x74];
-        private readonly int[] legendaryShipPtrOffsets = [0xBB8];
         private readonly int[] percentPtrOffsets = [0x284];
         private readonly int[] loadingPtrOffsets = [0x7D8];
-        private readonly int[] fortsPtrOffsets = [0xA08];
         private readonly int[] xCoordPtrOffsets = [0x0, 0x40];
         private readonly int[] yCoordPtrOffsets = [0x0, 0x44];
         private readonly int[] zCoordPtrOffsets = [0x0, 0x48];
@@ -56,6 +52,9 @@ namespace Route_AC4
         private const int LettersThirdOffset = -0x04EC;
         private const int ManuscriptsThirdOffset = -0x334;
         private const int MusicThirdOffset = 0x424;
+        private readonly int legendaryShipPtrOffset = 0x1B30;
+        private readonly int fortsPtrOffsets = 0x19B0;
+        private readonly int modernDayPtrOffset = 0x2D30;
 
         // Shared offsets for pointer traversal
         private const int FirstOffset = 0x2D0;
@@ -63,11 +62,16 @@ namespace Route_AC4
         private const int LastOffset = 0x18;
         private const int OffsetStep = 0x14;
         // Shared offsets for different Missions
-        private const int MissionFirstOffset = 0x1C8;
-        private const int MissionEndOffset = 0x648;
-        private const int TemplarHuntFirstOffset = 0x6A8;
-        private const int TemplarHuntEndOffset = 0x7C8;
+        private const int MissionFirstOffset = 0x1170;
+        private const int MissionEndOffset = 0x15F0;
+        private const int TemplarHuntFirstOffset = 0x1650;
+        private const int TemplarHuntEndOffset = 0x1770;
         private const int MissionOffsetStep = 0x60;
+        private const int ConsistentOffsets1 = 0x1C; 
+        private const int ConsistentOffsets2 = 0x550;
+        private const int ConsistentOffsets3 = 0x74;
+        private const int ConsistentOffsets4 = 0x0;
+        private const int ConsistentOffsets5 = 0x10;
 
         // Ranges for flag-based collectibles
         private const int ChestStartOffset = 0x67C;
@@ -89,6 +93,7 @@ namespace Route_AC4
         #region Progress and Upgrade Tracking
         // Special activity counters (updated via memory or logic)
         private int completedStoryMissions = 0;
+        private int modernDayMissions = 0;
         private int totalTemplarHunts = 0;
         private int legendaryShips = 0;
         private int treasuremaps = 0;
@@ -110,15 +115,11 @@ namespace Route_AC4
 
         // Sets up our tracker to read AC4's memory
         // Calculates the starting point for finding all the collectibles
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0290",
-        Justification = "NO")]
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0079",
-        Justification = "because i said so")]
-        public GameStats(IntPtr processHandle, IntPtr baseAddress)
-    : base(processHandle, baseAddress)
+        public GameStats(MemoryHandler memory)
+            : base(memory)
         {
             this.collectiblesBaseAddress = (nint)baseAddress + 0x026BEAC0;
-            this.missionBaseAddress = (nint)baseAddress + 0x0137D9F8;
+            this.missionBaseAddress = (nint)baseAddress + 0x00634960;
             this.XYZBaseAddress = (nint)baseAddress + 0x026C16A0;
         }
 
@@ -127,19 +128,17 @@ namespace Route_AC4
         // Makes the code cleaner by removing duplicated memory reading logic
         private void CheckSecondOffset(int mainmenu, bool loading)
         {
-            //Debug.WriteLine($"using alt offset?: {useAltOffset}");
             DetectStatuses(mainmenu, loading);
-            int temppointer = ReadWithCache<int>("checksecondoffset", collectiblesBaseAddress, [FirstOffset, SecondOffset, 0x67C, LastOffset]);
+            int temppointer = ReadWithCache<int>("checksecondoffset", collectiblesBaseAddress, [FirstOffset, 0x90C, 0x67C, LastOffset]);
             if (temppointer == IntPtr.Zero)
             {
-                Debug.WriteLine("Swapped to 0x90C");
-                SecondOffset = 0x90C;
-                useAltOffset = true;
+                //Debug.WriteLine("90C pointer is null");
             }
-            else if (!useAltOffset && temppointer == IntPtr.Zero)
+            else if (temppointer != IntPtr.Zero && hasbeenused == false)
             {
-                Debug.WriteLine("Swapped to 0x8BC");
-                SecondOffset = 0x8BC;
+                //Debug.WriteLine("Swapped to 0x90C");
+                SecondOffset = 0x90C;
+                hasbeenused = true;
             }
         }
 
@@ -153,7 +152,13 @@ namespace Route_AC4
         private int ReadMission(int missionOffset)
         {
             string cacheKey = $"mission_{missionOffset}";
-            return ReadWithCache<int>(cacheKey, missionBaseAddress, [missionOffset]);
+            return ReadWithCache<int>(cacheKey, missionBaseAddress, [ConsistentOffsets1, ConsistentOffsets2, ConsistentOffsets3, ConsistentOffsets4, ConsistentOffsets5, missionOffset]);
+        }
+
+        // read legendaryship ptr
+        private int ReadSpecialShit(string cacheKey, int Offset)
+        {
+            return ReadWithCache<int>(cacheKey, missionBaseAddress, [ConsistentOffsets1, ConsistentOffsets2, ConsistentOffsets3, ConsistentOffsets4, ConsistentOffsets5, Offset]);
         }
 
         // Used for things like chests and taverns that have many individual locations
@@ -244,7 +249,7 @@ namespace Route_AC4
             // Reading collectibles using existing methods
             int percent = ReadWithCache<int>("percent", (nint)baseAddress + 0x49D9774, percentPtrOffsets);
             float percentFloat = ReadWithCache<float>("percentFloat", (nint)baseAddress + 0x049F1EE8, percentFtPtrOffsets);
-            int forts = ReadWithCache<int>("forts", missionBaseAddress, fortsPtrOffsets);
+            int forts = ReadSpecialShit("forts", fortsPtrOffsets);
 
             // for other functions
             int mainmenu = ReadWithCache<int>("mainmenu", (nint)baseAddress + 0x49D2204, mainMenuPtrOffsets);
@@ -269,7 +274,8 @@ namespace Route_AC4
             totalUpgrades = ReadCollectible(HeroUpgradeThirdOffset);
 
             // legendary ship,templar hunt, storymissions, and treasuremaps counts
-            legendaryShips = ReadWithCache<int>("legendaryships", missionBaseAddress, legendaryShipPtrOffsets);
+            legendaryShips = ReadSpecialShit("legendaryships", legendaryShipPtrOffset);
+            modernDayMissions = ReadSpecialShit("moderndaymissions", modernDayPtrOffset);
             totalTemplarHunts = CountMissions(TemplarHuntFirstOffset, TemplarHuntEndOffset);
             completedStoryMissions = CountMissions(MissionFirstOffset, MissionEndOffset);
             treasuremaps = CountCollectibles(TreasureMapsStartOffset, TreasureMapsEndOffset);
@@ -318,9 +324,9 @@ namespace Route_AC4
         // Tells the route tracker how many special activities we've completed.
         // This is how the UI knows when to check off story missions, legendary ships, and treasure maps.
         // Returns a tuple with all four counter values at once.
-        public (int StoryMissions, int TemplarHunts, int LegendaryShips, int TreasureMaps) GetSpecialActivityCounts()
+        public (int StoryMissions, int TemplarHunts, int LegendaryShips, int TreasureMaps, int ModernDay) GetSpecialActivityCounts()
         {
-            return (completedStoryMissions, totalTemplarHunts, legendaryShips, treasuremaps);
+            return (completedStoryMissions, totalTemplarHunts, legendaryShips, treasuremaps, modernDayMissions);
         }
 
         public override (bool IsLoading, bool IsMainMenu) GetGameStatus()
@@ -334,7 +340,7 @@ namespace Route_AC4
         {
             // Get stats using existing methods
             var (Percent, PercentFloat, Viewpoints, Myan, Treasure, Fragments, Assassin, Naval, Letters, Manuscripts, Music, Forts, Taverns, TotalChests, xCoord, yCoord, zCoord) = GetStats();
-            var (StoryMissions, TemplarHunts, LegendaryShips, TreasureMaps) = GetSpecialActivityCounts();
+            var (StoryMissions, TemplarHunts, LegendaryShips, TreasureMaps, ModernDay) = GetSpecialActivityCounts();
             var (IsLoading, IsMainMenu) = GetGameStatus();
 
             // Return everything in a dictionary
@@ -361,6 +367,7 @@ namespace Route_AC4
                 ["Templar Hunts"] = TemplarHunts,
                 ["Legendary Ships"] = LegendaryShips,
                 ["Treasure Maps"] = TreasureMaps,
+                ["ModernDay Missions"] = ModernDay,
 
                 // Other stats
                 ["Hero Upgrades"] = totalUpgrades,
