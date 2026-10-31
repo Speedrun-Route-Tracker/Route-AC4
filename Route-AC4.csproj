@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <!-- Private=false: the host app already ships Route-Plugin-Base.dll, a second copy would break type identity. -->
-    <ProjectReference Include="..\..\Route-Plugin-Base\Route-Plugin-Base.csproj">
+    <ProjectReference Include="C:\Users\jjdom\OneDrive\Route tracker\Route-Plugin-Base\Route-Plugin-Base.csproj">
       <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
