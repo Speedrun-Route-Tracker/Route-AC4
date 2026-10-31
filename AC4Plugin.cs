@@ -1,3 +1,4 @@
+using System.IO;
 using Route_Plugin_Base;
 using Route_Plugin_Base.Utils;
 
@@ -6,12 +7,13 @@ namespace Route_AC4
     public class AC4Plugin : IPluginBase
     {
         private const string ProcessName = "AC4BFSP";
-        private const string RouteFileName = "AC4 100 % Route - Main Route.tsv";
+        private const string RouteFileName = "ac4_route_plugin_v2.tsv";
 
         private static readonly IReadOnlyDictionary<string, object> NoStats = new Dictionary<string, object>();
 
         private readonly GameConnection _connection = new(ProcessName);
         private GameStats? _gameStats;
+        private Ac4SaveReader? _saveReader;
         private IReadOnlyDictionary<string, object> _lastStats = NoStats;
 
         public AC4Plugin()
@@ -30,7 +32,9 @@ namespace Route_AC4
         public override Version Version => typeof(AC4Plugin).Assembly.GetName().Version ?? new Version(1, 0, 0);
 
         public override bool IsConnected => _connection.IsConnected;
-        public override string Status => _connection.Status;
+        public override string Status => _connection.IsConnected && _saveReader != null
+            ? $"{_connection.Status} - save: {_saveReader.Status}"
+            : _connection.Status;
         public override IReadOnlyDictionary<string, object> Stats => _lastStats;
 
         public override void Initialize()
@@ -43,12 +47,16 @@ namespace Route_AC4
             Route.AddRange(Ac4RouteLoader.Load(Path.Combine(pluginDirectory, "Routes", RouteFileName), Log));
             Log($"Loaded {Route.Count} route entries.");
 
+            Ac4Settings settings = Ac4Settings.Load(pluginDirectory, Log);
+            _saveReader = new Ac4SaveReader(settings, Log);
+
             IsInitialized = true;
         }
 
         public override void Shutdown()
         {
             _connection.Disconnect();
+            _saveReader = null;
             IsInitialized = false;
         }
 
@@ -60,64 +68,52 @@ namespace Route_AC4
             _gameStats ??= new GameStats(_connection.Memory!);
 
             Dictionary<string, object> stats = _gameStats.GetStatsAsDictionary();
-            _lastStats = stats;
 
-            // Pointers are not valid on loading screens and in the main menu. Reading them then would
-            // look like every collectible was lost, so leave the route alone until gameplay resumes.
+            // The save is only trusted during gameplay: while the game loads or sits in the main menu the file may be
+            // mid-write or belong to another slot, so the route is left alone until gameplay resumes.
             (bool isLoading, bool isMainMenu) = _gameStats.GetGameStatus();
-            if (isLoading || isMainMenu)
+            if (isLoading || isMainMenu || _saveReader == null)
+            {
+                _lastStats = stats;
                 return;
+            }
+
+            _saveReader.Refresh();
+            Ac4SaveSnapshot? save = _saveReader.Snapshot;
 
             bool gameFinished = stats.TryGetValue("Exact Percentage", out object? percent)
                 && percent is float exact
                 && Math.Round(exact, 2) >= 100f;
 
-            foreach (RoutePart part in Route)
+            if (save != null || gameFinished)
             {
-                bool done = gameFinished || (part is Ac4RoutePart ac4Part && IsComplete(ac4Part, stats, _gameStats));
-                part.ApplyGameCompletion(done);
+                foreach (RoutePart part in Route)
+                {
+                    bool done = gameFinished || (part is Ac4RoutePart ac4Part && save != null && ac4Part.Parsed.IsMet(save));
+                    part.ApplyGameCompletion(done);
+                }
             }
+
+            AddRouteCounts(stats);
+            _lastStats = stats;
         }
 
-        // Collectibles that are tracked per location (chest in a specific area, viewpoint in a specific area, ...)
-        private static readonly Dictionary<string, Func<GameStats, string, int, bool>> LocationCheckers = new(StringComparer.OrdinalIgnoreCase)
+        // Adds "done / total" per route type to the stats window.
+        private void AddRouteCounts(Dictionary<string, object> stats)
         {
-            ["Chest"] = (stats, location, condition) => stats.LocationChestCounts.TryGetValue(location, out int count) && count >= condition,
-            ["Animus Fragment"] = (stats, location, condition) => stats.LocationFragmentCounts.TryGetValue(location, out int count) && count >= condition,
-            ["Taverns"] = (stats, location, condition) => stats.LocationTavernCounts.TryGetValue(location, out int count) && count >= condition,
-            ["Treasure Map"] = (stats, location, condition) => stats.LocationTreasureMapCounts.TryGetValue(location, out int count) && count >= condition,
-            ["Viewpoint"] = (stats, location, condition) => stats.LocationViewpointsCounts.TryGetValue(location, out int count) && count >= condition
-        };
+            Dictionary<string, (int Done, int Total)> counts = new(StringComparer.OrdinalIgnoreCase);
+            foreach (RoutePart part in Route)
+            {
+                string type = part.Type.Trim();
+                if (string.IsNullOrEmpty(type) || part.IsSkipped)
+                    continue;
 
-        // Route file type -> key in the stats dictionary
-        private static readonly Dictionary<string, string> StatKeyMappings = new(StringComparer.OrdinalIgnoreCase)
-        {
-            ["Story"] = "Story Missions",
-            ["Myan Stones"] = "Myan Stones",
-            ["Burired Treasure"] = "Buried Treasure",  // the route file really is spelled "Burired"
-            ["Assassin Contracts"] = "Assassin Contracts",
-            ["Naval Contracts"] = "Naval Contracts",
-            ["Letters"] = "Letter Bottles",
-            ["Manuscripts"] = "Manuscripts",
-            ["Shanty"] = "Music Sheets",
-            ["Forts"] = "Forts",
-            ["Legendary Ships"] = "Legendary Ships",
-            ["Templar Hunts"] = "Templar Hunts",
-            ["Upgrades"] = "Hero Upgrades",
-            ["Modern Day"] = "ModernDay Missions"
-        };
+                counts.TryGetValue(type, out (int Done, int Total) current);
+                counts[type] = (current.Done + (part.IsCompleted ? 1 : 0), current.Total + 1);
+            }
 
-        private static bool IsComplete(Ac4RoutePart part, Dictionary<string, object> stats, GameStats gameStats)
-        {
-            string type = part.Type.Trim();
-
-            if (!string.IsNullOrEmpty(part.Location) && LocationCheckers.TryGetValue(type, out var locationChecker))
-                return locationChecker(gameStats, part.Location, part.LocationCondition);
-
-            if (StatKeyMappings.TryGetValue(type, out string? statKey))
-                return stats.TryGetValue(statKey, out object? value) && value is int count && count >= part.Condition;
-
-            return false;
+            foreach ((string type, (int done, int total)) in counts)
+                stats[type] = $"{done} / {total}";
         }
     }
 }

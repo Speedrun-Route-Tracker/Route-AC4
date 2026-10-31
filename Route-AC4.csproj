@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -13,9 +13,11 @@
 
   <ItemGroup>
     <!-- Private=false: the host app already ships Route-Plugin-Base.dll, a second copy would break type identity. -->
-    <ProjectReference Include="C:\Users\jjdom\OneDrive\Route tracker\Route-Plugin-Base\Route-Plugin-Base.csproj">
+    <ProjectReference Include="..\Route-Plugin-Base\Route-Plugin-Base.csproj">
       <Private>false</Private>
     </ProjectReference>
+    <!-- ACSaveLib is copied next to the plugin (the host does not ship it). -->
+    <ProjectReference Include="C:\Users\jjdom\OneDrive\ACSaveLib\src\AcSaveLib\AcSaveLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
