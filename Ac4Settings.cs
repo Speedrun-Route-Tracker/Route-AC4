@@ -18,6 +18,9 @@ namespace Route_AC4
         /// <summary>Folder that holds the .save files. Empty means find it automatically.</summary>
         public string SaveFolder { get; set; } = "";
 
+        /// <summary>Make the game window borderless while the tracker is connected.</summary>
+        public bool Borderless { get; set; }
+
         public static Ac4Settings Load(string pluginDirectory, Action<string> log)
         {
             string path = Path.Combine(pluginDirectory, FileName);

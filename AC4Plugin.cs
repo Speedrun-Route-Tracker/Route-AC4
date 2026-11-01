@@ -16,6 +16,7 @@ namespace Route_AC4
         private Ac4SaveReader? _saveReader;
         private Ac4Settings? _settings;
         private IReadOnlyDictionary<string, object> _lastStats = NoStats;
+        private Ac4Borderless? _borderless;
 
         public AC4Plugin()
         {
@@ -25,6 +26,7 @@ namespace Route_AC4
                 _gameStats?.Dispose();
                 _gameStats = null;
                 _lastStats = NoStats;
+                _borderless?.Forget(); // the game is gone and took the patch with it
             };
         }
 
@@ -33,11 +35,19 @@ namespace Route_AC4
         public override Version Version => typeof(AC4Plugin).Assembly.GetName().Version ?? new Version(1, 0, 0);
 
         public override bool IsConnected => _connection.IsConnected;
-        public override string Status => _connection.IsConnected && _saveReader != null
-            ? $"{_connection.Status} - save: {_saveReader.Status}"
-            : _connection.Status;
+        public override string Status
+        {
+            get
+            {
+                string status = _connection.IsConnected && _saveReader != null
+                    ? $"{_connection.Status} - save: {_saveReader.Status}"
+                    : _connection.Status;
+                return _borderless is { Status.Length: > 0 } ? $"{status} - {_borderless.Status}" : status;
+            }
+        }
         public override IReadOnlyDictionary<string, object> Stats => _lastStats;
 
+        private static readonly string[] OnOff = ["Off", "On"];
         private static readonly string[] SlotNames = ["Top slot", "Middle slot", "Bottom slot"];
 
         private static string PluginDirectory => Path.GetDirectoryName(typeof(AC4Plugin).Assembly.Location) is { Length: > 0 } dir
@@ -53,7 +63,11 @@ namespace Route_AC4
                 "Which of the three save slots in the game's load menu to follow. The newest save of that slot is used.",
                 SlotNames),
             new PluginOption("saveFolder", "Save folder", PluginOptionKind.Folder, Settings.SaveFolder,
-                "Leave empty to find the folder automatically. Set it if you keep your saves somewhere else.")
+                "Leave empty to find the folder automatically. Set it if you keep your saves somewhere else."),
+            new PluginOption("borderless", "Borderless window", PluginOptionKind.Choice, Settings.Borderless ? "On" : "Off",
+                "Removes the game's window border while the tracker is connected (needs the tracker run as administrator). " +
+                "It is undone when you turn it off or close the tracker, and disappears on its own when the game closes.",
+                OnOff)
         ];
 
         public override void ApplyOptions(IReadOnlyList<PluginOption> options)
@@ -68,6 +82,10 @@ namespace Route_AC4
                     case "saveFolder":
                         Settings.SaveFolder = option.Value.Trim();
                         break;
+                    case "borderless":
+                        Settings.Borderless = option.Value == "On";
+                        Borderless.ResetFailure();
+                        break;
                 }
             }
 
@@ -75,6 +93,8 @@ namespace Route_AC4
             _saveReader?.Reset();
             Log($"Options changed: {SlotNames[Settings.Slot]}, folder '{(Settings.SaveFolder.Length == 0 ? "automatic" : Settings.SaveFolder)}'.");
         }
+
+        private Ac4Borderless Borderless => _borderless ??= new Ac4Borderless(Log);
 
         public override void Initialize()
         {
@@ -91,6 +111,8 @@ namespace Route_AC4
 
         public override void Shutdown()
         {
+            // Put the game back as it was before letting go of it, in case it keeps running after the tracker closes.
+            _borderless?.RestoreNow(_connection.Memory);
             _connection.Disconnect();
             _saveReader = null;
             IsInitialized = false;
@@ -102,6 +124,8 @@ namespace Route_AC4
                 return;
 
             _gameStats ??= new GameStats(_connection.Memory!);
+
+            Borderless.Update(_connection.Memory!, Settings.Borderless);
 
             Dictionary<string, object> stats = _gameStats.GetStatsAsDictionary();
 
