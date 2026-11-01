@@ -40,6 +40,15 @@ namespace Route_AC4
         /// <summary>Short text for the status line.</summary>
         public string Status { get; private set; } = "looking for a save";
 
+        /// <summary>Forget the loaded save, so the next <see cref="Refresh"/> looks again (after the settings changed).</summary>
+        public void Reset()
+        {
+            Snapshot = null;
+            _currentSource = null;
+            _checkedOnce = false;
+            Status = "looking for a save";
+        }
+
         /// <summary>Check for a new save now and then. Returns true when the snapshot was replaced.</summary>
         public bool Refresh()
         {
@@ -147,7 +156,8 @@ namespace Route_AC4
                         return false;
                 }
 
-                string title = Encoding.Unicode.GetString(header, 4, header.Length - 4).Trim().TrimEnd('\0').Trim();
+                // The title is padded with NULs on both sides (Trim() does not remove NUL), so trim those explicitly.
+                string title = Encoding.Unicode.GetString(header, 4, header.Length - 4).Trim('\0', ' ', '\t', '\r', '\n');
                 Match m = TitleRegex().Match(title);
                 if (m.Success)
                 {

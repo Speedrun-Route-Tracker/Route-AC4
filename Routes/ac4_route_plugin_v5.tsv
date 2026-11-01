@@ -1,0 +1,1019 @@
+Name	Type	Condition	Coordinates	Location	Total Counters	Total Counters Location
+Fleet Map 1	Treasure Map	0x74748F124 collected [ACGA_TreasureMaps_19]	None	Uncharted1	1	1
+Fleet Map 2	Treasure Map	0x74748F128 collected [ACGA_TreasureMaps_20]	None	Uncharted2	2	1
+Fleet Map 3	Treasure Map	0x74A8DF156 collected [ACGA_TreasureMaps_21]	None	Uncharted	3	1
+Start Edward Kenway	Story Start	0x669E09D8F started (entry exists in save)	None	Cape Bonavista	1	1
+Viewpoint 1 First Cape Bonavista	Viewpoint	0xA97AA0DFB sync>=100 [RHP_Intro_First]	None	Cape Bonavista	1	1
+Chest 1 Cape Bonavista	Chest	0x9AF2D4F62 collected [ACGA_Collectables_TreasureChest_CapBonavista _001]	None	Cape Bonavista	1	1
+Chest 2 Cape Bonavista	Chest	0x9AF2D4F66 collected [ACGA_Collectables_TreasureChest_CapBonavista _008]	None	Cape Bonavista	2	2
+Fragment 1 Cape Bonavista	Animus Fragment	0x7FC0F1EAA collected [ACGA_Collectables_AnimusFragment_054_Intro]	None	Cape Bonavista	1	1
+Chest 3 Cape Bonavista	Chest	0xAE6D0F6FD collected [ACGA_Collectables_TreasureChest_CapBonavista _009]	None	Cape Bonavista	3	3
+Chest 4 Cape Bonavista	Chest	0xAE6D0F6F9 collected [ACGA_Collectables_TreasureChest_CapBonavista _014]	None	Cape Bonavista	4	4
+Viewpoint 2 Souffre Cape Bonavista	Viewpoint	0x9AF29C362 sync>=100 [RHP_Intro_Souffre]	None	Cape Bonavista	2	2
+Viewpoint 3 River Cape Bonavista	Viewpoint	0x9AF29C345 sync>=100 [RHP_Intro_River]	None	Cape Bonavista	3	3
+Fragment 2 Cape Bonavista	Animus Fragment	0x7FC0F1FA6 collected [ACGA_Collectables_AnimusFragment_025_Intro]	None	Cape Bonavista	2	2
+Chest 5 Cape Bonavista	Chest	0xAE6D0F70D collected [ACGA_Collectables_TreasureChest_CapBonavista _012]	None	Cape Bonavista	5	5
+Treasure Map Cape Bonavista	Treasure Map	0xA7BD521DD collected [ACGA_TreasureMaps_24]	None	Cape Bonavista	4	1
+Edward Kenway	Story	0x669E09D8F sync>=100	None	Cape Bonavista	1	1
+Start Welcome to Abstergo Entertainment	Modern Day Start	0x669E09D91 started (entry exists in save)	None	Havana	1	1
+Welcome to Abstergo Entertainment	Modern Day	0x669E09D91 sync>=100	None	Havana	1	1
+Start Lively Havana	Story Start	0x669E09DC0 started (entry exists in save)	None	Havana	2	2
+Fragment 1 Havana	Animus Fragment	0x311B40332 collected [ACGA_Collectables_AnimusFragment_002_Havana]	None	Havana	3	1
+Buy swords -> go near the restricted area with manuscript until the animus border appears and wait -> Get Manuscript 1 Havana	Manuscripts	0x81AF19857 collected [ACGA_Collectables_Manuscript_001_Havana]	None	Havana	1	1
+(un-missable apart of story) Viewpoint 1 DowntownTavern Havana	Viewpoint	0x79CA144CD sync>=100 [RHP_Havana_DowntownTavern]	None	Havana	4	1
+(near bonnet) Chest 1 Havana	Chest	0xAFAC70CF0 collected [ACGA_Collectables_TreasureChest_Havana_020]	None	Havana	6	1
+(near bonnet) Shanty 1 Havana	Shanty	0x8051829C5 collected [ACGA_Collectables_Song_003_Havana]	None	Havana	1	1
+Lively Havana	Story	0x669E09DC0 sync>=102	None	Havana	2	2
+Start ...And My Sugar?	Story Start	0x669E09DC1 started (entry exists in save)	None	Havana	3	3
+(during tailing) Chest 2 Havana	Chest	0xAFAC70CF8 collected [ACGA_Collectables_TreasureChest_Havana_017]	None	Havana	7	2
+(during tailing) Fragment 2 Havana	Animus Fragment	0x7FC0F1FCA collected [ACGA_Collectables_AnimusFragment_010_Havana]	None	Havana	4	2
+(during tailing after they leave the restricted area) Chest 3 Havana	Chest	0x7B5DD85D5 collected [ACGA_Collectables_TreasureChest_Havana_001]	None	Havana	8	3
+(during tailing get ahead of them) Shanty 2 Havana	Shanty	0x8051829C9 collected [ACGA_Collectables_Song_002_Havana]	None	Havana	2	2
+(during tailing get ahead of them at viewpoint 1) Fragment 3 Havana	Animus Fragment	0x7FC0F1FCE collected [ACGA_Collectables_AnimusFragment_011_Havana]	None	Havana	5	3
+Fragment 4 Havana	Animus Fragment	0x7FC0F1FC2 collected [ACGA_Collectables_AnimusFragment_008_Havana]	None	Havana	6	4
+Chest 4 Havana	Chest	0x7B5DD879D collected [ACGA_Collectables_TreasureChest_Havana_010]	None	Havana	9	4
+Chest 5 Havana	Chest	0xAFAC70CFC collected [ACGA_Collectables_TreasureChest_Havana_016]	None	Havana	10	5
+finish eavesdrop -> pickpocket guy -> reload checkpoint -> Manuscript 2 Havana	Manuscripts	0x81AF19873 collected [ACGA_Collectables_Manuscript_003_Havana]	None	Havana	2	2
+Chest 6 Havana	Chest	0xAFAC70CEC collected [ACGA_Collectables_TreasureChest_Havana_018]	None	Havana	11	6
+(Fort)Fragment 5 Havana	Animus Fragment	0x7FC0F1FBE collected [ACGA_Collectables_AnimusFragment_007_Havana]	None	Havana	7	5
+...And My Sugar?	Story	0x669E09DC1 sync>=102	None	Havana	3	3
+Fast Travel to Havana Viewpoint 1 -> straight -> left at intersection -> diagonal right at intersection -> left at intersection -> right then straight to fast lift -> Chest 7 Havana	Chest	0xAB4E780A3 collected [ACGA_Collectables_TreasureChest_Havana_011]	None	Havana	12	7
+(Governors Mansion) Chest 8 Havana	Chest	0x7B5DD878D collected [ACGA_Collectables_TreasureChest_Havana_002]	None	Havana	13	8
+Fragment 6 Havana	Animus Fragment	0x7FC0F1FDA collected [ACGA_Collectables_AnimusFragment_014_Havana]	None	Havana	8	6
+Fragement 7 Havana	Animus Fragment	0x7FC0F1FD6 collected [ACGA_Collectables_AnimusFragment_013_Havana]	None	Havana	9	7
+Viewpoint 2 Mansion Havana	Viewpoint	0x7A4B50978 sync>=100 [RHP_Havana_Mansion]	None	Havana	5	2
+Start Mister Walpole I presume	Story Start	0x669E09DC2 started (entry exists in save)	None	Havana	4	4
+Mister Walpole I presume	Story	0x669E09DC2 sync>=102	None	Havana	4	4
+get Beach Bandit	Assassin Contract Start	0x77C91B9BF started (entry exists in save)	None	Havana	1	1
+Viewpoint 3 PoorChurch Havana	Viewpoint	0x7A4B5072B sync>=100 [RHP_Havana_PoorChurch]	None	Havana	6	3
+Start A Man They Call A Sage	Story Start	0x669E09DC3 started (entry exists in save)	None	Havana	5	5
+Fragment 8 Havana	Animus Fragment	0x7FC0F1FB6 collected [ACGA_Collectables_AnimusFragment_005_Havana]	None	Havana	10	8
+A Man They Call A Sage	Story	0x669E09DC3 sync>=102	None	Havana	5	5
+Get Spanish Commander	Assassin Contract Start	0x7E2A46A74 started (entry exists in save)	None	Havana	2	2
+Quit warp -> Chest 9 Havana	Chest	0x7B5DD8781 collected [ACGA_Collectables_TreasureChest_Havana_005]	None	Havana	14	9
+Fragment 9 Havana	Animus Fragment	0x7FC0F1FD2 collected [ACGA_Collectables_AnimusFragment_012_Havana]	None	Havana	11	9
+Fragment 10 Havana	Animus Fragment	0x7FC0F1FDE collected [ACGA_Collectables_AnimusFragment_015_Havana]	None	Havana	12	10
+Chest 10 Havana	Chest	0xAB4E7809B collected [ACGA_Collectables_TreasureChest_Havana_014]	None	Havana	15	10
+Fragment 11 Havana	Animus Fragment	0x311B40336 collected [ACGA_Collectables_AnimusFragment_003_Havana]	None	Havana	13	11
+Treasure Map Havana	Treasure Map	0x6CCEE37D6 collected [ACGA_TreasureMaps_01]	None	Havana	5	1
+Shanty 3 Havana	Shanty	0x8051829BD collected [ACGA_Collectables_Song_005_Havana]	None	Havana	3	3
+Manuscript 3 Havana	Manuscripts	0x81AF19877 collected [ACGA_Collectables_Manuscript_004_Havana]	None	Havana	3	3
+Fragment 12 Havana	Animus Fragment	0x7FC0F1FC6 collected [ACGA_Collectables_AnimusFragment_009_Havana]	None	Havana	14	12
+Viewpoint 4 RichNorth Havana	Viewpoint	0x7A24CF6E8 sync>=100 [RHP_Havana_RichNorth]	None	Havana	7	4
+Get No More Taxes	Assassin Contract Start	0x7E2A46A75 started (entry exists in save)	None	Havana	3	3
+No More Taxes	Assassin Contracts	0x7E2A46A75 sync>=100 [ASC11_HAV_C3_T1]	None	Havana	1	1
+Get Botched Escape	Assassin Contract Start	0x84F144875 started (entry exists in save)	None	Havana	4	4
+Chest 11 Havana	Chest	0x7B5DD8785 collected [ACGA_Collectables_TreasureChest_Havana_007]	None	Havana	16	11
+Botched Escape	Assassin Contracts	0x84F144875 sync>=100 [ASC12_HAV_C3_T2]	None	Havana	2	2
+Quit warp -> Fast travel to South Viewpoint -> Buried Treasure Havana	Burired Treasure	0x7B0CF371F collected [ACGA_Blueprints_Figurehead_Iconic] (guess: order)	None	Havana	1	1
+Beach Bandit -> Quit warp	Assassin Contracts	0x77C91B9BF sync>=100 [ASC07_HAV_C1_T1]	None	Havana	3	3
+Chest 12 Havana	Chest	0xAFAC70CF4 collected [ACGA_Collectables_TreasureChest_Havana_019]	None	Havana	17	12
+Viewpoint 5 Basilica Havana	Viewpoint	0x7A4B504DC sync>=100 [RHP_Havana_Basilica]	None	Havana	8	5
+Start Claiming Whats Due	Story Start	0x669E09DC4 started (entry exists in save)	None	Havana	6	6
+Chest 13 Havana	Chest	0x7B5DD8789 collected [ACGA_Collectables_TreasureChest_Havana_003]	None	Havana	18	13
+Claiming Whats Due	Story	0x669E09DC4 sync>=102	None	Havana	6	6
+Start Treasure Fleet	Story Start	0x669E09DC5 started (entry exists in save)	None	Carribean	7	7
+Treasure Fleet 	Story	0x669E09DC5 sync>=102	None	Carribean	7	7
+Start This Tyro Captain	Story Start	0x8F9362F2C started (entry exists in save)	None	Abaco Island	8	8
+Fragment 1 Uncharted	Animus Fragment	0x7FC0F2182 collected [ACGA_Collectables_AnimusFragment_192_Uncharted]	(566,864)	Uncharted	15	1
+Fragment 2 Uncharted	Animus Fragment	0x7FC0F2196 collected [ACGA_Collectables_AnimusFragment_195_Uncharted]	(589,906)	Uncharted	16	2
+Reload -> Chest 1 Uncharted	Chest	0x7B5DD867D collected [ACGA_Collectables_TreasureChest_Uncharted47_01]	(501,846)	Uncharted	19	1
+Chest 2 Uncharted	Chest	0x7F9E97FD3 collected [ACGA_Collectables_TreasureChest_Uncharted67_01]	(457,904)	Uncharted	20	2
+Fragment 3 Uncharted	Animus Fragment	0x7FC0F214E collected [ACGA_Collectables_AnimusFragment_196_Uncharted]	(458,903)	Uncharted	17	3
+Reload -> Chest 3 Uncharted	Chest	0xA66AD613E collected [ACGA_Collectables_TreasureChest_Uncharted40_01]	(550,816)	Uncharted	21	3
+Letter 1 Abaco Island	Letters	0x820F6F69E collected [ACGA_Collectables_LetterBottle_011_AndreasIsland]	None	Abaco Island	1	1
+Shoot Ocolot (skin) -> Treasure Map Abaco Island	Treasure Map	0x6CCEE37E6 collected [ACGA_TreasureMaps_05]	None	Abaco Island	6	1
+Air assassinate Ocolot if near (skin) -> Health Upgrade 1	Upgrades	0x8C61178C3 collected [ACGA_Crafting_Life_2]	None	Abaco Island	1	1
+ Pistol Holster 1	Upgrades	0xB1E213E1C collected [ACGA_Crafting_2nd_Pistol_Sheat_BIDON]	None	Abaco Island	2	2
+Fragment 1 Abaco Island	Animus Fragment	0x7FC0F20EE collected [ACGA_Collectables_AnimusFragment_141_AndreasIsland]	None	Abaco Island	18	1
+Viewpoint LittleAbaco Abaco Island	Viewpoint	0x7DF29AF57 sync>=100 [RHP_CAR_A_LittleAbaco]	None	Abaco Island	9	1
+Chest 1 Abaco Island	Chest	0x7B5DD871D collected [ACGA_Collectables_TreasureChest_AndreasIsland_001]	None	Abaco Island	22	1
+Fragment 2 Abaco Island	Animus Fragment	0x7FC0F20EA collected [ACGA_Collectables_AnimusFragment_142_AndreasIsland]	None	Abaco Island	19	2
+Fragment 3 Abaco Island	Animus Fragment	0x7FC0F20E6 collected [ACGA_Collectables_AnimusFragment_143_AndreasIsland]	None	Abaco Island	20	3
+boat return to ship -> This Tyro Captain	Story	0x8F9362F2C sync>=102	None	Abaco Island	8	8
+Start Now Hiring	Story Start	0x669E09E2D started (entry exists in save)	None	Nassua	9	9
+free crew at church -> Viewpoint 1 City Nassua	Viewpoint	0x7A35EF327 sync>=100 [RHP_Nassau_City]	None	Nassua	10	1
+Fragment 1 Nassua	Animus Fragment	0x7FC0F1FF6 collected [ACGA_Collectables_AnimusFragment_021_Nassau]	None	Nassua	21	1
+reload -> Complete Now Hiring	Story	0x669E09E2D sync>=102	None	Nassua	9	9
+Start Prizes and Plunder	Story Start	0x6BB638CCE started (entry exists in save)	None	Carribean	10	10
+Destroy scooner -> Discover AndIs -> reload -> Hull Armor 1	Upgrades	0x773C845EE collected [ACGA_ShipUpgrade_HullLevel2]	None	Carribean	3	3
+Prizes and Plunder	Story	0x6BB638CCE sync>=102	None	Carribean	10	10
+Exit Mission -> Buy Roundshot Strength 1	Upgrades	0x773C84AB1 collected [ACGA_ShipUpgrade_CannonRoundShot_Level2]	None	Uncharted	4	4
+Buy Roundshot Strength 2	Upgrades	0x773C84AAD collected [ACGA_ShipUpgrade_CannonRoundShot_Level3]	None	Uncharted	5	5
+Buy Mortar 1	Upgrades	0x75F9F3486 collected [ACGA_ShipUpgrade_CannonMortarLevel1]	None	Uncharted	6	6
+Buy Heavy Shot 1	Upgrades	0x773C84BC1 collected [ACGA_ShipUpgrade_CannonHeavyShot_Level1]	None	Uncharted	7	7
+Buy Heavy Shot 2	Upgrades	0x773C84BC5 collected [ACGA_ShipUpgrade_CannonHeavyShot_Level2]	None	Uncharted	8	8
+Buy Mortar Storage 1	Upgrades	0x7F3CA90CF collected [ACGA_ShipUpgrade_MortarStorage2]	None	Uncharted	9	9
+Buy Mortar Storage 2	Upgrades	0x7F3CA90CB collected [ACGA_ShipUpgrade_MortarStorage3]	None	Uncharted	10	10
+Start Raise the BlackFlag	Story Start	0x669E09E2F started (entry exists in save)	None	Uncharted	11	11
+Fragment 4 Uncharted	Animus Fragment	0x7FC0F2156 collected [ACGA_Collectables_AnimusFragment_187_Uncharted]	(495,675)	Uncharted	22	4
+Chest 4 Uncharted	Chest	0xA66AD6152 collected [ACGA_Collectables_TreasureChest_Uncharted43_01]	(442,669)	Uncharted	23	4
+Reload -> Do first ship boarding -> Reload 2nd ship boarding -> Get Broadside Cannons 1 (Jackdaw, captain's quarters)	Upgrades	0x60419E683 collected [ACGA_ShipUpgrade_CannonSideLevel2]	None	Carribean	11	11
+Raise the BlackFlag (spawn hunter ship by sailing away while looking at objective)	Story	0x669E09E2F sync>=102	None	Carribean	11	11
+ Chest 5 Uncharted	Chest	0xA66AD6156 collected [ACGA_Collectables_TreasureChest_Uncharted54_01]	(488,591)	Uncharted	24	5
+Quit Warp -> Salt Key Banter	Taverns	0x82E0FFFFF accomplished [ACGA Tavern V SaltKeyBank]	None	Salt Key Bank	1	1
+Get Shady Buisness	Assassin Contract Start	0x840494CAF started (entry exists in save)	None	Salt Key Bank	5	5
+Chest 1 SaltKey	Chest	0x7B5DD85E1 collected [ACGA_Collectables_TreasureChest_SaltKeyBank_002]	None	Salt Key Bank	25	1
+Chest 2 SaltKey	Chest	0xA80115D75 collected [ACGA_Collectables_TreasureChest_SaltKeyBank_006]	None	Salt Key Bank	26	2
+Viewpoint SaltKeyBank SaltKey	Viewpoint	0x7B0E054FA sync>=100 [RHP_CAR_V_SaltKeyBank]	None	Salt Key Bank	11	1
+Chest 3 SaltKey	Chest	0x7B5DD85E5 collected [ACGA_Collectables_TreasureChest_SaltKeyBank_003]	None	Salt Key Bank	27	3
+Shady Buisness	Assassin Contracts	0x840494CAF sync>=100 [ASC28_SaltKeyBank_C1_T1]	None	Uncharted	4	4
+Chest 6 Uncharted	Chest	0x7F9E97FBF collected [ACGA_Collectables_TreasureChest_Uncharted53_01]	(400,646)	Uncharted	28	6
+Reload -> Fragment 1 Matanzas	Animus Fragment	0x7FC0F202E collected [ACGA_Collectables_AnimusFragment_127_Matanzas]	None	Matanzas	23	1
+Chest 1 Matanzas	Chest	0xAAAD93C71 collected [ACGA_Collectables_TreasureChest_Matanza_003]	None	Matanzas	29	1
+Fragment 2 Matanzas	Animus Fragment	0x7FC0F202A collected [ACGA_Collectables_AnimusFragment_126_Matanzas]	None	Matanzas	24	2
+Fast travel SaltKey -> Letter 2 SaltKey	Letters	0x820F6F6BE collected [ACGA_Collectables_LetterBottle_003_SaltKeyBank]	None	Salt Key Bank	2	2
+Chest 4 SaltKey	Chest	0xA80115D71 collected [ACGA_Collectables_TreasureChest_SaltKeyBank_005]	None	Salt Key Bank	30	4
+Fragment 1 SaltKey	Animus Fragment	0x7FC0F1F46 collected [ACGA_Collectables_AnimusFragment_093_SaltKeyBank]	None	Salt Key Bank	25	1
+Fragment 2 Salt Key	Animus Fragment	0x7FC0F1F42 collected [ACGA_Collectables_AnimusFragment_092_SaltKeyBank]	None	Salt Key Bank	26	2
+Shanty SaltKey	Shanty	0x805182989 collected [ACGA_Collectables_Song_018_SaltKeyBank]	None	Salt Key Bank	4	1
+Get The Informant	Assassin Contract Start	0x86B8EE34F started (entry exists in save)	None	Salt Key Bank	6	6
+Fragment 3 SaltKey	Animus Fragment	0x7FC0F1F4A collected [ACGA_Collectables_AnimusFragment_094_SaltKeyBank]	None	Salt Key Bank	27	2
+Chest 5 SaltKey	Chest	0x7B5DD8691 collected [ACGA_Collectables_TreasureChest_SaltKeyBank_001]	None	Salt Key Bank	31	5
+Chest 6 SaltKey	Chest	0xA80115D6D collected [ACGA_Collectables_TreasureChest_SaltKeyBank_004]	None	Salt Key Bank	32	6
+Fast travel Andreas Island -> get The Treasure Hunter	Assassin Contract Start	0x7E2A46A6E started (entry exists in save)	None	Andreas Island	7	7
+The Andreas Inn	Taverns	0x830048003 accomplished [ACGA Tavern B LittleAbaco]	None	Andreas Island	2	1
+Letter 3 Andreas Island	Letters	0x820F6F6A6 collected [ACGA_Collectables_LetterBottle_009_LittleAbaco]	None	Andreas Island	3	3
+Manuscript Andreas Island	Manuscripts	0x81AF198AF collected [ACGA_Collectables_Manuscript_018_LittleAbaco]	None	Andreas Island	4	4
+Chest 1 AndreasIsland	Chest	0x7B5DD86D1 collected [ACGA_Collectables_TreasureChest_LittleAbaco_002]	None	Andreas Island	33	1
+Chest 2 AndreasIsland	Chest	0xA80115D39 collected [ACGA_Collectables_TreasureChest_LittleAbaco_005]	None	Andreas Island	34	2
+Fragment 1 AndreasIsland	Animus Fragment	0x7FC0F2086 collected [ACGA_Collectables_AnimusFragment_134_LittleAbaco]	None	Andreas Island	28	1
+Start The Plantation and its yeilds	Story Start	0x78611BF7C started (entry exists in save)	None	Andreas Island	12	12
+Fragment 2 AndreasIsland	Animus Fragment	0x7FC0F204A collected [ACGA_Collectables_AnimusFragment_133_LittleAbaco]	None	Andreas Island	29	2
+Viewpoint Andreas AndreasIsland	Viewpoint	0x7CEB622DA sync>=100 [RHP_CAR_B_Andreas]	None	Andreas Island	12	1
+Chest 3 AndreasIsland	Chest	0x7B5DD86CD collected [ACGA_Collectables_TreasureChest_LittleAbaco_003]	None	Andreas Island	35	3
+Chest 4 AndreasIsland	Chest	0xA80115D35 collected [ACGA_Collectables_TreasureChest_LittleAbaco_004]	None	Andreas Island	36	4
+Chest 5 AndreasIsland	Chest	0x7B5DD86E9 collected [ACGA_Collectables_TreasureChest_LittleAbaco_001]	None	Andreas Island	37	5
+Treasure Map AndreasIsland	Treasure Map	0x6CCEE37DE collected [ACGA_TreasureMaps_03]	None	Andreas Island	7	1
+Return to Boat when timer starts near red zone -> Chest 7 Uncharted	Chest	0x7F9E97FC3 collected [ACGA_Collectables_TreasureChest_Uncharted58_01]	(651,723)	Uncharted	38	7
+When it says reduce distance to target and new objective appears reload -> Chest 1 CatIsland	Chest	0x7B5DD8661 collected [ACGA_Collectables_TreasureChest_CatIsland_001]	None	Cat Island	39	1
+Fragment 1 CatIsland	Animus Fragment	0x7FC0F201E collected [ACGA_Collectables_AnimusFragment_123_CatIsland]	None	Cat Island	30	1
+Chest 2 CatIsland	Chest	0xAAAD93C79 collected [ACGA_Collectables_TreasureChest_CatIsland_005]	None	Cat Island	40	2
+Fragment 2 CatIsland	Animus Fragment	0x7FC0F2022 collected [ACGA_Collectables_AnimusFragment_124_CatIsland]	None	Cat Island	31	2
+Reload -> Chest 3 CatIsland	Chest	0xAAAD93C7D collected [ACGA_Collectables_TreasureChest_CatIsland_004]	None	Cat Island	41	3
+Chest 4 CatIsland	Chest	0x7B5DD8649 collected [ACGA_Collectables_TreasureChest_CatIsland_003]	None	Cat Island	42	4
+Shanty CatIsland	Shanty	0x805182985 collected [ACGA_Collectables_Song_020_CatIsland]	None	Cat Island	5	1
+Viewpoint CatIsland CatIsland	Viewpoint	0x7A949B5F0 sync>=100 [RHP_CAR_P_CatIsland]	None	Cat Island	13	1
+Sugarcan and its Yeilds	Story	0x78611BF7C sync>=102	None	Cat Island	12	12
+Chest 5 CatIsland	Chest	0x7B5DD8659 collected [ACGA_Collectables_TreasureChest_CatIsland_002]	None	Cat Island	43	5
+MyanStone Cat Island	Myan Stones	0x7B5DD887E collected [ACGA_Collectables_MayanSteles_CatIsland_001]	None	Cat Island	1	1
+Fragment 5 Uncharted	Animus Fragment	0x7FC0F219A collected [ACGA_Collectables_AnimusFragment_194_Uncharted]	(819,644)	Uncharted	32	5
+Quit warp -> Treasure Map Salt Lagoon	Treasure Map	0x6CCEE380A collected [ACGA_TreasureMaps_14]	None	Salt Lagoon	8	1
+Start Proper Defenses	Story Start	0x669E09E30 started (entry exists in save)	None	Salt Lagoon	13	13
+Chest 1 Salt Lagoon	Chest	0x7B5DD8625 collected [ACGA_Collectables_TreasureChest_SaltLagoon_001]	None	Salt Lagoon	44	1
+Viewpoint SaltLagoon Salt Lagoon	Viewpoint	0x7B5C3DD30 sync>=100 [RHP_CAR_B_SaltLagoon]	None	Salt Lagoon	14	1
+Fragment 1 Salt Lagoon	Animus Fragment	0x7FC0F20E2 collected [ACGA_Collectables_AnimusFragment_144_SaltLagoon]	None	Salt Lagoon	33	1
+Proper Defenses	Story	0x669E09E30 sync>=102	None	Carribean	13	13
+Chest 8 Uncharted	Chest	0xA66AD6132 collected [ACGA_Collectables_TreasureChest_Uncharted34_01]	(901,487)	Uncharted	45	8
+Start A Single Madman	Story Start	0x669E09E31 started (entry exists in save)	None	Great Igauna	14	14
+Fragment 1 Great Inagua	Animus Fragment	0x7FC0F1F76 collected [ACGA_Collectables_AnimusFragment_067_Hideout]	None	Great Igauna	34	1
+Chest 1 Great Inagua	Chest	0x7B5DD85F5 collected [ACGA_Collectables_TreasureChest_Hideout_002]	None	Great Igauna	46	1
+Shanty 1 Great Inagua	Shanty	0x805182991 collected [ACGA_Collectables_Song_016_Hideout]	None	Great Igauna	6	1
+Chest 2 Great Inagua	Chest	0x7B5DD8729 collected [ACGA_Collectables_TreasureChest_Hideout_001]	None	Great Igauna	47	2
+Fragment 2 Great Inagua	Animus Fragment	0x7FC0F1F72 collected [ACGA_Collectables_AnimusFragment_066_Hideout]	None	Great Igauna	35	2
+Chest 3 Great Inagua	Chest	0x7B5DD8609 collected [ACGA_Collectables_TreasureChest_Hideout_003]	None	Great Igauna	48	3
+Fragment 3 Great Inagua	Animus Fragment	0x7FC0F1F6E collected [ACGA_Collectables_AnimusFragment_065_Hideout]	None	Great Igauna	36	3
+Chest 4 Great Inagua	Chest	0xA80115D25 collected [ACGA_Collectables_TreasureChest_Hideout_006]	None	Great Igauna	49	4
+Treasure Map Great Inagua	Treasure Map	0x6CCEE37DA collected [ACGA_TreasureMaps_02]	None	Great Igauna	9	1
+A Single Madman 	Story	0x669E09E31 sync>=102	None	Great Igauna	14	14
+Start A Small Favour	Modern Day Start	0x669E0A115 started (entry exists in save)	None	Abstergo Industries	2	2
+A Small Favour	Modern Day	0x669E0A115 sync>=100	None	Abstergo Industries	2	2
+Start This Old Cove	Story Start	0x669E09E38 started (entry exists in save)	None	Great Igauna	15	15
+Fragment 4 Great Inagua	Animus Fragment	0x7FC0F1F6A collected [ACGA_Collectables_AnimusFragment_064_Hideout]	None	Great Igauna	37	4
+Chest 5 Great Inagua	Chest	0xA80115D1D collected [ACGA_Collectables_TreasureChest_Hideout_009]	None	Great Igauna	50	5
+Reload -> Shanty 2	Shanty	0x80518298D collected [ACGA_Collectables_Song_017_Hideout]	None	Great Igauna	7	1
+Letter 4 Great Inagua	Letters	0x820F6F67E collected [ACGA_Collectables_LetterBottle_001_Hideout]	None	Great Igauna	4	4
+Chest 6 Great Inagua	Chest	0x7B5DD8601 collected [ACGA_Collectables_TreasureChest_Hideout_005]	None	Great Igauna	51	6
+Chest 7 Great Inagua	Chest	0xA80115D29 collected [ACGA_Collectables_TreasureChest_Hideout_010]	None	Great Igauna	52	7
+Reload -> Myan Stone Great Inagua	Myan Stones	0xC207EEBB8 collected [ACGA_Collectables_MayanSteles_MayanTemple]	None	Great Igauna	2	2
+Chest 8 Great Inagua	Chest	0x7B5DD8605 collected [ACGA_Collectables_TreasureChest_Hideout_004]	None	Great Igauna	53	8
+Chest 9 Great Inagua	Chest	0xA80115D21 collected [ACGA_Collectables_TreasureChest_Hideout_008]	None	Great Igauna	54	9
+Chest 10 Great Inagua	Chest	0xA80115D19 collected [ACGA_Collectables_TreasureChest_Hideout_007]	None	Great Igauna	55	10
+Fragment 5 Great Inagua	Animus Fragment	0x7FC0F1F7A collected [ACGA_Collectables_AnimusFragment_068_Hideout]	None	Great Igauna	38	5
+Viewpoint Hideout Great Inagua	Viewpoint	0x84E593328 sync>=100 [RHP_Hideout]	None	Great Igauna	15	1
+This Old Cove	Story	0x669E09E38 sync>=100	None	Great Igauna	15	15
+Fast travel just outside Nassua -> Chest 9 Uncharted	Chest	0xA66AD614A collected [ACGA_Collectables_TreasureChest_Uncharted49_01]	(674,771)	Uncharted	56	9
+Swim until minimap has you in restricted area then quit warp -> Destroy Defenses Eleuthera	Fort Defenses	0x81D96F54D sync>=100 [NGL_F_Elenthera_Naval]	None	Eleuthera	1	1
+Fragment 1 Eleuthera	Animus Fragment	0x96684188C collected [ACGA_Collectables_AnimusFragment_019_Elenthera]	None	Eleuthera	39	1
+Chest 1 Eleuthera	Chest	0x8B19BA6BC collected [ACGA_Collectables_TreasureChest_Elenthera_002]	None	Eleuthera	57	1
+Fragment 2 Eleuthera	Animus Fragment	0x966841888 collected [ACGA_Collectables_AnimusFragment_018_Elenthera]	None	Eleuthera	40	2
+Chest 2 Eleuthera	Chest	0x8B19BA670 collected [ACGA_Collectables_TreasureChest_Elenthera_001]	None	Eleuthera	58	2
+Capture Eleuthera	Forts	0x7B76D2984 sync>=100 [NGL_F_Elenthera_Land]	None	Eleuthera	1	1
+ Brother In Arms  go to (843,798) well underneath the marker then mark. sail to them stop at 570 range BE PATIENT!	Legendary Ships	0x7AED43202 sync>=100 [SS_Twins]	None	Uncharted	1	1
+Fast travel to Eleuthera -> Buy Roundshot Strength 3	Upgrades	0x773C84AA9 collected [ACGA_ShipUpgrade_CannonRoundShot_Level4]	None	Uncharted	12	12
+Buy Chainshot Strength 1	Upgrades	0x8998CB436 collected [ACGA_ShipUpgrade_ChainShotLevel2]	None	Uncharted	13	13
+Buy Chainshot Strength 2	Upgrades	0x8998CB43B collected [ACGA_ShipUpgrade_ChainShotLevel3]	None	Uncharted	14	14
+Buy Fire Barrel Strength 1	Upgrades	0x773C8502E collected [ACGA_ShipUpgrade_Mine_Level2]	None	Uncharted	15	15
+Buy Heavy Shot Storage 1	Upgrades	0x7F3CA90D7 collected [ACGA_ShipUpgrade_HeavyShotStorage2]	None	Uncharted	16	16
+Buy Heavy Shot Storage 2	Upgrades	0x7F3CA90DF collected [ACGA_ShipUpgrade_HeavyShotStorage3]	None	Uncharted	17	17
+Refill on ammo -> Accept Spanish Plague	Naval Contract Start	0x7C4A545D8 started (entry exists in save)	None	Uncharted	1	1
+Fragment 6 Uncharted	Animus Fragment	0x7FC0F219E collected [ACGA_Collectables_AnimusFragment_193_Uncharted]	(723,739)	Uncharted	41	6
+Spanish Plague	Naval Contracts	0x7C4A545D8 sync>=100 [NVC_CAR03]	None	Uncharted	1	1
+Fast Travel to Cape Bonavista -> Fast travel to Viewpoint 1 -> Chest 6 Cape Bonavista	Chest	0x9AF2D4F4E collected [ACGA_Collectables_TreasureChest_CapBonavista _002]	None	Cape Bonavista	59	6
+Letter 5 Cape Bonavista	Letters	0x820F6F68A collected [ACGA_Collectables_LetterBottle_016_CapBonavista]	None	Cape Bonavista	5	5
+Chest 7 Cape Bonavista	Chest	0xAE6D0F701 collected [ACGA_Collectables_TreasureChest_CapBonavista _010]	None	Cape Bonavista	60	7
+Fast travel to viewpoint 2 -> Chest 8 Cape Bonavista	Chest	0x9AF2D4F5A collected [ACGA_Collectables_TreasureChest_CapBonavista _005]	None	Cape Bonavista	61	8
+Fast travel back to viewpoint 2 -> Chest 9 Cape Bonavista	Chest	0x9AF2D4F56 collected [ACGA_Collectables_TreasureChest_CapBonavista _003]	None	Cape Bonavista	62	9
+Fragment 3 Cape Bonavista	Animus Fragment	0x7FC0F1ECE collected [ACGA_Collectables_AnimusFragment_041_Intro]	None	Cape Bonavista	42	3
+Chest 10 Cape Bonavista	Chest	0xAE6D0F705 collected [ACGA_Collectables_TreasureChest_CapBonavista _015]	None	Cape Bonavista	63	10
+Chest 11 Cape Bonavista	Chest	0xAE6D0F715 collected [ACGA_Collectables_TreasureChest_CapBonavista _011]	None	Cape Bonavista	64	11
+Chest 12 Cape Bonavista	Chest	0x9AF2D4F52 collected [ACGA_Collectables_TreasureChest_CapBonavista _006]	None	Cape Bonavista	65	12
+MyanStone Cape Bonavista	Myan Stones	0xC207EEBB4 collected [ACGA_Collectables_MayanSteles_CapeBonavista]	None	Cape Bonavista	3	3
+Chest 13 Cape Bonavista	Chest	0x9AF2D4F5E collected [ACGA_Collectables_TreasureChest_CapBonavista _007]	None	Cape Bonavista	66	13
+Shanty Cape Bonavista	Shanty	0xC7E2F0580 collected [ACGA_Collectables_Song_025_Intro]	None	Cape Bonavista	8	1
+Fragment 4 Cape Bonavista	Animus Fragment	0x7FC0F1F02 collected [ACGA_Collectables_AnimusFragment_038_Intro]	None	Cape Bonavista	43	4
+Fast travel back to viewpoint 2 -> Chest 14 Cape Bonavista	Chest	0xAE6D0F711 collected [ACGA_Collectables_TreasureChest_CapBonavista _013]	None	Cape Bonavista	67	14
+Chest 15 Cape Bonavista	Chest	0x9AF2D4F4A collected [ACGA_Collectables_TreasureChest_CapBonavista _004]	None	Cape Bonavista	68	15
+Fast travel to viewpoint 3 -> Chest 16 Cape Bonavista	Chest	0xAE6D0F709 collected [ACGA_Collectables_TreasureChest_CapBonavista _016]	None	Cape Bonavista	69	16
+Buried Treasure Cape Bonavista	Burired Treasure	0xAA71FD79D collected [ACGA_BuriedTreasure_Bidon_24]	None	Cape Bonavista	2	2
+Chest 10 Uncharted	Chest	0xA80115D2D collected [ACGA_Collectables_TreasureChest_Uncharted51_01]	(121,628)	Uncharted	70	10
+Cheat reload -> Destroy Defenses Conttoyor	Fort Defenses	0x81D96F54A sync>=100 [NGL_F_Conttoyor_Naval]	None	Conttoyor	2	2
+Fragment 1 Conttoyor	Animus Fragment	0x7FC0F1F4E collected [ACGA_Collectables_AnimusFragment_095_Contoyor]	None	Conttoyor	44	1
+Chest 1 Conttoyor	Chest	0x8B19BA674 collected [ACGA_Collectables_TreasureChest_Contoyor_001]	None	Conttoyor	71	1
+Fragment 2 Conttoyor	Animus Fragment	0x7FC0F2062 collected [ACGA_Collectables_AnimusFragment_104_Contoyor]	None	Conttoyor	45	2
+Chest 2 Conttoyor	Chest	0x8B19BA66C collected [ACGA_Collectables_TreasureChest_Contoyor_002]	None	Conttoyor	72	2
+Capture Conttoyor	Forts	0x7B76D2982 sync>=100 [NGL_F_Conttoyor_Land]	None	Conttoyor	2	2
+Refil ammo if needed -> Start Law of the Ocean	Naval Contract Start	0x7C4A545D7 started (entry exists in save)	None	Conttoyor	2	2
+Law of the Ocean	Naval Contracts	0x7C4A545D7 sync>=100 [NVC_CAR02]	None	Conttoyor	2	2
+Start Nothing is True	Story Start	0x669E09E39 started (entry exists in save)	None	Tulum	16	16
+Chest 1 Tulum	Chest	0x7B5DD85FD collected [ACGA_Collectables_TreasureChest_Cozumel_004]	None	Tulum	73	1
+Viewpoint 1 Beach Tulum	Viewpoint	0x804601FD4 sync>=100 [RHP_COZUMEL_Beach]	None	Tulum	16	1
+Fragment 1 Tulum	Animus Fragment	0x7FC0F1F8A collected [ACGA_Collectables_AnimusFragment_072_Cozumel]	None	Tulum	46	1
+Chest 2 Tulum	Chest	0xAB4E78097 collected [ACGA_Collectables_TreasureChest_Cozumel_005]	None	Tulum	74	2
+Fragment 2 Tulum	Animus Fragment	0x7FC0F1F8E collected [ACGA_Collectables_AnimusFragment_073_Cozumel]	None	Tulum	47	2
+Chest 3 Tulum	Chest	0x7B5DD873D collected [ACGA_Collectables_TreasureChest_Cozumel_002]	None	Tulum	75	3
+Chest 4 Tulum	Chest	0xAB4E78093 collected [ACGA_Collectables_TreasureChest_Cozumel_007]	None	Tulum	76	4
+MyanStone Tulum	Myan Stones	0x7B5DD884E collected [ACGA_Collectables_MayanSteles_Cozumel_001]	None	Tulum	4	4
+Nothing is True	Story	0x669E09E39 sync>=102	None	Tulum	16	16
+Start The Sage's Buired Secret	Story Start	0x669E09E3A started (entry exists in save)	None	Tulum	17	17
+The Sage's Buired Secret	Story	0x669E09E3A sync>=100	None	Tulum	17	17
+Start Overrun and Outnumbered	Story Start	0x669E09E3B started (entry exists in save)	None	Tulum	18	18
+Chest 5 Tulum	Chest	0xAB4E7808F collected [ACGA_Collectables_TreasureChest_Cozumel_006]	None	Tulum	77	5
+Chest 6 Tulum	Chest	0x7B5DD85E9 collected [ACGA_Collectables_TreasureChest_Cozumel_001]	None	Tulum	78	6
+Viewpoint 2 Shrine Tulum	Viewpoint	0x804601F4F sync>=100 [RHP_COZUMEL_Shrine]	None	Tulum	17	2
+Fragment 3 Tulum	Animus Fragment	0x7FC0F1F82 collected [ACGA_Collectables_AnimusFragment_070_Cozumel]	None	Tulum	48	3
+Overrun and Outnumbered	Story	0x669E09E3B sync>=102	None	Tulum	18	18
+Start The Forts	Story Start	0x669E09E42 started (entry exists in save)	None	Punta Guarico	19	19
+Defeat fort defenses then reload & infiltrate -> Fragment 1 Punta Guarico	Animus Fragment	0x9668418A0 collected [ACGA_Collectables_AnimusFragment_027_PtGuarico]	None	Punta Guarico	49	1
+Chest 1 Punta Guarico	Chest	0x8B19BA698 collected [ACGA_Collectables_TreasureChest_PtGuarico_002]	None	Punta Guarico	79	1
+Chest 2 Punta Guarico	Chest	0x8B19BA6A8 collected [ACGA_Collectables_TreasureChest_PtGuarico_001]	None	Punta Guarico	80	2
+Fragment 2 Punta Guarico	Animus Fragment	0x9668418A4 collected [ACGA_Collectables_AnimusFragment_031_PtGuarico]	None	Punta Guarico	50	2
+The Forts (Capture Punta Guarico)	Story	0x669E09E42 sync>=102	None	Punta Guarico	19	19
+Chest 11 Uncharted	Chest	0x7B5DD8725 collected [ACGA_Collectables_TreasureChest_Uncharted32_01]	(832,387)	Uncharted	81	11
+Quit Warp -> MyanStone do not pick up -> Chest 1 Tortuga	Chest	0x7B5DD862D collected [ACGA_Collectables_TreasureChest_Tortuga_002]	None	Tortuga	82	1
+Chest 2 Tortuga	Chest	0xAAAD93C59 collected [ACGA_Collectables_TreasureChest_Tortuga_007]	None	Tortuga	83	2
+Chest 3 Tortuga	Chest	0xAAAD93C55 collected [ACGA_Collectables_TreasureChest_Tortuga_006]	None	Tortuga	84	3
+Viewpoint Tortuga Tortuga	Viewpoint	0x7A949AFA2 sync>=100 [RHP_CAR_P_Tortuga]	None	Tortuga	18	1
+Fragment 1 Tortuga	Animus Fragment	0x7FC0F203E collected [ACGA_Collectables_AnimusFragment_131_Tortuga]	None	Tortuga	51	1
+Treasure Map Tortuga	Treasure Map	0x6CCEE37F6 collected [ACGA_TreasureMaps_09]	None	Tortuga	10	1
+Chest 4 Tortuga	Chest	0xAAAD93C5D collected [ACGA_Collectables_TreasureChest_Tortuga_005]	None	Tortuga	85	4
+Warehouse -> Chest 5 Tortuga	Chest	0xAAAD93C61 collected [ACGA_Collectables_TreasureChest_Tortuga_004]	None	Tortuga	86	5
+Chest 6 Tortuga	Chest	0x7B5DD86B5 collected [ACGA_Collectables_TreasureChest_Tortuga_001]	None	Tortuga	87	6
+Fragment 2 Tortuga	Animus Fragment	0x7FC0F2042 collected [ACGA_Collectables_AnimusFragment_132_Tortuga]	None	Tortuga	52	2
+Cheat warp -> MyanStone Tortuga	Myan Stones	0x7B5DD8876 collected [ACGA_Collectables_MayanSteles_Tortugal_001]	None	Tortuga	5	5
+Fast travel to Matanzas -> Letter 6 Matanzas	Letters	0x820F6F6AE collected [ACGA_Collectables_LetterBottle_007_Matanzas]	None	Matanzas	6	6
+Chest 2 Matanzas	Chest	0xAAAD93C75 collected [ACGA_Collectables_TreasureChest_Matanza_004]	None	Matanzas	88	2
+Chest 3 Matanzas	Chest	0x7B5DD8635 collected [ACGA_Collectables_TreasureChest_Matanza_002]	None	Matanzas	89	3
+Chest 4 Matanzas	Chest	0x7B5DD86BD collected [ACGA_Collectables_TreasureChest_Matanza_001]	None	Matanzas	90	4
+Viewpoint Matanzas Matanzas	Viewpoint	0x7AF076A60 sync>=100 [RHP_CAR_P_Matanzas]	None	Matanzas	19	1
+Fragment 3 Matanzas	Animus Fragment	0x7FC0F2026 collected [ACGA_Collectables_AnimusFragment_125_Matanzas]	None	Matanzas	53	3
+Warehouse -> Buried Treasure Matanzas	Burired Treasure	0x7F3CA9AE2 collected [ACGA_Blueprints_MortarStorage_Lv4]	None	Matanzas	3	3
+MyanStone Matanzas	Myan Stones	0x7B5DD887A collected [ACGA_Collectables_MayanSteles_Matanzas_001]	None	Matanzas	6	6
+Fast Travel to Punta Guarico -> Buy Mortar 2	Upgrades	0x75F9F3490 collected [ACGA_ShipUpgrade_CannonMortarLevel2]	None	Uncharted	18	18
+Buy Swivel Strength 1	Upgrades	0x773C84E44 collected [ACGA_ShipUpgrade_SwivelGun_Level2]	None	Uncharted	19	19
+Refill ammo if needed -> Cheat reload after leaving habormaster -> Fragment 7 Uncharted	Animus Fragment	0x7FC0F215E collected [ACGA_Collectables_AnimusFragment_184_Uncharted]	(738,310)	Uncharted	54	7
+Swim to ship a little quit warp -> Destroy Defenses Navassa	Fort Defenses	0x81D96F551 sync>=100 [NGL_F_Navassa_Naval]	None	Navassa	3	3
+Chest 1 Navassa	Chest	0x8B19BA6A0 collected [ACGA_Collectables_TreasureChest_Navassa_002]	None	Navassa	91	1
+Chest 2 Navassa	Chest	0x8B19BA694 collected [ACGA_Collectables_TreasureChest_Navassa_001]	None	Navassa	92	2
+Fragment 1 Navassa	Animus Fragment	0x7FC0F1F3A collected [ACGA_Collectables_AnimusFragment_090_Navassa]	None	Navassa	55	1
+Fragment 2 Navassa	Animus Fragment	0x9668418C0 collected [ACGA_Collectables_AnimusFragment_050_Navassa]	None	Navassa	56	2
+Capture Navassa	Forts	0x7B76D2986 sync>=100 [NGL_F_Navassa_Land]	None	Navassa	3	3
+Refill ammo if needed -> Start Blind Justice	Naval Contract Start	0x7C04028A9 started (entry exists in save)	None	Uncharted	3	3
+Letter 7 Uncharted 1	Letters	0x820F6F686 collected [ACGA_Collectables_LetterBottle_017_Uncharted]	(798,191)	Uncharted	7	7
+Chest 12 Uncharted	Chest	0xA66AD6126 collected [ACGA_Collectables_TreasureChest_Uncharted27_01]	(800,192)	Uncharted	93	12
+Blind Justice	Naval Contracts	0x7C04028A9 sync>=100 [NVC_CAR08]	None	Navassa	3	3
+Treasure Map Ille A Vache	Treasure Map	0x6CCEE3802 collected [ACGA_TreasureMaps_12]	None	Ille A Vache	11	1
+Chest 1 Ille A Vache	Chest	0x7B5DD8639 collected [ACGA_Collectables_TreasureChest_IleAVache_003]	None	Ille A Vache	94	1
+Fragment 1 Ille A Vache	Animus Fragment	0x7FC0F20F6 collected [ACGA_Collectables_AnimusFragment_139_IleVache]	None	Ille A Vache	57	1
+Viewpoint IleAVache Ille A Vache	Viewpoint	0x7E022524F sync>=100 [RHP_CAR_A_IleAVache]	None	Ille A Vache	20	1
+Chest 2 Ille A Vache	Chest	0x7B5DD8629 collected [ACGA_Collectables_TreasureChest_IleAVache_002]	None	Ille A Vache	95	2
+Vino A Vache	Taverns	0x830048004 accomplished [ACGA Tavern B IleAVache]	None	Ille A Vache	3	1
+Get The Expedition	Assassin Contract Start	0x7BC6E7736 started (entry exists in save)	None	Ille A Vache	8	8
+Manuscript Ille A Vache	Manuscripts	0x81AF1986B collected [ACGA_Collectables_Manuscript_020_IleVache]	None	Ille A Vache	5	5
+HMS Prince (for cheese stop as you reach sub 600 meters away)	Legendary Ships	0x7AED43200 sync>=100 [SS_Hunter]	None	Uncharted	2	2
+Fast Travel to Punta Guarico -> sail to red area unboard quit warp -> Buried Treasure Cumberland Bay	Burired Treasure	0x903EC7A0A collected [ACGA_BuriedTreasure_Bidon_19]	None	Cumberland Bay	4	4
+The Expedition	Assassin Contracts	0x7BC6E7736 sync>=100 [ASC23_ILEAV_C1_T1]	None	Cumberland Bay	5	5
+Viewpoint MarVerde Cumberland Bay	Viewpoint	0x7CEB62314 sync>=100 [RHP_CAR_B_MarVerde]	None	Cumberland Bay	21	1
+Fragment 1 Cumberland Bay	Animus Fragment	0x7FC0F20CE collected [ACGA_Collectables_AnimusFragment_149_MarVerde]	None	Cumberland Bay	58	1
+Fast travel back to Viewpoint -> Chest 1 Cumberland Bay	Chest	0xAAAD93C89 collected [ACGA_Collectables_TreasureChest_MarVerde_003]	None	Cumberland Bay	96	1
+Chest 2 Cumberland Bay	Chest	0x7B5DD8715 collected [ACGA_Collectables_TreasureChest_MarVerde_001]	None	Cumberland Bay	97	2
+Chest 3 Cumberland Bay	Chest	0x7B5DD86A1 collected [ACGA_Collectables_TreasureChest_MarVerde_002]	None	Cumberland Bay	98	3
+Treasure Map Cumberland Bay	Treasure Map	0x74748F118 collected [ACGA_TreasureMaps_16] (confirmed by 73% test)	None	Cumberland Bay	12	1
+Fragment 2 Cumberland Bay	Animus Fragment	0x7FC0F20CA collected [ACGA_Collectables_AnimusFragment_150_MarVerde]	None	Cumberland Bay	59	2
+Letter 8 Cumberland Bay	Letters	0x820F6F696 collected [ACGA_Collectables_LetterBottle_013_MarVerde]	None	Cumberland Bay	8	8
+Fast travel Ille A Vache viewpoint -> Fragment 2 Ille A Vache	Animus Fragment	0x7FC0F20FA collected [ACGA_Collectables_AnimusFragment_138_IleVache]	None	Ille A Vache	60	2
+Get The Slave Master	Assassin Contract Start	0x8251F16E5 started (entry exists in save)	None	Ille A Vache	9	9
+Chest 3 Ille A Vache	Chest	0xA80115D31 collected [ACGA_Collectables_TreasureChest_IleAVache_004]	None	Ille A Vache	99	3
+Chest 4 Ille A Vache	Chest	0x7B5DD86E5 collected [ACGA_Collectables_TreasureChest_IleAVache_001]	None	Ille A Vache	100	4
+Chest 13 Uncharted	Chest	0xA66AD6116 collected [ACGA_Collectables_TreasureChest_Uncharted28_01]	(893,174)	Uncharted	101	13
+Fragment 8 Uncharted	Animus Fragment	0x7FC0F214A collected [ACGA_Collectables_AnimusFragment_199_Uncharted]	(965,144)	Uncharted	61	8
+Fast Travel to Tortuga -> Chest 7 Tortuga	Chest	0x7B5DD8631 collected [ACGA_Collectables_TreasureChest_Tortuga_003]	None	Tortuga	102	7
+The Slave Master	Assassin Contracts	0x8251F16E5 sync>=100 [ASC24_ILEAV_C1_T2]	None	Tortuga	6	6
+Letter 9 Tortuga	Letters	0x820F6F6AA collected [ACGA_Collectables_LetterBottle_008_Tortuga]	None	Tortuga	9	9
+Fast travel to Navassa -> Chest 14 Uncharted	Chest	0x7B5DD8721 collected [ACGA_Collectables_TreasureChest_Uncharted26_01]	(699,155)	Uncharted	103	14
+Start Travelling Salesman	Story Start	0x669E09E43 started (entry exists in save)	None	Kingston	20	20
+Buy Officer's Rapiers	Upgrades	0x78154050F collected [ACGA_MW_ItalianOfficer_Rapiers_Primary], 0x781540F15 collected [ACGA_MW_ItalianOfficer_Rapiers_Secondary]	None	Kingston	20	20
+Buy Cannon-Barrel Pistols	Upgrades	0x781541338 collected [ACGA_WR_Cannon_Barrel_LeftDown_Holster], 0x781541340 collected [ACGA_WR_Cannon_Barrel_RightDown_Holster] (guess)	None	Kingston	21	21
+Buy rabbit pelt (2x)	Upgrades	0x1D59D2024 collected [ACGA_TradeObj_Hare_Pelt] (guess)	None	Kingston	22	22
+Buy hutia pelt (2x)	Upgrades	0x1D59D2038 collected [ACGA_TradeObj_Hutia_Pelt] (guess)	None	Kingston	23	23
+Buy howler monkey skin (2x)	Upgrades	0x2C95B2B7C collected [ACGA_TradeObj_HowlerMonkey_Pelt] (guess)	None	Kingston	24	24
+Buy crocodile leather (2x)	Upgrades	0x1D59D20FD collected [ACGA_TradeObj_Crocodile_Leather] (guess)	None	Kingston	25	25
+Buy killer whale skin (2x)	Upgrades	0x8C61178B0 collected [ACGA_TradeObj_KillerWhale_Skin] (guess)	None	Kingston	26	26
+Buy humpback whale skin (2x)	Upgrades	0x8C61178A4 collected [ACGA_TradeObj_Whale_Skin] (guess)	None	Kingston	27	27
+rabbit, huita, howler, corcodile, killer whale, humpback (all 2x) -> Craft Pistol Holster 3	Upgrades	0x78154133C collected [ACGA_WR_Cannon_Barrel_LeftUp_Holster] (guess)	None	Kingston	28	28
+Craft Pistol Holster 4	Upgrades	0x781541344 collected [ACGA_WR_Cannon_Barrel_RightUp_Holster] (guess)	None	Kingston	29	29
+Craft smoke bomb pouch 1	Upgrades	0x8D3855A1F collected [ACGA_Crafting_SmokeBombPouch_1]	None	Kingston	30	30
+Craft smoke bomb pouch 2	Upgrades	0x8D3855A1B collected [ACGA_Crafting_SmokeBombPouch_2]	None	Kingston	31	31
+Craft dart pouch 1	Upgrades	0x8D3855A27 collected [ACGA_Crafting_DartPouch_1]	None	Kingston	32	32
+Craft dart pouch 2	Upgrades	0x8D3855A17 collected [ACGA_Crafting_DartPouch_2]	None	Kingston	33	33
+Viewpoint 1 South_01 Kingston	Viewpoint	0x7A32FA12D sync>=100 [RHP_Kingston_South_01]	None	Kingston	22	1
+Shanty 1 Kingston	Shanty	0xC7E2F0584 collected [ACGA_Collectables_Song_024_Kingston]	None	Kingston	9	1
+Chest 1 Kingston	Chest	0x7B5DD8741 collected [ACGA_Collectables_TreasureChest_Kingston_006]	None	Kingston	104	1
+Chest 2 Kingston	Chest	0xAAAD93CA1 collected [ACGA_Collectables_TreasureChest_Kingston_014]	None	Kingston	105	2
+Reload when objective turns to eavesdrop -> fragment 1 Kingston	Animus Fragment	0x7FC0F1F0E collected [ACGA_Collectables_AnimusFragment_042_Kingston]	None	Kingston	62	1
+Shanty 2 Kingston	Shanty	0x80518299D collected [ACGA_Collectables_Song_013_Kingston]	None	Kingston	10	2
+Complete Travelling Salesman	Story	0x669E09E43 sync>=102	None	Kingston	20	20
+Viewpoint 2 South_02 Kingston	Viewpoint	0x7A32FA38D sync>=100 [RHP_Kingston_South_02]	None	Kingston	23	2
+Get The Weapons Smugglers	Assassin Contract Start	0x7E2A46A73 started (entry exists in save)	None	Kingston	10	10
+The Weapons Smugglers	Assassin Contracts	0x7E2A46A73 sync>=100 [ASC05_KIN_C3_T1]	None	Kingston	7	7
+Fast travel to Viewpoint 2 Kingston -> Fragment 2 Kingston	Animus Fragment	0x7FC0F1E8A collected [ACGA_Collectables_AnimusFragment_046_Kingston]	None	Kingston	63	2
+Get The British Captain	Assassin Contract Start	0x871F1F959 started (entry exists in save)	None	Kingston	11	11
+Start The Maroon Assassins	Templar Hunt Start	0x7D890CA1B started (entry exists in save)	None	Kingston	1	1
+Shanty 3 Kingston	Shanty	0x8051829A1 collected [ACGA_Collectables_Song_012_Kingston]	None	Kingston	11	3
+The British Captain	Assassin Contracts	0x871F1F959 sync>=100 [ASC06_KIN_C3_T2]	None	Kingston	8	8
+Fragment 3 Kingston	Animus Fragment	0x7FC0F1EC6 collected [ACGA_Collectables_AnimusFragment_060_Kingston]	None	Kingston	64	3
+Do first Eavesdrop on guards -> (near warehouse) Viewpoint 3 Fields_03 Kingston	Viewpoint	0x7A32FAF10 sync>=100 [RHP_Kingston_Fields_03]	None	Kingston	24	3
+Get warehouse -> Chest 3 Kingston	Chest	0x7B5DD8749 collected [ACGA_Collectables_TreasureChest_Kingston_008]	None	Kingston	106	3
+Kingston Crown	Taverns	0x82E0FFFFD accomplished [ACGA Tavern Kingston]	None	Kingston	4	1
+Fragment 4 Kingston	Animus Fragment	0x7FC0F1ECA collected [ACGA_Collectables_AnimusFragment_043_Kingston]	None	Kingston	65	4
+Chest 4 Kingston	Chest	0xAAAD93CA9 collected [ACGA_Collectables_TreasureChest_Kingston_018]	None	Kingston	107	4
+Complete The Maroon Assassins	Templar Hunts	0x7D890CA1B sync>=100 [AVT03_M10]	None	Kingston	1	1
+Shanty 4 Kingston	Shanty	0x8051829A5 collected [ACGA_Collectables_Song_011_Kingston]	None	Kingston	12	4
+Start Recruiting Maroons	Templar Hunt Start	0x7D890CA1C started (entry exists in save)	None	Kingston	2	2
+Chest 5 Kingston	Chest	0x7B5DD87AD collected [ACGA_Collectables_TreasureChest_Kingston_005]	None	Kingston	108	5
+Manuscript 1 Kingston	Manuscripts	0x81AF19893 collected [ACGA_Collectables_Manuscript_011_Kingston]	None	Kingston	6	6
+Reload -> Shanty 5 Kingston	Shanty	0x805182995 collected [ACGA_Collectables_Song_015_Kingston]	None	Kingston	13	5
+get The Plantation Master	Assassin Contract Start	0x7E2A46A71 started (entry exists in save)	None	Kingston	12	12
+Fragment 5 Kingston	Animus Fragment	0x7FC0F1EA2 collected [ACGA_Collectables_AnimusFragment_052_Kingston]	None	Kingston	66	5
+Viewpoint 4 North_02 Kingston	Viewpoint	0x7A32FAA6E sync>=100 [RHP_Kingston_North_02]	None	Kingston	25	4
+Free final slave -> Fragment 6 Kingston	Animus Fragment	0x7FC0F1EB2 collected [ACGA_Collectables_AnimusFragment_056_Kingston]	None	Kingston	67	6
+Recruiting Maroons	Templar Hunts	0x7D890CA1C sync>=100 [AVT03_M20]	None	Kingston	2	2
+Start Unmanned	Story Start	0x669E09E44 started (entry exists in save)	None	Kingston	21	21
+Viewpoint 5 Fields_01 Kingston	Viewpoint	0x7A32FA5D8 sync>=100 [RHP_Kingston_Fields_01]	None	Kingston	26	5
+After disabling all bells -> Chest 6 Kingston	Chest	0xAAAD93CA5 collected [ACGA_Collectables_TreasureChest_Kingston_016]	None	Kingston	109	6
+(far left outside the walls)Chest 7 Kingston	Chest	0x7B5DD8755 collected [ACGA_Collectables_TreasureChest_Kingston_002]	None	Kingston	110	7
+Reload -> Viewpoint 6 Fields_02 Kingston	Viewpoint	0x7A32FACC5 sync>=100 [RHP_Kingston_Fields_02]	None	Kingston	27	6
+Chest 8 Kingston	Chest	0xAAAD93CAD collected [ACGA_Collectables_TreasureChest_Kingston_012]	None	Kingston	111	8
+Chest 9 Kingston	Chest	0xAAAD93C9D collected [ACGA_Collectables_TreasureChest_Kingston_011]	None	Kingston	112	9
+(before killing prines or after) Fragment 7 Kingston	Animus Fragment	0x7FC0F1E8E collected [ACGA_Collectables_AnimusFragment_047_Kingston]	None	Kingston	68	7
+Get The Slave Traders	Assassin Contract Start	0x7E2A46A72 started (entry exists in save)	None	Kingston	13	13
+Complete Unmanned	Story	0x669E09E44 sync>=102	None	Kingston	21	21
+Fast travel to Kingston viewpoint 2 -> The Slave Traders	Assassin Contracts	0x7E2A46A72 sync>=100 [ASC03_KIN_C2_T1]	None	Kingston	9	9
+Fast travel to Viewpoint 5 -> get The Judge	Assassin Contract Start	0x834DC40CF started (entry exists in save)	None	Kingston	14	14
+Fast travel to Viewpoint near warehouse south -> Chest 10 Kingston	Chest	0x7B5DD87B5 collected [ACGA_Collectables_TreasureChest_Kingston_010]	None	Kingston	113	10
+Fast travel to North east Viewpoint -> The Plantation Master	Assassin Contracts	0x7E2A46A71 sync>=100 [ASC01_KIN_C1_T1]	None	Kingston	10	10
+Chest 11 Kingston	Chest	0xAAAD93C95 collected [ACGA_Collectables_TreasureChest_Kingston_017]	None	Kingston	114	11
+Viewpoint 7 North_01 Kingston	Viewpoint	0x7A32FA823 sync>=100 [RHP_Kingston_North_01]	None	Kingston	28	7
+Fragment 8 Kingston	Animus Fragment	0x7FC0F1EBE collected [ACGA_Collectables_AnimusFragment_059_Kingston]	None	Kingston	69	8
+Fragment 9 Kingston	Animus Fragment	0x7FC0F1EAE collected [ACGA_Collectables_AnimusFragment_055_Kingston]	None	Kingston	70	9
+Get the Guard Post	Assassin Contract Start	0x86D4414F2 started (entry exists in save)	None	Kingston	15	15
+fast travel to viewpoint 7 -> Chest 12 Kingston	Chest	0xAAAD93C99 collected [ACGA_Collectables_TreasureChest_Kingston_015]	None	Kingston	115	12
+Chest 13 Kingston	Chest	0x7B5DD8775 collected [ACGA_Collectables_TreasureChest_Kingston_003]	None	Kingston	116	13
+Quit warp -> The Guard Post	Assassin Contracts	0x86D4414F2 sync>=100 [ASC02_KIN_C1_T2]	None	Kingston	11	11
+Chest 14 Kingston	Chest	0x7B5DD874D collected [ACGA_Collectables_TreasureChest_Kingston_004]	None	Kingston	117	14
+Chest 15 Kingston	Chest	0x7B5DD8745 collected [ACGA_Collectables_TreasureChest_Kingston_007]	None	Kingston	118	15
+Fast travel to viewpoint 2 -> Start Under Attack	Templar Hunt Start	0x7D890CA1D started (entry exists in save)	None	Kingston	3	3
+Under Attack	Templar Hunts	0x7D890CA1D sync>=100 [AVT03_M30]	None	Kingston	3	3
+Fast travel to viewpoint 2 -> Start The Commanders Ruse	Templar Hunt Start	0x7D890CA1E started (entry exists in save)	None	Kingston	4	4
+Fragment 10 Kingston	Animus Fragment	0x7FC0F1E9E collected [ACGA_Collectables_AnimusFragment_051_Kingston]	None	Kingston	71	10
+Shanty 6 Kingston	Shanty	0x805182999 collected [ACGA_Collectables_Song_014_Kingston]	None	Kingston	14	6
+The Commanders Ruse	Templar Hunts	0x7D890CA1E sync>=100 [AVT03_M40]	None	Kingston	4	4
+Chest 16 Kingston	Chest	0x7B5DD87B1 collected [ACGA_Collectables_TreasureChest_Kingston_009]	None	Kingston	119	16
+Fast travel to Nassua -> (during following sequence) Shanty 1 Nassua	Shanty	0x8051829B5 collected [ACGA_Collectables_Song_007_Nassau]	None	Kingston	15	1
+Buy Hull Armor 2	Upgrades	0x773C845EA collected [ACGA_ShipUpgrade_HullLevel3]	None	Kingston	34	34
+Buy Diving Bell	Upgrades	0x675421FDF collected [ACGA_ShipUpgrade_DivingBell]	None	Kingston	35	35
+Buy Mortar Storage 3	Upgrades	0x7F3CA90C7 collected [ACGA_ShipUpgrade_MortarStorage4]	None	Kingston	36	36
+Refill ammo -> Cheat reload -> Chest 1 Nassua	Chest	0xAAAD93CD9 collected [ACGA_Collectables_TreasureChest_Nassau_011]	None	Kingston	120	1
+Chest 2 Nassua	Chest	0xB38EC7661 collected [ACGA_Collectables_TreasureChest_Nassau_022]	None	Kingston	121	2
+Cheat warp -> Chest 3 Nassua	Chest	0x7B5DD87A5 collected [ACGA_Collectables_TreasureChest_Nassau_007]	None	Kingston	122	3
+Fast travel to just outsude Havana -> Fragment 9 Uncharted	Animus Fragment	0x7FC0F217E collected [ACGA_Collectables_AnimusFragment_190_Uncharted]	(268,699)	Uncharted	72	9
+Destroy Defenses Dry Tortuga	Fort Defenses	0x80F6A776C sync>=100 [NGL_F_DryTortuga_Naval]	None	Dry Tortuga	4	4
+The Informant	Assassin Contracts	0x86B8EE34F sync>=100 [ASC26_SaltKeyBank_C1_T2]	None	Dry Tortuga	12	12
+Chest 1 DryTortuga	Chest	0x8B19BA6B8 collected [ACGA_Collectables_TreasureChest_DryTortuga_001]	None	Dry Tortuga	123	1
+Fragment 1 DryTortuga	Animus Fragment	0x966841890 collected [ACGA_Collectables_AnimusFragment_017_DryTortuga]	None	Dry Tortuga	73	1
+Fragment 2 DryTortuga	Animus Fragment	0x966841898 collected [ACGA_Collectables_AnimusFragment_016_DryTortuga]	None	Dry Tortuga	74	2
+Chest 2 DryTortuga	Chest	0x8B19BA6B0 collected [ACGA_Collectables_TreasureChest_DryTortuga_002]	None	Dry Tortuga	124	2
+Capture Dry Tortuga	Forts	0x78A271D38 sync>=100 [NGL_F_DryTortuga_Land]	None	Dry Tortuga	4	4
+Get Private Escort	Naval Contract Start	0x7C4A545DC started (entry exists in save)	None	Dry Tortuga	4	4
+Private Escort	Naval Contracts	0x7C4A545DC sync>=100 [NVC_CAR07]	None	Dry Tortuga	4	4
+El Impoluto stop at 580 meters away	Legendary Ships	0x7AED43201 sync>=100 [SS_Rammer]	None	Uncharted	3	3
+Fast travel to dry tortuga -> Chest 15 Uncharted	Chest	0x7F9E97FCF collected [ACGA_Collectables_TreasureChest_Uncharted65_01]	(316,759)	Uncharted	125	15
+Swim in water Quit warp -> Start Diving for Medicines	Story Start	0x40DA6747F started (entry exists in save)	None	San Ignacio	22	22
+Chest 1 San Ignacio	Chest	0x9714DAF58 collected [ACGA_Collectables_Underwater_Shipwreck07_TreasureChest_03]	None	San Ignacio	126	1
+Chest 2 San Ignacio	Chest	0x9714DAF68 collected [ACGA_Collectables_Underwater_Shipwreck07_TreasureChest_02]	None	San Ignacio	127	2
+Fragment 1 San Ignacio	Animus Fragment	0x7FC0F2112 collected [ACGA_Collectables_AnimusFragment_164_Shipwreck7]	None	San Ignacio	75	1
+Chest 3 San Ignacio	Chest	0x9714DAF54 collected [ACGA_Collectables_Underwater_Shipwreck07_TreasureChest_01]	None	San Ignacio	128	3
+get medicine thing then Go through water tunnel reload -> Fragment 2 San Ignacio	Animus Fragment	0x7FC0F209E collected [ACGA_Collectables_AnimusFragment_165_Shipwreck7]	None	San Ignacio	76	2
+Chest 4 San Ignacio	Chest	0x9714DAF60 collected [ACGA_Collectables_Underwater_Shipwreck07_TreasureChest_04]	None	San Ignacio	129	4
+Fragment 3 San Ignacio	Animus Fragment	0x7FC0F211E collected [ACGA_Collectables_AnimusFragment_160_Shipwreck7]	None	San Ignacio	77	3
+Chest 5 San Ignacio	Chest	0x7B0CF36E3 collected [ACGA_Blueprints_Unlock_Hull_Lv5] (chest holds the blueprint)	None	San Ignacio	130	5
+Chest 6 San Ignacio	Chest	0x9714DAF5C collected [ACGA_Collectables_Underwater_Shipwreck07_TreasureChest_05]	None	San Ignacio	131	6
+Complete Diving for Medicines	Story	0x40DA6747F sync>=102	None	San Ignacio	22	22
+Fragment 10 Uncharted	Animus Fragment	0x7FC0F20F2 collected [ACGA_Collectables_AnimusFragment_140_Uncharted]	(362,815)	Uncharted	78	10
+Fragment 11 Uncharted	Animus Fragment	0x7FC0F2192 collected [ACGA_Collectables_AnimusFragment_197_Uncharted]	(369,862)	Uncharted	79	11
+Quit warp -> Letter 10 Florida	Letters	0x820F6F68E collected [ACGA_Collectables_LetterBottle_015_Florida]	None	Florida	10	10
+Fragment 1 Florida	Animus Fragment	0x7FC0F20B2 collected [ACGA_Collectables_AnimusFragment_156_Florida]	None	Florida	80	1
+Viewpoint Florida Florida	Viewpoint	0xA9CB39F80 sync>=100 [RHP_CAR_B_Florida]	None	Florida	29	1
+Cheat reload -> Fragment 2 Florida	Animus Fragment	0x7FC0F20AE collected [ACGA_Collectables_AnimusFragment_157_Florida]	None	Florida	81	2
+Chest Florida	Chest	0xAAAD93C41 collected [ACGA_Collectables_TreasureChest_Florida_01]	None	Florida	132	1
+Fast Travel to San Ignacio Wreck -> Fragment 12 Uncharted	Animus Fragment	0x7FC0F2152 collected [ACGA_Collectables_AnimusFragment_188_Uncharted]	(388,722)	Uncharted	82	12
+Fast Travel to Florida -> Chest 16 Uncharted	Chest	0x7B5DD8739 collected [ACGA_Collectables_TreasureChest_Uncharted45_01]	(455,784)	Uncharted	133	16
+Fragment 13 Uncharted	Animus Fragment	0x7FC0F216A collected [ACGA_Collectables_AnimusFragment_189_Uncharted]	(513,770)	Uncharted	83	13
+Chest 17 Uncharted	Chest	0xA66AD615E collected [ACGA_Collectables_TreasureChest_Uncharted75_01]	(497,730)	Uncharted	134	17
+Fast Travel just outside Kingston -> Chest 18 Uncharted	Chest	0x7B5DD8711 collected [ACGA_Collectables_TreasureChest_Uncharted23_01]	(655,73)	Uncharted	135	18
+Cheat reload -> Chest 19 Uncharted	Chest	0xA66AD616A collected [ACGA_Collectables_TreasureChest_Uncharted06_01]	(527,113)	Uncharted	136	19
+Swim then quit warp -> Chest 1 The Blue Hole	Chest	0x9714DAF50 collected [ACGA_Collectables_Underwater_Shipwreck06_TreasureChest_005]	None	The Blue Hole	137	1
+Chest 2 The Blue Hole	Chest	0x7B5DD881D collected [ACGA_Collectables_Underwater_Shipwreck06_TreasureChest_003]	None	The Blue Hole	138	2
+Chest 3 The Blue Hole	Chest	0x9714DAF08 collected [ACGA_Collectables_Underwater_Shipwreck06_TreasureChest_006]	None	The Blue Hole	139	3
+Fragment 1 The Blue Hole	Animus Fragment	0x7FC0F212E collected [ACGA_Collectables_AnimusFragment_172_Shipwreck6]	None	The Blue Hole	84	1
+Chest 4 The Blue Hole	Chest	0x7B5DD880D collected [ACGA_Collectables_Underwater_Shipwreck06_TreasureChest_004]	None	The Blue Hole	140	4
+Chest 5 The Blue Hole	Chest	0x7B5DD8809 collected [ACGA_Collectables_Underwater_Shipwreck06_TreasureChest_001]	None	The Blue Hole	141	5
+Chest 6 The Blue Hole	Chest	0x7B0CF36EB collected [ACGA_Blueprints_Unlock_Broadside_Cannons_LV7] (chest holds the blueprint)	None	The Blue Hole	142	6
+Fragment 2 The Blue Hole	Animus Fragment	0x7FC0F210E collected [ACGA_Collectables_AnimusFragment_163_Shipwreck6]	None	The Blue Hole	85	2
+Chest 7 The Blue Hole	Chest	0x7B5DD8805 collected [ACGA_Collectables_Underwater_Shipwreck06_TreasureChest_002]	None	The Blue Hole	143	7
+Fragment 3 The Blue Hole	Animus Fragment	0x7FC0F212A collected [ACGA_Collectables_AnimusFragment_171_Shipwreck6]	None	The Blue Hole	86	3
+Cheat reload -> Chest 20 Uncharted	Chest	0x7B5DD8719 collected [ACGA_Collectables_TreasureChest_Uncharted03_01]	(471,217)	Uncharted	144	20
+quit warp -> Buried Treasure New Bone	Burired Treasure	0x903EC7A06 collected [ACGA_BuriedTreasure_Bidon_14]	None	New Bone	5	5
+Viewpoint NewBone New Bone	Viewpoint	0x7A383EA74 sync>=100 [RHP_CAR_P_NewBone]	None	New Bone	30	1
+Skip fragment on windmill Get Castaway	Assassin Contract Start	0x7E2A46A6F started (entry exists in save)	None	New Bone	16	16
+Fragment 1 New Bone	Animus Fragment	0x7FC0F2032 collected [ACGA_Collectables_AnimusFragment_128_NewBone]	None	New Bone	87	1
+Chest 1 New Bone	Chest	0xAAAD93C69 collected [ACGA_Collectables_TreasureChest_NewBone_004]	None	New Bone	145	1
+Myan Stone New Bone	Myan Stones	0x7B5DD886E collected [ACGA_Collectables_MayanSteles_NewBonel_001]	None	New Bone	7	7
+warehouse -> Chest 2 New Bone	Chest	0xAAAD93C6D collected [ACGA_Collectables_TreasureChest_NewBone_003]	None	New Bone	146	2
+Chest 3 New Bone	Chest	0xAAAD93C65 collected [ACGA_Collectables_TreasureChest_NewBone_005]	None	New Bone	147	3
+Chest 4 New Bone	Chest	0x7B5DD85C1 collected [ACGA_Collectables_TreasureChest_NewBone_001]	None	New Bone	148	4
+Fragment 2 New Bone	Animus Fragment	0x7FC0F2036 collected [ACGA_Collectables_AnimusFragment_129_NewBone]	None	New Bone	88	2
+Chest 5 New Bone	Chest	0x7B5DD8709 collected [ACGA_Collectables_TreasureChest_NewBone_002]	None	New Bone	149	5
+Fast travel to The Blue Hole -> Fragment 14 Uncharted	Animus Fragment	0x7FC0F203A collected [ACGA_Collectables_AnimusFragment_130_NewBone]	(549,167)	Uncharted	89	14
+Fast travel to NewBone -> Fragment 15 Uncharted	Animus Fragment	0x7FC0F208E collected [ACGA_Collectables_AnimusFragment_175_Uncharted]	(468,44)	Uncharted	90	15
+La Dama Negra stop at 570 meters ish like the others	Legendary Ships	0x7AED431FF sync>=100 [SS_Fortress]	None	Uncharted	4	4
+Fast travel to SaltLagoon -> Fragment 16 Uncharted	Animus Fragment	0x7FC0F2172 collected [ACGA_Collectables_AnimusFragment_178_Uncharted]	(707,629)	Uncharted	91	16
+Cheat reload -> Start Devil's Advocate	Story Start	0x669E09E4E started (entry exists in save)	None	Uncharted	23	23
+Chest 21 Uncharted	Chest	0x7B5DD872D collected [ACGA_Collectables_TreasureChest_Uncharted35_01]	(809,597)	Uncharted	150	21
+Fragment 17 Uncharted	Animus Fragment	0x7FC0F2146 collected [ACGA_Collectables_AnimusFragment_185_Uncharted]	(854,598)	Uncharted	92	17
+Complete Devils Advocate	Story	0x669E09E4E sync>=102	None	Uncharted	23	23
+Fast Travel Salt Lagoon -> Chest 22 Uncharted	Chest	0x7B5DD8619 collected [ACGA_Collectables_TreasureChest_Uncharted36_01]	(760,560)	Uncharted	151	22
+quit warp -> Crooked Island Canter	Taverns	0x830048001 accomplished [ACGA Tavern V CrookedIsland]	None	Crooked Island	5	1
+Refill ammo -> Viewpoint CrookedIsland CrookedIsland	Viewpoint	0x7B0E073CC sync>=100 [RHP_CAR_V_CrookedIsland]	None	Crooked Island	31	1
+Chest 1 CrookedIsland	Chest	0xA80115D55 collected [ACGA_Collectables_TreasureChest_CrookedIsland_005]	None	Crooked Island	152	1
+Chest 2 CrookedIsland	Chest	0x7B5DD8689 collected [ACGA_Collectables_TreasureChest_CrookedIsland_002]	None	Crooked Island	153	2
+Cheat reload -> Fragment 1 CrookedIsland	Animus Fragment	0x7FC0F218A collected [ACGA_Collectables_AnimusFragment_200_Uncharted]	None	Crooked Island	93	1
+Chest 3 CrookedIsland	Chest	0xA80115D59 collected [ACGA_Collectables_TreasureChest_CrookedIsland_003]	None	Crooked Island	154	3
+Get The Poachers	Assassin Contract Start	0x7B37381AC started (entry exists in save)	None	Crooked Island	17	17
+The Poachers	Assassin Contracts	0x7B37381AC sync>=100 [ASC19_CROOK_C1_T1]	None	Crooked Island	13	13
+Viewpoint Mariguana Mariguana	Viewpoint	0x7CEB6232F sync>=100 [RHP_CAR_B_Mariguana]	None	Mariguana	32	1
+Fast travel to Viewpoint Mariguana -> Fragment 1 Mariguana	Animus Fragment	0x7FC0F1F52 collected [ACGA_Collectables_AnimusFragment_096_CrookedIsland]	None	Mariguana	94	1
+Chest 1 Mariguana	Chest	0xAAAD93C39 collected [ACGA_Collectables_TreasureChest_MariguanaIsland_003]	None	Mariguana	155	1
+Chest 2 Mariguana	Chest	0xAAAD93C3D collected [ACGA_Collectables_TreasureChest_MariguanaIsland_004]	None	Mariguana	156	2
+Chest 3 Mariguana	Chest	0x7B5DD86C5 collected [ACGA_Collectables_TreasureChest_MariguanaIsland_001]	None	Mariguana	157	3
+Treasure Map Mariguana	Treasure Map	0x74748F11C collected [ACGA_TreasureMaps_17]	None	Mariguana	13	1
+Chest 4 Mariguana	Chest	0x7B5DD86FD collected [ACGA_Collectables_TreasureChest_MariguanaIsland_002]	None	Mariguana	158	4
+Fragment 2 Mariguana	Animus Fragment	0x7FC0F20C6 collected [ACGA_Collectables_AnimusFragment_151_MariguanaIsland]	None	Mariguana	95	2
+The Treasure Hunter	Assassin Contracts	0x7E2A46A6E sync>=100 [ASC27_LittleAbaco_C1_T2]	None	Abaco Island	14	14
+Cheat reload -> Buried Treasure Abaco Island	Burired Treasure	0x903EC79EA collected [ACGA_BuriedTreasure_Bidon_05]	None	Abaco Island	6	6
+Get Slavers Intution	Assassin Contract Start	0x7E2A46A70 started (entry exists in save)	None	Andreas Island	18	18
+Buried Treasure Andreas Island	Burired Treasure	0x7B0CF3713 collected [ACGA_Blueprints_Harpoon_Lv3]	None	Andreas Island	7	7
+A Slavers Intution	Assassin Contracts	0x7E2A46A70 sync>=100 [ASC25_LittleAbaco_C1_T1]	None	Andreas Island	15	15
+quit warp -> Fragment 18 Uncharted	Animus Fragment	0x7FC0F20C2 collected [ACGA_Collectables_AnimusFragment_152_MariguanaIsland]	(581,659)	Uncharted	96	18
+cheat reload -> Chest 1 Antocha Wreck	Chest	0x9714DAF7C collected [ACGA_Collectables_Underwater_Shipwreck08_TreasureChest_01]	None	Antocha Wreck	159	1
+Chest 2 Antocha Wreck	Chest	0x9714DAF6C collected [ACGA_Collectables_Underwater_Shipwreck08_TreasureChest_05]	None	Antocha Wreck	160	2
+Fragment 1 Antocha Wreck	Animus Fragment	0x7FC0F215A collected [ACGA_Collectables_AnimusFragment_186_Uncharted]	None	Antocha Wreck	97	1
+Chest 3 Antocha Wreck	Chest	0x9714DAF74 collected [ACGA_Collectables_Underwater_Shipwreck08_TreasureChest_03]	None	Antocha Wreck	161	3
+Chest 4 Antocha Wreck	Chest	0x9714DAF78 collected [ACGA_Collectables_Underwater_Shipwreck08_TreasureChest_04]	None	Antocha Wreck	162	4
+Chest 5 Antocha Wreck	Chest	0xB68C50E61 collected [ACGA_Collectables_Underwater_Shipwreck08_TreasureChest_06]	None	Antocha Wreck	163	5
+Chest 6 Antocha Wreck	Chest	0x7B0CF36F3 collected [ACGA_Blueprints_Mortar_Lv4] (chest holds the blueprint)	None	Antocha Wreck	164	6
+Chest 7 Antocha Wreck	Chest	0x9714DAF70 collected [ACGA_Collectables_Underwater_Shipwreck08_TreasureChest_02]	None	Antocha Wreck	165	7
+Fragment 2 Antocha Wreck	Animus Fragment	0x7FC0F206E collected [ACGA_Collectables_AnimusFragment_102_Shipwreck8]	None	Antocha Wreck	98	2
+cheat warp -> Chest 23 Uncharted	Chest	0x7B5DD8735 collected [ACGA_Collectables_TreasureChest_Uncharted39_01]	(677,674)	Uncharted	166	23
+Letter 11 Crooked Island	Letters	0x820F6F6BA collected [ACGA_Collectables_LetterBottle_004_CrookedIsland]	None	Crooked Island	11	11
+Fragment 2 CrookedIsland	Animus Fragment	0x7FC0F2072 collected [ACGA_Collectables_AnimusFragment_103_Shipwreck8]	None	Crooked Island	99	2
+Fragment 3 CrookedIsland	Animus Fragment	0x7FC0F1F5E collected [ACGA_Collectables_AnimusFragment_098_CrookedIsland]	None	Crooked Island	100	3
+Chest 4 CrookedIsland	Chest	0xA80115D5D collected [ACGA_Collectables_TreasureChest_CrookedIsland_004]	None	Crooked Island	167	4
+Chest 5 CrookedIsland	Chest	0x7B5DD868D collected [ACGA_Collectables_TreasureChest_CrookedIsland_001]	None	Crooked Island	168	5
+Chest 6 CrookedIsland	Chest	0xA80115D51 collected [ACGA_Collectables_TreasureChest_CrookedIsland_006]	None	Crooked Island	169	6
+Get The Deserter	Assassin Contract Start	0x8251F16E6 started (entry exists in save)	None	Salt Lagoon	19	19
+The Deserter	Assassin Contracts	0x8251F16E6 sync>=100 [ASC20_CROOK_C1_T2]	None	Salt Lagoon	16	16
+Chest 2 Salt Lagoon	Chest	0x7B5DD8621 collected [ACGA_Collectables_TreasureChest_SaltLagoon_002]	None	Salt Lagoon	170	2
+Fragment 2 Salt Lagoon	Animus Fragment	0x7FC0F1F56 collected [ACGA_Collectables_AnimusFragment_097_CrookedIsland]	None	Salt Lagoon	101	2
+Buried Treasure Salt Lagoon	Burired Treasure	0x903EC79E2 collected [ACGA_BuriedTreasure_Bidon_03]	None	Salt Lagoon	8	8
+Chest 3 Salt Lagoon	Chest	0xAAAD93C8D collected [ACGA_Collectables_TreasureChest_SaltLagoon_003]	None	Salt Lagoon	171	3
+Chest 24 Uncharted	Chest	0xA66AD6136 collected [ACGA_Collectables_TreasureChest_Uncharted37_01]	(707,558)	Uncharted	172	24
+Swim to red quit warp -> Destroy Defenses Gibra	Fort Defenses	0x81D96F54F sync>=100 [NGL_F_Gibara_Naval]	None	Gibra	5	5
+Chest 1 Gibra	Chest	0x8B19BA668 collected [ACGA_Collectables_TreasureChest_Gibara_002]	None	Gibra	173	1
+Fragment 1 Gibra	Animus Fragment	0x7FC0F20DE collected [ACGA_Collectables_AnimusFragment_145_SaltLagoon]	None	Gibra	102	1
+Fragment 2 Gibra	Animus Fragment	0x7FC0F205E collected [ACGA_Collectables_AnimusFragment_107_Gibara]	None	Gibra	103	2
+Chest 2 Gibra	Chest	0x8B19BA6AC collected [ACGA_Collectables_TreasureChest_Gibara_001]	None	Gibra	174	2
+Capture Gibra	Forts	0x7B76D2985 sync>=100 [NGL_F_Gibara_Land]	None	Gibra	5	5
+Get Silk on the Waves	Naval Contract Start	0x7C4A545DA started (entry exists in save)	None	Gibra	5	5
+Silk on the Waves	Naval Contracts	0x7C4A545DA sync>=100 [NVC_CAR05]	None	Gibra	5	5
+Buy Ram Strength 1	Upgrades	0x773C84D1A collected [ACGA_ShipUpgrade_Ramming_Level1]	None	Uncharted	37	37
+Buy Ram Strength 2	Upgrades	0x773C84D26 collected [ACGA_ShipUpgrade_Ramming_Level2]	None	Uncharted	38	38
+Cheat reload -> Chest 25 Uncharted	Chest	0x7F9E97FC7 collected [ACGA_Collectables_TreasureChest_Uncharted56_01]	(653,590)	Uncharted	175	25
+Fast travel to gibra -> Fragment 19 Uncharted	Animus Fragment	0x7FC0F206A collected [ACGA_Collectables_AnimusFragment_112_Gibara]	(613,534)	Uncharted	104	19
+Swim quit warp -> Chest 1 Jiguey	Chest	0xA80115D81 collected [ACGA_Collectables_TreasureChest_Jiguey_004]	None	Jiguey	176	1
+Chest 2 Jiguey	Chest	0x7B5DD866D collected [ACGA_Collectables_TreasureChest_Jiguey_001]	None	Jiguey	177	2
+Fragment 1 Jiguey	Animus Fragment	0x7FC0F2176 collected [ACGA_Collectables_AnimusFragment_191_Uncharted]	None	Jiguey	105	1
+Chest 3 Jiguey	Chest	0x7B5DD8675 collected [ACGA_Collectables_TreasureChest_Jiguey_002]	None	Jiguey	178	3
+Buried Treasure Jiguey	Burired Treasure	0x903EC79FE collected [ACGA_BuriedTreasure_Bidon_12]	None	Jiguey	9	9
+Chest 4 Jiguey	Chest	0x7B5DD8645 collected [ACGA_Collectables_TreasureChest_Jiguey_003]	None	Jiguey	179	4
+Fragment 2 Jiguey	Animus Fragment	0x7FC0F205A collected [ACGA_Collectables_AnimusFragment_108_Jiguey]	None	Jiguey	106	2
+quit warp -> Letter 12 Jiguey	Letters	0x820F6F6B6 collected [ACGA_Collectables_LetterBottle_005_Jiguey]	None	Jiguey	12	12
+Fragment 20 Uncharted	Animus Fragment	0x7FC0F207E collected [ACGA_Collectables_AnimusFragment_109_Jiguey]	(585,592)	Uncharted	107	20
+Start The Sige of Charles Town	Story Start	0x669E09E4F started (entry exists in save)	None	Uncharted	24	24
+The Sige of Charles Town	Story	0x669E09E4F sync>=102	None	Uncharted	24	24
+Start Corporate Pressure	Modern Day Start	0x669E09E45 started (entry exists in save)	None	Abstergo Industries	3	3
+Corporate Pressure	Modern Day	0x669E09E45 sync>=100	None	Abstergo Industries	3	3
+Start We Demand A Parlay	Story Start	0x669E09E56 started (entry exists in save)	None	Nassua	25	25
+Fragment 2 Nassua	Animus Fragment	0x7FC0F2092 collected [ACGA_Collectables_AnimusFragment_176_Uncharted]	None	Nassua	108	2
+Shanty 2 Nassua	Shanty	0x8051829A9 collected [ACGA_Collectables_Song_010_Nassau]	None	Nassua	16	2
+Chest 4 Nassua	Chest	0x7B5DD8761 collected [ACGA_Collectables_TreasureChest_Nassau_002]	None	Nassua	180	4
+Fragment 3 Nassua	Animus Fragment	0x7FC0F1ED2 collected [ACGA_Collectables_AnimusFragment_026_Nassau]	None	Nassua	109	3
+get The Pirate Captain	Assassin Contract Start	0x7E2A46A76 started (entry exists in save)	None	Nassua	20	20
+Fragment 4 Nassua	Animus Fragment	0x7FC0F1EF6 collected [ACGA_Collectables_AnimusFragment_035_Nassau]	None	Nassua	110	4
+Fragment 5 (fort) Nassua	Animus Fragment	0x7FC0F1EFA collected [ACGA_Collectables_AnimusFragment_036_Nassau]	None	Nassua	111	5
+Reload -> Fragment 6 Nassua	Animus Fragment	0x7FC0F1F06 collected [ACGA_Collectables_AnimusFragment_039_Nassau]	None	Nassua	112	6
+Viewpoint 2 Fort Nassua	Viewpoint	0x7A25B46CB sync>=100 [RHP_Nassau_Fort]	None	Nassua	33	2
+Chest 5 Nassua	Chest	0xAAAD93CC1 collected [ACGA_Collectables_TreasureChest_Nassau_019]	None	Nassua	181	5
+Complete We Demand A Parlay	Story	0x669E09E56 sync>=102	None	Nassua	25	25
+Fragment 7 Nassua	Animus Fragment	0x7FC0F1FFE collected [ACGA_Collectables_AnimusFragment_022_Nassau]	None	Nassua	113	7
+Manuscript 1 Nassua	Manuscripts	0x81AF1987B collected [ACGA_Collectables_Manuscript_005_Nassau]	None	Nassua	7	7
+Cheat Reload -> Start The Gunpowder Plot	Story Start	0x669E09E58 started (entry exists in save)	None	Nassua	26	26
+Chest 6 Nassua	Chest	0x7B5DD8765 collected [ACGA_Collectables_TreasureChest_Nassau_003]	None	Nassua	182	6
+Chest 7 Nassua	Chest	0x7B5DD8779 collected [ACGA_Collectables_TreasureChest_Nassau_008]	None	Nassua	183	7
+Fragment 8 Nassua	Animus Fragment	0x7FC0F1EF2 collected [ACGA_Collectables_AnimusFragment_034_Nassau]	None	Nassua	114	8
+Viewpoint 3 PirateCamp_01 Nassua	Viewpoint	0x7A3D39503 sync>=100 [RHP_Nassau_PirateCamp_01]	None	Nassua	34	3
+Shanty 3 Nassua	Shanty	0xC7E2F057C collected [ACGA_Collectables_Song_023_Nassau]	None	Nassua	17	3
+Chest 8 Nassua	Chest	0xAAAD93CB9 collected [ACGA_Collectables_TreasureChest_Nassau_012]	None	Nassua	184	8
+Refill on ammo if needed -> Manuscript 2 Nassua	Manuscripts	0x81AF198AB collected [ACGA_Collectables_Manuscript_017_Bahia]	None	Nassua	8	8
+Viewpoint 4 PirateCamp_02 Nassua	Viewpoint	0x7A3D3900F sync>=100 [RHP_Nassau_PirateCamp_02]	None	Nassua	35	4
+Fragment 9 Nassua	Animus Fragment	0x7FC0F1F0A collected [ACGA_Collectables_AnimusFragment_040_Nassau]	None	Nassua	115	9
+Fragment 10 Nassua	Animus Fragment	0x7FC0F1FAE collected [ACGA_Collectables_AnimusFragment_024_Nassau]	None	Nassua	116	10
+Chest 9 Nassua	Chest	0x7B5DD8799 collected [ACGA_Collectables_TreasureChest_Nassau_009]	None	Nassua	185	9
+Viewpoint 5 Countryside Nassua	Viewpoint	0x7A25B46AF sync>=100 [RHP_Nassau_Countryside]	None	Nassua	36	5
+Complete The Gunpowder Plot	Story	0x669E09E58 sync>=102	None	Nassua	26	26
+Chest 10 Nassua	Chest	0xAAAD93CC9 collected [ACGA_Collectables_TreasureChest_Nassau_013]	None	Nassua	186	10
+Manuscript 3 Nassua	Manuscripts	0x81AF19883 collected [ACGA_Collectables_Manuscript_007_Nassau]	None	Nassua	9	9
+Cheat reload -> Chest 11 Nassua	Chest	0xAAAD93CCD collected [ACGA_Collectables_TreasureChest_Nassau_016]	None	Nassua	187	11
+Viewpoint 6 GovernorsHouse Nassua	Viewpoint	0x7A3D38B31 sync>=100 [RHP_Nassau_GovernorsHouse]	None	Nassua	37	6
+Manuscript 4 Nassua	Manuscripts	0x81AF19897 collected [ACGA_Collectables_Manuscript_012_Nassau]	None	Nassua	10	10
+Start Commodore Eighty-Sixed	Story Start	0x669E09E57 started (entry exists in save)	None	Nassua	27	27
+Chest 12 Nassua	Chest	0xAAAD93CD5 collected [ACGA_Collectables_TreasureChest_Nassau_018]	None	Nassua	188	12
+Chest 13 Nassua	Chest	0x7B5DD875D collected [ACGA_Collectables_TreasureChest_Nassau_001]	None	Nassua	189	13
+Manuscript 5 Nassua	Manuscripts	0x81AF1987F collected [ACGA_Collectables_Manuscript_006_Nassau]	None	Nassua	11	11
+Chest 14 Nassua	Chest	0x7B5DD8771 collected [ACGA_Collectables_TreasureChest_Nassau_006]	None	Nassua	190	14
+Chest 15 Nassua	Chest	0xAAAD93CDD collected [ACGA_Collectables_TreasureChest_Nassau_017]	None	Nassua	191	15
+Reload -> Complete Commodore Eighty-Sixed	Story	0x669E09E57 sync>=102	None	Nassua	27	27
+Cheat Reload -> start Oh Brother...	Templar Hunt Start	0x7CF546459 started (entry exists in save)	None	Nassua	5	5
+Shanty 4 Nassua	Shanty	0x8051829AD collected [ACGA_Collectables_Song_009_Nassau]	None	Nassua	18	4
+Complete Oh Brother...	Templar Hunts	0x7CF546459 sync>=100 [AVT04_M10]	None	Nassua	5	5
+Chest 16 Nassua	Chest	0xAAAD93CD1 collected [ACGA_Collectables_TreasureChest_Nassau_015]	None	Nassua	192	16
+Shanty 5 Nassua	Shanty	0x8051829B1 collected [ACGA_Collectables_Song_008_Nassau]	None	Nassua	19	5
+Fragment 11 Nassua	Animus Fragment	0x7FC0F1EDA collected [ACGA_Collectables_AnimusFragment_028_Nassau]	None	Nassua	117	11
+Chest 17 Nassua	Chest	0xAAAD93CBD collected [ACGA_Collectables_TreasureChest_Nassau_020]	None	Nassua	193	17
+The Pirate Captain	Assassin Contracts	0x7E2A46A76 sync>=100 [ASC13_NAS_C1_T1]	None	Nassua	17	17
+Chest 18 Nassua	Chest	0x7B5DD876D collected [ACGA_Collectables_TreasureChest_Nassau_005]	None	Nassua	194	18
+Chest 19 Nassua	Chest	0xB38EC765D collected [ACGA_Collectables_TreasureChest_Nassau_021]	None	Nassua	195	19
+Fragment 12 Nassua	Animus Fragment	0x7FC0F1EE2 collected [ACGA_Collectables_AnimusFragment_030_Nassau]	None	Nassua	118	12
+quit warp -> Chest 20 Nassua	Chest	0x7B5DD8769 collected [ACGA_Collectables_TreasureChest_Nassau_004]	None	Nassua	196	20
+Viewpoint 7 Beach Nassua	Viewpoint	0x79C9EAA14 sync>=100 [RHP_Nassau_Beach]	None	Nassua	38	7
+Start The Fire Ship	Story Start	0x669E09E59 started (entry exists in save)	None	Nassua	28	28
+Complete The Fire Ship	Story	0x669E09E59 sync>=102	None	Nassua	28	28
+Start The Other Brother	Templar Hunt Start	0x7CF54645A started (entry exists in save)	None	Nassua	6	6
+get The Outlaws	Assassin Contract Start	0x7E2A46A77 started (entry exists in save)	None	Nassua	21	21
+Complete The Other Brother	Templar Hunts	0x7CF54645A sync>=100 [AVT04_M20]	None	Nassua	6	6
+Chest 21 Nassua	Chest	0xAAAD93CC5 collected [ACGA_Collectables_TreasureChest_Nassau_014]	None	Nassua	197	21
+Start Upton's Sorrow	Templar Hunt Start	0x7CF54645B started (entry exists in save)	None	Nassua	7	7
+Do Upton's Sorrow	Templar Hunts	0x7CF54645B sync>=100 [AVT04_M30]	None	Nassua	7	7
+Start Queen of Pirates, King of Fools	Templar Hunt Start	0x7CF54645C started (entry exists in save)	None	Nassua	8	8
+Buried Treasure Nassua	Burired Treasure	0x7B0CF3717 collected [ACGA_Blueprints_Sails_Iconic] (guess: order)	None	Nassua	10	10
+Complete The Outlaws	Assassin Contracts	0x7E2A46A77 sync>=100 [ASC14_NAS_C1_T2]	None	Nassua	18	18
+Fragment 13 Nassua	Animus Fragment	0x7FC0F1EFE collected [ACGA_Collectables_AnimusFragment_037_Nassau]	None	Nassua	119	13
+Kill the targets -> Chest 22 Nassua	Chest	0x7B5DD87A1 collected [ACGA_Collectables_TreasureChest_Nassau_010]	None	Nassua	198	22
+Complete Queen of Pirates, King of Fools	Templar Hunts	0x7CF54645C sync>=100 [AVT04_M40]	None	Nassua	8	8
+Fast Travel to Abaco Island -> Chest 26 Uncharted	Chest	0xA66AD614E collected [ACGA_Collectables_TreasureChest_Uncharted48_01]	(669,830)	Uncharted	199	26
+Letter 13 Uncharted 2	Letters	0x820F6F682 collected [ACGA_Collectables_LetterBottle_018_Uncharted]	(669,830)	Uncharted	13	13
+Chest 27 Uncharted	Chest	0xA66AD613A collected [ACGA_Collectables_TreasureChest_Uncharted62_01]	(688,904)	Uncharted	200	27
+Chest 28 Uncharted	Chest	0x7F9E97FBB collected [ACGA_Collectables_TreasureChest_Uncharted61_01]	(637,947)	Uncharted	201	28
+Start Do Not Go Gently...	Story Start	0x669E09F81 started (entry exists in save)	None	Uncharted	29	29
+Do Not Go Gently...	Story	0x669E09F81 sync>=102	None	Uncharted	29	29
+Destroy Defenses Caba De Cruz	Fort Defenses	0x81DF6F816 sync>=100 [NGL_F_Cruz_Naval]	None	Caba De Cruz	6	6
+Fast travel to Cumberland Bay -> Chest 1 Caba De Cruz	Chest	0x8B19BA6C2 collected [ACGA_Collectables_TreasureChest_Cruz_002]	None	Caba De Cruz	202	1
+Fragment 1 Caba De Cruz	Animus Fragment	0x7FC0F1EDE collected [ACGA_Collectables_AnimusFragment_029_Nassau]	None	Caba De Cruz	120	1
+Chest 2 Caba De Cruz	Chest	0x8B19BA6B4 collected [ACGA_Collectables_TreasureChest_Cruz_001]	None	Caba De Cruz	203	2
+Fragment 2 Caba De Cruz	Animus Fragment	0x7FC0F20FE collected [ACGA_Collectables_AnimusFragment_136_Cruz]	None	Caba De Cruz	121	2
+Capture Caba De Cruz	Forts	0x7B76D2983 sync>=100 [NGL_F_Cruz_Land]	None	Caba De Cruz	6	6
+Get Drift Wood	Naval Contract Start	0x7C4A545D9 started (entry exists in save)	None	Caba De Cruz	6	6
+Drift Wood	Naval Contracts	0x7C4A545D9 sync>=100 [NVC_CAR04]	None	Caba De Cruz	6	6
+Chest 1 Devils Eye Cavern	Chest	0x7B5DD87DD collected [ACGA_Collectables_Underwater_Shipwreck04_TreasureChest_002]	None	Devils Eyes Cavern	204	1
+Chest 2 Devils Eye Cavern	Chest	0x7B5DD87D1 collected [ACGA_Collectables_Underwater_Shipwreck04_TreasureChest_001]	None	Devils Eyes Cavern	205	2
+Fragment 1 Devils Eye Cavern	Animus Fragment	0x7FC0F2006 collected [ACGA_Collectables_AnimusFragment_117_Cruz]	None	Devils Eyes Cavern	122	1
+Chest 3 Devils Eye Cavern	Chest	0x7B5DD87E1 collected [ACGA_Collectables_Underwater_Shipwreck04_TreasureChest_003]	None	Devils Eyes Cavern	206	3
+Chest 4 Devils Eye Cavern	Chest	0x7B5DD87F1 collected [ACGA_Collectables_Underwater_Shipwreck04_TreasureChest_004]	None	Devils Eyes Cavern	207	4
+Chest 5 Devils Eye Cavern	Chest	0xB68C50E6D collected [ACGA_Collectables_Underwater_Shipwreck04_TreasureChest_006]	None	Devils Eyes Cavern	208	5
+Fragment 2 Devils Eye Cavern	Animus Fragment	0x7FC0F2116 collected [ACGA_Collectables_AnimusFragment_166_Shipwreck4]	None	Devils Eyes Cavern	123	2
+Chest 6 Devils Eye Cavern	Chest	0x7B0CF36F7 collected [ACGA_Blueprints_SwivelGun_Lv4] (chest holds the blueprint)	None	Devils Eyes Cavern	209	6
+Chest 7 Devils Eye Cavern	Chest	0x9714DAF04 collected [ACGA_Collectables_Underwater_Shipwreck04_TreasureChest_005]	None	Devils Eyes Cavern	210	7
+Chest 8 Devils Eye Cavern	Chest	0xB68C50E69 collected [ACGA_Collectables_Underwater_Shipwreck04_TreasureChest_007]	None	Devils Eyes Cavern	211	8
+Cheat reload -> exit ship wreck -> Chest 29 Uncharted	Chest	0xA66AD612E collected [ACGA_Collectables_TreasureChest_Uncharted20_01]	(441,385)	Uncharted	212	29
+Chest 30 Uncharted	Chest	0xA66AD612A collected [ACGA_Collectables_TreasureChest_Uncharted21_01]	(379,400)	Uncharted	213	30
+Start Vainglorious Bastards	Story Start	0x669E09F82 started (entry exists in save)	None	Uncharted	30	30
+Vainglorious Bastards(try and get frigate to spawn with metal)	Story	0x669E09F82 sync>=102	None	Uncharted	30	30
+Start Marooned	Story Start	0x669E09F83 started (entry exists in save)	None	Isla Providencia	31	31
+Buried Treasure Isla Providencia	Burired Treasure	0x7F3CA9AE6 collected [ACGA_Blueprints_MineStorage_Lv4] (guess: name)	None	Isla Providencia	11	11
+Chest 1 Isla Providencia	Chest	0x7B5DD883D collected [ACGA_Collectables_TreasureChest_IslaProvidencia_005]	None	Isla Providencia	214	1
+Viewpoint 1 Shipwreck Isla Providencia	Viewpoint	0x8180014F3 sync>=100 [RHP_Providencia_Shipwreck]	None	Isla Providencia	39	1
+Chest 2 Isla Providencia	Chest	0xAAAD93C49 collected [ACGA_Collectables_TreasureChest_IslaProvidencia_009]	None	Isla Providencia	215	2
+Letter 14 Isla Providencia	Letters	0x820F6F6C2 collected [ACGA_Collectables_LetterBottle_002_IslaProvidencia]	None	Isla Providencia	14	14
+Chest 3 Isla Providencia	Chest	0xAAAD93C4D collected [ACGA_Collectables_TreasureChest_IslaProvidencia_007]	None	Isla Providencia	216	3
+Chest 4 Isla Providencia	Chest	0x7B5DD8815 collected [ACGA_Collectables_TreasureChest_IslaProvidencia_004]	None	Isla Providencia	217	4
+Fragment 1 Isla Providencia	Animus Fragment	0x7FC0F211A collected [ACGA_Collectables_AnimusFragment_167_Shipwreck4]	None	Isla Providencia	124	1
+Fragment 2 Isla Providencia	Animus Fragment	0x7FC0F1F22 collected [ACGA_Collectables_AnimusFragment_084_IslaProvidencia]	None	Isla Providencia	125	2
+Chest 5 Isla Providencia	Chest	0xAAAD93C45 collected [ACGA_Collectables_TreasureChest_IslaProvidencia_006]	None	Isla Providencia	218	5
+Fragment 3 Isla Providencia	Animus Fragment	0x7FC0F1F26 collected [ACGA_Collectables_AnimusFragment_085_IslaProvidencia]	None	Isla Providencia	126	3
+Myan Stone 1 Isla Providencia	Myan Stones	0x7B5DD885A collected [ACGA_Collectables_MayanSteles_Providencia_002]	None	Isla Providencia	8	8
+Chest 6 Isla Providencia	Chest	0x7B5DD8849 collected [ACGA_Collectables_TreasureChest_IslaProvidencia_003]	None	Isla Providencia	219	6
+Viewpoint 2 Waterfall Isla Providencia	Viewpoint	0x7C336DC8F sync>=100 [RHP_Providencia_Waterfall]	None	Isla Providencia	40	2
+Fragment 4 Isla Providencia	Animus Fragment	0x7FC0F1F2A collected [ACGA_Collectables_AnimusFragment_086_IslaProvidencia]	None	Isla Providencia	127	4
+Chest 7 Isla Providencia	Chest	0x7B5DD8845 collected [ACGA_Collectables_TreasureChest_IslaProvidencia_002]	None	Isla Providencia	220	7
+Treasure Map Isla Providencia	Treasure Map	0x6CCEE3806 collected [ACGA_TreasureMaps_13]	None	Isla Providencia	14	1
+Chest 8 Isla Providencia	Chest	0xAAAD93C51 collected [ACGA_Collectables_TreasureChest_IslaProvidencia_008]	None	Isla Providencia	221	8
+Chest 9 Isla Providencia	Chest	0x7B5DD8671 collected [ACGA_Collectables_TreasureChest_IslaProvidencia_001]	None	Isla Providencia	222	9
+Myan Stone 2 Isla Providencia	Myan Stones	0x7B5DD8856 collected [ACGA_Collectables_MayanSteles_Providencia_001]	None	Isla Providencia	9	9
+Fragment 5 Isla Providencia	Animus Fragment	0x7FC0F1F1E collected [ACGA_Collectables_AnimusFragment_083_IslaProvidencia]	None	Isla Providencia	128	5
+Viewpoint 3 Temple Isla Providencia	Viewpoint	0x7C336E15D sync>=100 [RHP_Providencia_Temple]	None	Isla Providencia	41	3
+Complete Marooned	Story	0x669E09F83 sync>=102	None	Isla Providencia	31	31
+Fast travel to Conttoyor -> Start The Realities of War	Naval Contract Start	0x78A27193C started (entry exists in save)	None	Uncharted	7	7
+Refill on ammo if needed -> Chest 31 Uncharted	Chest	0xA66AD616E collected [ACGA_Collectables_TreasureChest_Uncharted52_01]	(58,535)	Uncharted	223	31
+The Realities of War	Naval Contracts	0x78A27193C sync>=100 [NVC_CAR10]	None	Uncharted	7	7
+Fast travel to Conttoyor -> refill on ammo/repair ship if needed -> Buy Mortar 3	Upgrades	0x75F9F348C collected [ACGA_ShipUpgrade_CannonMortarLevel3]	None	Chinchorro	39	39
+Buy Broadside Cannons 2	Upgrades	0x60419E687 collected [ACGA_ShipUpgrade_CannonSideLevel3]	None	Chinchorro	40	40
+Cheat reload to skip upgrade of jackdaw cutscene -> fast travel to tulum -> return to ship -> Cheat reload -> Destroy Defenses Chinchorro	Fort Defenses	0x81D96F548 sync>=100 [NGL_F_Chinchorro_Naval]	None	Chinchorro	7	7
+Fragment 1 Chinchorro	Animus Fragment	0x7FC0F1F2E collected [ACGA_Collectables_AnimusFragment_087_IslaProvidencia]	None	Chinchorro	129	1
+Fragment 2 Chinchorro	Animus Fragment	0x9668418A8 collected [ACGA_Collectables_AnimusFragment_032_Chinchorro]	None	Chinchorro	130	2
+Chest 1 Chinchorro	Chest	0x8B19BA6A4 collected [ACGA_Collectables_TreasureChest_Chinchorro_002]	None	Chinchorro	224	1
+Chest 2 Chinchorro	Chest	0x8B19BA67C collected [ACGA_Collectables_TreasureChest_Chinchorro_001]	None	Chinchorro	225	2
+Capture Chinchorro	Forts	0x7B76D2981 sync>=100 [NGL_F_Chinchorro_Land]	None	Chinchorro	7	7
+Return to ship -> when 410 away from shipwreck quit warp -> Chest 1 La Concepcion	Chest	0x7B5DD87CD collected [ACGA_Collectables_Underwater_Shipwreck05_TreasureChest_005]	None	La Concepcion	226	1
+Chest 2 La Concepcion	Chest	0x7B5DD87FD collected [ACGA_Collectables_Underwater_Shipwreck05_TreasureChest_002]	None	La Concepcion	227	2
+Cheat reload -> Fragment 1 La Concepcion	Animus Fragment	0x9668418AC collected [ACGA_Collectables_AnimusFragment_033_Chinchorro]	None	La Concepcion	131	1
+Chest 3 La Concepcion	Chest	0x7B5DD87F5 collected [ACGA_Collectables_Underwater_Shipwreck05_TreasureChest_004]	None	La Concepcion	228	3
+Chest 4 La Concepcion	Chest	0x7B0CF36E7 collected [ACGA_Blueprints_Unlock_Ramming_Lv4] (chest holds the blueprint)	None	La Concepcion	229	4
+Chest 5 La Concepcion	Chest	0xB68C50E65 collected [ACGA_Collectables_Underwater_Shipwreck05_TreasureChest_006]	None	La Concepcion	230	5
+Fragment 2 La Concepcion	Animus Fragment	0x7FC0F2122 collected [ACGA_Collectables_AnimusFragment_169_Shipwreck5]	None	La Concepcion	132	2
+Chest 6 La Concepcion	Chest	0x7B5DD87C9 collected [ACGA_Collectables_Underwater_Shipwreck05_TreasureChest_003]	None	La Concepcion	231	6
+Chest 7 La Concepcion	Chest	0x7B5DD8831 collected [ACGA_Collectables_Underwater_Shipwreck05_TreasureChest_001]	None	La Concepcion	232	7
+Fragment 3 La Concepcion	Animus Fragment	0x7FC0F210A collected [ACGA_Collectables_AnimusFragment_162_Shipwreck5]	None	La Concepcion	133	3
+Cheat Reload -> leave shipwreck -> Chest 32 Uncharted	Chest	0xA66AD6146 collected [ACGA_Collectables_TreasureChest_Uncharted14_01]	(246,347)	Uncharted	233	32
+Quit warp -> Fragment 1 Cayman Sound	Animus Fragment	0x7FC0F20A2 collected [ACGA_Collectables_AnimusFragment_168_Shipwreck5]	None	Cayman Sound	134	1
+The Castaway	Assassin Contracts	0x7E2A46A6F sync>=100 [ASC17_NewBone_C1_T1]	None	Cayman Sound	19	19
+Letter 15 Cayman Sound	Letters	0x820F6F692 collected [ACGA_Collectables_LetterBottle_014_CaymanIsland]	None	Cayman Sound	15	15
+Chest 1 Cayman Sound	Chest	0x7B5DD870D collected [ACGA_Collectables_TreasureChest_CaymanIsland_001]	None	Cayman Sound	234	1
+Fragment 2 Cayman Sound	Animus Fragment	0x7FC0F20B6 collected [ACGA_Collectables_AnimusFragment_155_CaymanIsland]	None	Cayman Sound	135	2
+Chest 2 Cayman Sound	Chest	0xAAAD93C81 collected [ACGA_Collectables_TreasureChest_CaymanIsland_003]	None	Cayman Sound	235	2
+Fragment 3 Cayman Sound	Animus Fragment	0x7FC0F20BE collected [ACGA_Collectables_AnimusFragment_153_CaymanIsland]	None	Cayman Sound	136	3
+Viewpoint Cayman Cayman Sound	Viewpoint	0x7B5C3DCEF sync>=100 [RHP_CAR_B_Cayman]	None	Cayman Sound	42	1
+Start The Taino Assassin	Templar Hunt Start	0x7CF54644E started (entry exists in save)	None	Cayman Sound	9	9
+The Taino Assassin	Templar Hunts	0x7CF54644E sync>=100 [AVT01_M10]	None	Cayman Sound	9	9
+Fast Travel to Devil Eye's Cavern -> Chest 33 Uncharted	Chest	0x7B5DD8701 collected [ACGA_Collectables_TreasureChest_Uncharted19_01]	(442,333)	Uncharted	236	33
+Quit warp -> Start Templar Ships	Templar Hunt Start	0x7CF54644F started (entry exists in save)	None	Grand Cayman	10	10
+Fragment 1 Grand Cayman	Animus Fragment	0x7FC0F20BA collected [ACGA_Collectables_AnimusFragment_154_CaymanIsland]	None	Grand Cayman	137	1
+Shanty Grand Cayman	Shanty	0x8051829CD collected [ACGA_Collectables_Song_019_GreatCayman]	None	Grand Cayman	20	1
+Chest 1 Grand Cayman	Chest	0xA80115D69 collected [ACGA_Collectables_TreasureChest_GreatCayman_005]	None	Grand Cayman	237	1
+Start Eavesdrop -> Chest 2 Grand Cayman	Chest	0x7B5DD8681 collected [ACGA_Collectables_TreasureChest_GreatCayman_003]	None	Grand Cayman	238	2
+Chest 3 Grand Cayman	Chest	0x7B5DD8685 collected [ACGA_Collectables_TreasureChest_GreatCayman_001]	None	Grand Cayman	239	3
+Templar Ships	Templar Hunts	0x7CF54644F sync>=100 [AVT01_M20]	None	Grand Cayman	10	10
+The Randy Cayman	Taverns	0x830048000 accomplished [ACGA Tavern V GreatCayman]	None	Grand Cayman	6	1
+Fragment 2 Grand Cayman	Animus Fragment	0x7FC0F2066 collected [ACGA_Collectables_AnimusFragment_101_GreatCayman]	None	Grand Cayman	138	2
+Chest 4 Grand Cayman	Chest	0xA80115D61 collected [ACGA_Collectables_TreasureChest_GreatCayman_004]	None	Grand Cayman	240	4
+Get The Twin Dilemma	Assassin Contract Start	0x79C4081EA started (entry exists in save)	None	Grand Cayman	22	22
+Chest reload -> The Twin Dilemma	Assassin Contracts	0x79C4081EA sync>=100 [ASC21_GreatCayman_C1_T1]	None	Grand Cayman	20	20
+Cheat reload -> Start Right Hand Man	Templar Hunt Start	0x7CF546450 started (entry exists in save)	None	Grand Cayman	11	11
+Get The Smugglers Squat	Assassin Contract Start	0x97E73461D started (entry exists in save)	None	Grand Cayman	23	23
+Viewpoint GreatCayman Grand Cayman	Viewpoint	0x7B0E0734C sync>=100 [RHP_CAR_V_GreatCayman]	None	Grand Cayman	43	1
+Fragment 3 Grand Cayman	Animus Fragment	0x7FC0F204E collected [ACGA_Collectables_AnimusFragment_100_GreatCayman]	None	Grand Cayman	139	3
+Chest 5 Grand Cayman	Chest	0x7B5DD8695 collected [ACGA_Collectables_TreasureChest_GreatCayman_002]	None	Grand Cayman	241	5
+Reload checkpoint -> Activate chase sequence -> Chest 6 Grand Cayman	Chest	0xA80115D65 collected [ACGA_Collectables_TreasureChest_GreatCayman_006]	None	Grand Cayman	242	6
+Right Hand Man	Templar Hunts	0x7CF546450 sync>=100 [AVT01_M30]	None	Grand Cayman	11	11
+Fast Travel to Cayman Sound -> Chest 34 Uncharted	Chest	0xA66AD6142 collected [ACGA_Collectables_TreasureChest_Uncharted15_01]	(294,408)	Uncharted	243	34
+Quit warp -> Start The trail of Lucia Márquez	Templar Hunt Start	0x7CF546451 started (entry exists in save)	None	Pinos Isle	12	12
+Chest 1 Pinos Isle	Chest	0xA80115D95 collected [ACGA_Collectables_TreasureChest_Juventud_005]	None	Pinos Isle	244	1
+Fragment 1 Pinos Isle	Animus Fragment	0x7FC0F2136 collected [ACGA_Collectables_AnimusFragment_099_GreatCayman]	None	Pinos Isle	140	1
+Chest 2 Pinos Isle	Chest	0x7B5DD86E1 collected [ACGA_Collectables_TreasureChest_Juventud_001]	None	Pinos Isle	245	2
+The trail of Lucia Márquez	Templar Hunts	0x7CF546451 sync>=100 [AVT01_M40]	None	Pinos Isle	12	12
+Viewpoint Juventud Pinos Isle	Viewpoint	0x810DB3598 sync>=100 [RHP_CAR_R_Juventud]	None	Pinos Isle	44	1
+Chest 3 Pinos Isle	Chest	0x7B5DD86D5 collected [ACGA_Collectables_TreasureChest_Juventud_002]	None	Pinos Isle	246	3
+Buried Treasure Pinos Isle	Burired Treasure	0x7B0CF3723 collected [ACGA_Blueprints_Wheel_Iconic] (guess: order)	None	Pinos Isle	12	12
+Fragment 2 Pinos Isle	Animus Fragment	0x7FC0F2016 collected [ACGA_Collectables_AnimusFragment_121_Juventud]	None	Pinos Isle	141	2
+Chest 4 Pinos Isle	Chest	0xA80115D99 collected [ACGA_Collectables_TreasureChest_Juventud_006]	None	Pinos Isle	247	4
+Chest 5 Pinos Isle	Chest	0x7B5DD86D9 collected [ACGA_Collectables_TreasureChest_Juventud_003]	None	Pinos Isle	248	5
+Treasure Map Pinos Isle	Treasure Map	0x6CCEE37F2 collected [ACGA_TreasureMaps_08]	None	Pinos Isle	15	1
+Do Myan stone puzzle -> Fragment 3 Pinos Isle	Animus Fragment	0x7FC0F201A collected [ACGA_Collectables_AnimusFragment_122_Juventud]	None	Pinos Isle	142	3
+Myan Stone 1 Pinos Isle	Myan Stones	0x7B5DD8862 collected [ACGA_Collectables_MayanSteles_Juvented_002]	None	Pinos Isle	10	10
+Chest 6 Pinos Isle	Chest	0xA80115D91 collected [ACGA_Collectables_TreasureChest_Juventud_004]	None	Pinos Isle	249	6
+Fast travel to Cayman Sound Viewpoint -> Treasure Map Cayman Sound	Treasure Map	0x74748F120 collected [ACGA_TreasureMaps_18]	None	Cayman Sound	16	1
+ Chest 3 Cayman Sound	Chest	0xAAAD93C85 collected [ACGA_Collectables_TreasureChest_CaymanIsland_002]	None	Cayman Sound	250	3
+Buried Treasure Cayman Sound	Burired Treasure	0x903EC79F6 collected [ACGA_BuriedTreasure_Bidon_08]	None	Cayman Sound	13	13
+Fast Travel to Chinchorro -> Start Contraband	Naval Contract Start	0x7C4A545DB started (entry exists in save)	None	Chinchorro	8	8
+Contraband	Naval Contracts	0x7C4A545DB sync>=100 [NVC_CAR06]	None	Chinchorro	8	8
+Quit warp -> Fragment 21 Uncharted	Animus Fragment	0x7FC0F2012 collected [ACGA_Collectables_AnimusFragment_120_Juventud]	(144,402)	Uncharted	143	21
+Chest 35 Uncharted	Chest	0xA66AD6162 collected [ACGA_Collectables_TreasureChest_Uncharted13_01]	(121,450)	Uncharted	251	35
+Fragment 22 Uncharted	Animus Fragment	0x7FC0F209A collected [ACGA_Collectables_AnimusFragment_170_Uncharted]	(167,504)	Uncharted	144	22
+Quit warp -> Fragment 1 Arroyos	Animus Fragment	0x7FC0F2166 collected [ACGA_Collectables_AnimusFragment_181_Uncharted]	None	Arroyos	145	1
+Chest 1 Arroyos	Chest	0xA80115D45 collected [ACGA_Collectables_TreasureChest_Arroyos_003]	None	Arroyos	252	1
+Chest 2 Arroyos	Chest	0x7B5DD87C5 collected [ACGA_Collectables_TreasureChest_Arroyos_002]	None	Arroyos	253	2
+Fragment 2 Arroyos	Animus Fragment	0x7FC0F1F3E collected [ACGA_Collectables_AnimusFragment_091_Arroyos]	None	Arroyos	146	2
+Get Tomb Raiders	Assassin Contract Start	0x77D28A505 started (entry exists in save)	None	Arroyos	24	24
+Fragment 3 Arroyos	Animus Fragment	0x7FC0F1F32 collected [ACGA_Collectables_AnimusFragment_088_Arroyos]	None	Arroyos	147	3
+Chest 3 Arroyos	Chest	0x7B5DD865D collected [ACGA_Collectables_TreasureChest_Arroyos_001]	None	Arroyos	254	3
+Viewpoint Arroyos Arroyos	Viewpoint	0x7B0E0744E sync>=100 [RHP_CAR_V_Arroyos]	None	Arroyos	45	1
+Chest 4 Arroyos	Chest	0xA80115D49 collected [ACGA_Collectables_TreasureChest_Arroyos_004]	None	Arroyos	255	4
+Fast travel to Pinos Isle Viewpoint -> Tomb Raiders	Assassin Contracts	0x77D28A505 sync>=100 [ASC15_Arroyos_C1_T1]	None	Pinos Isle	21	21
+Cheat reload -> Myan stone 2 Pinos Isle	Myan Stones	0x7B5DD885E collected [ACGA_Collectables_MayanSteles_Juvented_001]	None	Pinos Isle	11	11
+Fast travel to Arroyos -> Chest 36 Uncharted	Chest	0x7F9E97FD7 collected [ACGA_Collectables_TreasureChest_Uncharted73_01]	(302,572)	Uncharted	256	36
+Swim until u enter restricted zone -> Quit warp -> Destroy Defenses Castilo de Jagua	Fort Defenses	0x81D96F544 sync>=100 [NGL_F_CastiloJagua_Naval]	None	Castilo de Jagua	8	8
+Fragment 1 Castilo de Jagua	Animus Fragment	0x7FC0F1F36 collected [ACGA_Collectables_AnimusFragment_089_Arroyos]	None	Castilo de Jagua	148	1
+Chest 1 Castilo de Jagua	Chest	0x8B19BA690 collected [ACGA_Collectables_TreasureChest_CastilloDeJagua_002]	None	Castilo de Jagua	257	1
+Chest 2 Castilo de Jagua	Chest	0x8B19BA69C collected [ACGA_Collectables_TreasureChest_CastilloDeJagua_001]	None	Castilo de Jagua	258	2
+Fragment 2 Castilo de Jagua	Animus Fragment	0x966841894 collected [ACGA_Collectables_AnimusFragment_020_CastilloDeJagua]	None	Castilo de Jagua	149	2
+Capture Castilo de Jagua	Forts	0x7B76D297F sync>=100 [NGL_F_CastiloJagua_Land]	None	Castilo de Jagua	8	8
+Start Eye For An Eye	Naval Contract Start	0x7C4A545D6 started (entry exists in save)	None	Uncharted	9	9
+Fragment 23 Uncharted	Animus Fragment	0x96684189C collected [ACGA_Collectables_AnimusFragment_023_CastilloDeJagua]	(269,481)	Uncharted	150	23
+Eye For An Eye	Naval Contracts	0x7C4A545D6 sync>=100 [NVC_CAR01]	None	Uncharted	9	9
+Cheat reload -> Chest 1 The Black Trench	Chest	0x9714DAF88 collected [ACGA_Collectables_Underwater_Shipwreck09_TreasureChest_01]	None	The Black Trench	259	1
+Chest 2 The Black Trench	Chest	0x9714DAF84 collected [ACGA_Collectables_Underwater_Shipwreck09_TreasureChest_03]	None	The Black Trench	260	2
+Cheat reload -> Chest 3 The Black Trench	Chest	0x9714DAF94 collected [ACGA_Collectables_Underwater_Shipwreck09_TreasureChest_02]	None	The Black Trench	261	3
+Chest 4 The Black Trench	Chest	0x9714DAF80 collected [ACGA_Collectables_Underwater_Shipwreck09_TreasureChest_05]	None	The Black Trench	262	4
+Chest 5 The Black Trench	Chest	0x9714DAF90 collected [ACGA_Collectables_Underwater_Shipwreck09_TreasureChest_04]	None	The Black Trench	263	5
+Fragment 1 The Black Trench	Animus Fragment	0x7FC0F216E collected [ACGA_Collectables_AnimusFragment_180_Uncharted]	None	The Black Trench	151	1
+Chest 6 The Black Trench	Chest	0x9714DAF8C collected [ACGA_Collectables_Underwater_Shipwreck09_TreasureChest_06]	None	The Black Trench	264	6
+Chest 7 The Black Trench	Chest	0x82F24B0C6 collected [ACGA_Blueprints_Sails_6] (chest holds the blueprint)	None	The Black Trench	265	7
+Fragment 2 The Black Trench	Animus Fragment	0x7FC0F1F92 collected [ACGA_Collectables_AnimusFragment_074_Shipwreck9]	None	The Black Trench	152	2
+Get A Last Drink For The Road	Assassin Contract Start	0x8647E80DC started (entry exists in save)	None	Arroyos	25	25
+Cheat reload -> Fast travel to Arroyos Viewpoint -> A Last Drink For The Road	Assassin Contracts	0x8647E80DC sync>=100 [ASC16_Arroyos_C1_T2]	None	Arroyos	22	22
+Cheat reload -> Arroyos Arms	Taverns	0x830048002 accomplished [ACGA Tavern V Arroyos]	None	Arroyos	7	1
+Chest 5 Arroyos	Chest	0xA80115D4D collected [ACGA_Collectables_TreasureChest_Arroyos_005]	None	Arroyos	266	5
+Fast travel to Chinchorro -> Start Smugglers Den	Naval Contract Start	0x7C4A5466D started (entry exists in save)	None	Uncharted	10	10
+Chest 37 Uncharted	Chest	0x7B5DD86F5 collected [ACGA_Collectables_TreasureChest_Uncharted12_01]	(93,292)	Uncharted	267	37
+Smugglers Den	Naval Contracts	0x7C4A5466D sync>=100 [NVC_CAR14]	None	Uncharted	10	10
+Fragment 24 Uncharted	Animus Fragment	0x7FC0F1F96 collected [ACGA_Collectables_AnimusFragment_075_Shipwreck9]	(51,321)	Uncharted	153	24
+Quit warp -> Treasure Map Corozal	Treasure Map	0x6CCEE37FE collected [ACGA_TreasureMaps_11]	None	Corozal	17	1
+Chest 1 Corozal	Chest	0xA80115D3D collected [ACGA_Collectables_TreasureChest_Corozal_004]	None	Corozal	268	1
+Cheat reload -> Manuscript Corozal	Manuscripts	0x81AF198B3 collected [ACGA_Collectables_Manuscript_019_Corozal]	None	Corozal	12	12
+Chest 2 Corozal	Chest	0x7B5DD86B1 collected [ACGA_Collectables_TreasureChest_Corozal_001]	None	Corozal	269	2
+Viewpoint Corozal Corozal	Viewpoint	0x7E0225306 sync>=100 [RHP_CAR_A_Corozal]	None	Corozal	46	1
+Fragment 1 Corozal	Animus Fragment	0x7FC0F218E collected [ACGA_Collectables_AnimusFragment_198_Uncharted]	None	Corozal	154	1
+Letter 16 Corozal	Letters	0x820F6F6A2 collected [ACGA_Collectables_LetterBottle_010_Corozal]	None	Corozal	16	16
+Corozal Tavern	Taverns	0x830048005 accomplished [ACGA Tavern B Corozal]	None	Corozal	8	1
+Fragment 2 Corozal	Animus Fragment	0x7FC0F207A collected [ACGA_Collectables_AnimusFragment_135_Corozal]	None	Corozal	155	2
+Chest 3 Corozal	Chest	0xA80115D41 collected [ACGA_Collectables_TreasureChest_Corozal_003]	None	Corozal	270	3
+Chest 4 Corozal	Chest	0x7B5DD8699 collected [ACGA_Collectables_TreasureChest_Corozal_002]	None	Corozal	271	4
+Get The Unworthy Brother	Assassin Contract Start	0x86B40C0AD started (entry exists in save)	None	Corozal	26	26
+The Unworthy Brother	Assassin Contracts	0x86B40C0AD sync>=100 [ASC18_Corozal_C1_T1]	None	Corozal	23	23
+Fast travel to Corozal Viewpoint -> Get The Outlaws Cave	Assassin Contract Start	0x97E73461E started (entry exists in save)	None	Uncharted	27	27
+Fragment 25 Uncharted	Animus Fragment	0x7FC0F208A collected [ACGA_Collectables_AnimusFragment_137_Corozal]	(105,207)	Uncharted	156	25
+When 630m away quit warp -> Chest 1 AmbergrisKey	Chest	0x7B5DD8669 collected [ACGA_Collectables_TreasureChest_AmberKey_001]	None	Ambergris Key	272	1
+Buried Treasure Ambergris Key	Burired Treasure	0x903EC79FA collected [ACGA_BuriedTreasure_Bidon_11]	None	Ambergris Key	14	14
+Fragment 1 AmbergrisKey	Animus Fragment	0x7FC0F213E collected [ACGA_Collectables_AnimusFragment_179_Uncharted]	None	Ambergris Key	157	1
+The Outlaws Cave	Assassin Contracts	0x97E73461E sync>=100 [ASC30_Corozal_C1_T2]	None	Ambergris Key	24	24
+Chest 2 AmbergrisKey	Chest	0x7B5DD8679 collected [ACGA_Collectables_TreasureChest_AmberKey_002]	None	Ambergris Key	273	2
+Chest 3 AmbergrisKey	Chest	0x7B5DD8665 collected [ACGA_Collectables_TreasureChest_AmberKey_003]	None	Ambergris Key	274	3
+Fragment 2 AmbergrisKey	Animus Fragment	0x7FC0F2056 collected [ACGA_Collectables_AnimusFragment_110_AmberKey]	None	Ambergris Key	158	2
+Treasure Map Ambergris Key	Treasure Map	0x6CCEE37FA collected [ACGA_TreasureMaps_10]	None	Ambergris Key	18	1
+Fast Travel to New Bone -> Fragment 3 New Bone	Animus Fragment	0x7FC0F2052 collected [ACGA_Collectables_AnimusFragment_111_AmberKey]	None	New Bone	159	3
+Get The Dreaded Pirate(New Bone)	Assassin Contract Start	0x849B99F9D started (entry exists in save)	None	Kingston	28	28
+Fast travel to Kingston viewpoint near Mission -> Start Imagine My Surprise	Story Start	0x669E09F8A started (entry exists in save)	None	Kingston	32	32
+Chest 17 Kingston	Chest	0xAAAD93C91 collected [ACGA_Collectables_TreasureChest_Kingston_013]	None	Kingston	275	17
+Manuscript 2 Kingston	Manuscripts	0x81AF1988F collected [ACGA_Collectables_Manuscript_010_Kingston]	None	Kingston	13	13
+Fragment 11 Kingston	Animus Fragment	0x7FC0F1EA6 collected [ACGA_Collectables_AnimusFragment_053_Kingston]	None	Kingston	160	11
+Imagine My Surprise	Story	0x669E09F8A sync>=102	None	Kingston	32	32
+Manuscript 3 Kingston	Manuscripts	0x81AF198A7 collected [ACGA_Collectables_Manuscript_016_StJuan]	None	Kingston	14	14
+Cheat reload -> Travel across pond -> Cheat relaod -> Manuscript 4 Kingston	Manuscripts	0x81AF198A3 collected [ACGA_Collectables_Manuscript_015_AmberKey]	None	Kingston	15	15
+Cheat reload -> Viewpoint 8 PortRoyal_02 Kingston	Viewpoint	0x9995C6C4E sync>=100 [RHP_Kingston_PortRoyal_02]	None	Kingston	47	8
+The Judge	Assassin Contracts	0x834DC40CF sync>=100 [ASC04_KIN_C2_T2]	None	Kingston	25	25
+Fragment 12 Kingston	Animus Fragment	0x7FC0F1EB6 collected [ACGA_Collectables_AnimusFragment_057_Kingston]	None	Kingston	161	12
+Chest 18 Kingston	Chest	0x7B5DD8751 collected [ACGA_Collectables_TreasureChest_Kingston_001]	None	Kingston	276	18
+Fast Travel to Navassa -> Chest 38 Uncharted	Chest	0xA66AD611E collected [ACGA_Collectables_TreasureChest_Uncharted29_01]	(792,240)	Uncharted	277	38
+Cheat Reload -> Fragment 26 Uncharted	Animus Fragment	0x7FC0F2142 collected [ACGA_Collectables_AnimusFragment_182_Uncharted]	(669,269)	Uncharted	162	26
+Swim in water for 5 seconds quit warp -> Chest 1 AnottoBay	Chest	0x7B5DD869D collected [ACGA_Collectables_TreasureChest_Bahia_001]	None	Anotto Bay	278	1
+Fragment 1 AnottoBay	Animus Fragment	0x7FC0F2082 collected [ACGA_Collectables_AnimusFragment_115_Bahia]	None	Anotto Bay	163	1
+Smugglers Squat	Assassin Contracts	0x97E73461D sync>=100 [ASC29_GreatCayman_C1_T2]	None	Anotto Bay	26	26
+Chest 2 AnottoBay	Chest	0x7B5DD86A5 collected [ACGA_Collectables_TreasureChest_Bahia_003]	None	Anotto Bay	279	2
+Treasure Map AnottoBay	Treasure Map	0x6CCEE37EA collected [ACGA_TreasureMaps_06] (confirmed by 73% test)	None	Anotto Bay	19	1
+Chest 3 AnottoBay	Chest	0x7B5DD86AD collected [ACGA_Collectables_TreasureChest_Bahia_002]	None	Anotto Bay	280	3
+Buried Treasure AnottoBay	Burired Treasure	0x903EC7A0E collected [ACGA_BuriedTreasure_Bidon_21]	None	Anotto Bay	15	15
+Fragment 2 AnottoBay	Animus Fragment	0x7FC0F2002 collected [ACGA_Collectables_AnimusFragment_116_Bahia]	None	Anotto Bay	164	2
+Fast travel to Navassa -> Start A personal Matter	Naval Contract Start	0x7C4A5466E started (entry exists in save)	None	Navassa	11	11
+A personal Matter	Naval Contracts	0x7C4A5466E sync>=100 [NVC_CAR15]	None	Navassa	11	11
+When 760m away quit warp -> Fragment 1 Kabah Ruins	Animus Fragment	0x7FC0F2106 collected [ACGA_Collectables_AnimusFragment_159_Shipwreck1]	None	Kabah Ruins	165	1
+Chest 1 Kabah Ruins	Chest	0x30F11B560 collected [ACGA_Collectables_Underwater_Shipwreck01_TreasureChest_01]	None	Kabah Ruins	281	1
+Cheat reload -> Chest 2 Kabah Ruins	Chest	0x30F11B56C collected [ACGA_Collectables_Underwater_Shipwreck01_TreasureChest_05]	None	Kabah Ruins	282	2
+Chest 3 Kabah Ruins	Chest	0x30F11B568 collected [ACGA_Collectables_Underwater_Shipwreck01_TreasureChest_04]	None	Kabah Ruins	283	3
+Chest 4 Kabah Ruins	Chest	0x9714DAEFC collected [ACGA_Collectables_Underwater_Shipwreck01_TreasureChest_06]	None	Kabah Ruins	284	4
+Fragment 2 Kabah Ruins	Animus Fragment	0x7FC0F2126 collected [ACGA_Collectables_AnimusFragment_161_Shipwreck1]	None	Kabah Ruins	166	2
+Chest 5 Kabah Ruins	Chest	0x7B0CF36FB collected [ACGA_Blueprints_RoundShot_Lv5] (chest holds the blueprint)	None	Kabah Ruins	285	5
+Chest 6 Kabah Ruins	Chest	0x30F11B564 collected [ACGA_Collectables_Underwater_Shipwreck01_TreasureChest_03]	None	Kabah Ruins	286	6
+Chest 7 Kabah Ruins	Chest	0x30F11B55C collected [ACGA_Collectables_Underwater_Shipwreck01_TreasureChest_02]	None	Kabah Ruins	287	7
+Chest 8 Kabah Ruins	Chest	0xB68C50E71 collected [ACGA_Collectables_Underwater_Shipwreck01_TreasureChest_07]	None	Kabah Ruins	288	8
+Fragment 3 Kabah Ruins	Animus Fragment	0x7FC0F2102 collected [ACGA_Collectables_AnimusFragment_158_Shipwreck1]	None	Kabah Ruins	167	3
+Cheat reload -> Chest 39 Uncharted	Chest	0xA66AD6172 collected [ACGA_Collectables_TreasureChest_Uncharted72_01] (guess: order)	(711,98)	Uncharted	289	39
+Start Trust is Earned	Story Start	0x669E09F8B started (entry exists in save)	None	Principe	33	33
+Cheat reload after ship fight -> Viewpoint 1 ShipMast Principe	Viewpoint	0x81B6D6299 sync>=100 [RHP_Principe_ShipMast]	None	Principe	48	1
+Fragment 1 Principe	Animus Fragment	0x7FC0F1F66 collected [ACGA_Collectables_AnimusFragment_079_Principe]	None	Principe	168	1
+Chest 1 Principe	Chest	0xAAAD93CB5 collected [ACGA_Collectables_TreasureChest_Principe_006]	None	Principe	290	1
+Chest 2 Principe	Chest	0x7B5DD87B9 collected [ACGA_Collectables_TreasureChest_Principe_003]	None	Principe	291	2
+Reload Checkpoint -> Chest 3 Principe	Chest	0x7B5DD85F9 collected [ACGA_Collectables_TreasureChest_Principe_004]	None	Principe	292	3
+Buried Treasure Principe	Burired Treasure	0x903EC79EE collected [ACGA_BuriedTreasure_Bidon_06]	None	Principe	16	16
+Viewpoint 2 WatchTower Principe	Viewpoint	0x7B0A64414 sync>=100 [RHP_Principe_WatchTower]	None	Principe	49	2
+Chest 4 Principe	Chest	0x7B5DD87F9 collected [ACGA_Collectables_TreasureChest_Principe_001]	None	Principe	293	4
+Reload Checkpointe -> Chest 5 Principe	Chest	0x7B5DD8759 collected [ACGA_Collectables_TreasureChest_Principe_002]	None	Principe	294	5
+Burgess and Cockrham -> Chest 6 Principe	Chest	0xAAAD93CB1 collected [ACGA_Collectables_TreasureChest_Principe_005]	None	Principe	295	6
+Trust is Earned	Story	0x669E09F8B sync>=102	None	Principe	33	33
+Chest 1 Misteriosa	Chest	0x7B5DD8641 collected [ACGA_Collectables_TreasureChest_Misteriosa_001]	None	Misteriosa	296	1
+Chest 2 Misteriosa	Chest	0xA80115D89 collected [ACGA_Collectables_TreasureChest_Misteriosa_005]	None	Misteriosa	297	2
+Cheat reload -> Myan Stone Puzzle -> Fragment 1 Misteriosa	Animus Fragment	0x7FC0F200A collected [ACGA_Collectables_AnimusFragment_118_Misteriosa]	None	Misteriosa	169	1
+Treasure Map Misteriosa	Treasure Map	0x6CCEE37EE collected [ACGA_TreasureMaps_07]	None	Misteriosa	20	1
+Viewpoint Misteriosa Misteriosa	Viewpoint	0x7C84D72D2 sync>=100 [RHP_CAR_R_Misteriosa]	None	Misteriosa	50	1
+Buried Treasure Misteriosa	Burired Treasure	0x7B0CF3707 collected [ACGA_Blueprints_HeavyShot_Lv3]	None	Misteriosa	17	17
+Chest 3 Misteriosa	Chest	0xA80115D8D collected [ACGA_Collectables_TreasureChest_Misteriosa_004]	None	Misteriosa	298	3
+Chest 4 Misteriosa	Chest	0xA80115D85 collected [ACGA_Collectables_TreasureChest_Misteriosa_006]	None	Misteriosa	299	4
+Fragment 2 Misteriosa	Animus Fragment	0x7FC0F200E collected [ACGA_Collectables_AnimusFragment_119_Misteriosa]	None	Misteriosa	170	2
+Letter 17 Misteriosa	Letters	0x820F6F6B2 collected [ACGA_Collectables_LetterBottle_006_Misteriosa]	None	Misteriosa	17	17
+Myan Stone 1 Misteriosa	Myan Stones	0x7B5DD886A collected [ACGA_Collectables_MayanSteles_Misteriosa_002]	None	Misteriosa	12	12
+Fast travel Viewpoint Misteriosa -> The Dreaded Pirate	Assassin Contracts	0x849B99F9D sync>=100 [ASC22_NewBone_C1_T2]	None	Misteriosa	27	27
+Fast travel Viewpoint Misteriosa -> Chest 5 Misteriosa	Chest	0x7B5DD86B9 collected [ACGA_Collectables_TreasureChest_Misteriosa_002]	None	Misteriosa	300	5
+Chest 6 Misteriosa	Chest	0x7B5DD863D collected [ACGA_Collectables_TreasureChest_Misteriosa_003]	None	Misteriosa	301	6
+Myan Stone 2 Misteriosa	Myan Stones	0x7B5DD8866 collected [ACGA_Collectables_MayanSteles_Misteriosa_001]	None	Misteriosa	13	13
+Fast travel to Kingston Viewpoint 1 -> Buy Roundshot Strength 4	Upgrades	0x773C84AA5 collected [ACGA_ShipUpgrade_CannonRoundShot_Level5]	None	Kingston	41	41
+Buy Heavy Shot 3	Upgrades	0x773C84BC9 collected [ACGA_ShipUpgrade_CannonHeavyShot_Level3]	None	Kingston	42	42
+Buried Treasure Kingston	Burired Treasure	0x903EC79F2 collected [ACGA_BuriedTreasure_Bidon_07]	None	Kingston	18	18
+Fast travel to Punta Guarico -> Fragment 27 Uncharted	Animus Fragment	0x7FC0F2162 collected [ACGA_Collectables_AnimusFragment_183_Uncharted]	(816,307)	Uncharted	171	27
+Get Weathering The Storm	Naval Contract Start	0x78A27193D started (entry exists in save)	None	Uncharted	12	12
+Weathering The Storm	Naval Contracts	0x78A27193D sync>=100 [NVC_CAR13]	None	Uncharted	12	12
+Cheat reload -> Fragment 1 Petite Caverne	Animus Fragment	0x7FC0F2076 collected [ACGA_Collectables_AnimusFragment_105_NanCaves]	None	Petite Caverne	172	1
+Chest 1 Petite Caverne	Chest	0x7B5DD86C1 collected [ACGA_Collectables_TreasureChest_NanCaves_001]	None	Petite Caverne	302	1
+Chest 2 Petite Caverne	Chest	0x7B5DD8655 collected [ACGA_Collectables_TreasureChest_NanCaves_002]	None	Petite Caverne	303	2
+Buried Treasure Petite Caverne	Burired Treasure	0x7F3CA9AEA collected [ACGA_Blueprints_HeavyShotStorage_Lv4]	None	Petite Caverne	19	19
+Treasure Map Petite Caverne	Treasure Map	0x6CCEE37E2 collected [ACGA_TreasureMaps_04] (guess: name pairing)	None	Petite Caverne	21	1
+Chest 3 Petite Caverne	Chest	0x7B5DD864D collected [ACGA_Collectables_TreasureChest_NanCaves_003]	None	Petite Caverne	304	3
+Fragment 2 Petite Caverne	Animus Fragment	0x7FC0F20A6 collected [ACGA_Collectables_AnimusFragment_106_NanCaves]	None	Petite Caverne	173	2
+Chest 4 Petite Caverne	Chest	0x7B5DD86A9 collected [ACGA_Collectables_TreasureChest_NanCaves_004]	None	Petite Caverne	305	4
+Fast travel to La Concepcion Wreck -> Fragment 28 Uncharted	Animus Fragment	0x7FC0F217A collected [ACGA_Collectables_AnimusFragment_177_Uncharted]	(153,248)	Uncharted	174	28
+Quit warp -> Letter 18 Santanillas	Letters	0x820F6F6CA collected [ACGA_Collectables_LetterBottle_020_Uncharted]	None	Santanillas	18	18
+Myan Stone 1 Santanillas	Myan Stones	0x7B5DD8882 collected [ACGA_Collectables_MayanSteles_Santanillas_001]	None	Santanillas	14	14
+Fragment 1 Santanillas	Animus Fragment	0x7FC0F20DA collected [ACGA_Collectables_AnimusFragment_146_Santanillas]	None	Santanillas	175	1
+Treasure Map Santanillas	Treasure Map	0x6CCEE380E collected [ACGA_TreasureMaps_15]	None	Santanillas	22	1
+Chest 1 Santanillas	Chest	0x7B5DD8705 collected [ACGA_Collectables_TreasureChest_Santanillas_003] (guess: order)	None	Santanillas	306	1
+Fragment 2 Santanillas	Animus Fragment	0x7FC0F20D6 collected [ACGA_Collectables_AnimusFragment_147_Santanillas]	None	Santanillas	176	2
+Myan Stone 2 Santanillas	Myan Stones	0x7B5DD8872 collected [ACGA_Collectables_MayanSteles_Santanillas_002]	None	Santanillas	15	15
+Fast travel Ambergris Key -> Start Black Barts Gambit	Story Start	0x669E09F8C started (entry exists in save)	None	Uncharted	34	34
+Black Barts Gambit	Story	0x669E09F8C sync>=102	None	Uncharted	34	34
+Letter 19 Uncharted 3	Letters	0x820F6F69A collected [ACGA_Collectables_LetterBottle_012_Santanilla]	(144,98)	Uncharted	19	19
+Chest 40 Uncharted	Chest	0xA66AD615A collected [ACGA_Collectables_TreasureChest_Uncharted70_01] (guess: order)	(144,97)	Uncharted	307	40
+Fast travel to Santanillas -> Chest 41 Uncharted	Chest	0x7B5DD86ED collected [ACGA_Collectables_TreasureChest_Uncharted08_01] (guess: order)	(238,169)	Uncharted	308	41
+Chest 42 Uncharted	Chest	0xA66AD6166 collected [ACGA_Collectables_TreasureChest_Uncharted10_01] (guess: order)	(176,191)	Uncharted	309	42
+Start Murder and Mayhem	Story Start	0x669E09FF4 started (entry exists in save)	None	Santanillas	35	35
+Fragment 3 Santanillas	Animus Fragment	0x7FC0F20D2 collected [ACGA_Collectables_AnimusFragment_148_Santanillas]	None	Santanillas	177	3
+Chest 2 Santanillas	Chest	0x7B5DD85ED collected [ACGA_Collectables_TreasureChest_Santanillas_002] (guess: order)	None	Santanillas	310	2
+Chest 3 Santanillas	Chest	0x7B5DD8611 collected [ACGA_Collectables_TreasureChest_Santanillas_001] (guess: order)	None	Santanillas	311	3
+Chest 4 Santanillas	Chest	0xBD19E34FB collected [ACGA_Collectables_TreasureChest_Santanillas_005] (guess: order)	None	Santanillas	312	4
+Chest 5 Santanillas	Chest	0xBD19E34F7 collected [ACGA_Collectables_TreasureChest_Santanillas_004] (guess: order)	None	Santanillas	313	5
+Viewpoint Santanillas Santanillas	Viewpoint	0x7B9C3D965 sync>=100 [RHP_CAR_B_Santanillas]	None	Santanillas	51	1
+Murder and Mayhem	Story	0x669E09FF4 sync>=102	None	Santanillas	35	35
+Fast travel to Castillo de Jagua -> Chest 43 Uncharted	Chest	0xA66AD611A collected [ACGA_Collectables_TreasureChest_Uncharted22_01] (guess: order)	(410,503)	Uncharted	314	43
+Swim 5 seconds quit warp -> Fragment 1 San Juan	Animus Fragment	0x7FC0F20AA collected [ACGA_Collectables_AnimusFragment_113_StJuan]	None	San Juan	178	1
+Chest 1 San Juan	Chest	0x7B5DD85C9 collected [ACGA_Collectables_TreasureChest_StJuan_001]	None	San Juan	315	1
+Buried Treasure San Juan	Burired Treasure	0x7B0CF370B collected [ACGA_Blueprints_Explosive_Barrel_Lv3]	None	San Juan	20	20
+Chest 2 San Juan	Chest	0xA80115D7D collected [ACGA_Collectables_TreasureChest_StJuan_003]	None	San Juan	316	2
+Chest 3 San Juan	Chest	0x7B5DD85D1 collected [ACGA_Collectables_TreasureChest_StJuan_002]	None	San Juan	317	3
+Fragment 2 San Juan	Animus Fragment	0x7FC0F2046 collected [ACGA_Collectables_AnimusFragment_114_StJuan]	None	San Juan	179	2
+Fast travel Devil's Eye Cavern -> Destroy Defenses Charlotte	Fort Defenses	0x81D96F546 sync>=100 [NGL_F_Charlotte_Naval]	None	Charlotte	9	9
+Chest 1 Charlotte	Chest	0x8B19BA68C collected [ACGA_Collectables_TreasureChest_Charlotte_001]	None	Charlotte	318	1
+Fragment 1 Charlotte	Animus Fragment	0x9668418BC collected [ACGA_Collectables_AnimusFragment_049_Charlotte]	None	Charlotte	180	1
+Fragment 2 Charlotte	Animus Fragment	0x9668418B8 collected [ACGA_Collectables_AnimusFragment_048_Charlotte]	None	Charlotte	181	2
+Chest 2 Charlotte	Chest	0x8B19BA680 collected [ACGA_Collectables_TreasureChest_Charlotte_002]	None	Charlotte	319	2
+Capture Charlotte	Forts	0x7B76D2980 sync>=100 [NGL_F_Charlotte_Land]	None	Charlotte	9	9
+Fast travel to abaco island build up wanted level to 2 -> Start Hunter Gather	Naval Contract Start	0x7C4A545DE started (entry exists in save)	None	Uncharted	13	13
+Hunter Gather	Naval Contracts	0x7C4A545DE sync>=100 [NVC_CAR11]	None	Uncharted	13	13
+Fragment 29 Uncharted	Animus Fragment	0x9668418B4 collected [ACGA_Collectables_AnimusFragment_045_Seranilla]	(371,267)	Uncharted	182	29
+Get Papers, Please	Naval Contract Start	0x7C4A545DF started (entry exists in save)	None	Uncharted	14	14
+Papers, Please	Naval Contracts	0x7C4A545DF sync>=100 [NVC_CAR12]	None	Uncharted	14	14
+Fast travel to Havana -> Get A Shipment of Powder	Assassin Contract Start	0x84F1447A4 started (entry exists in save)	None	Havana	29	29
+Fragment 13 Havana	Animus Fragment	0x9668418B0 collected [ACGA_Collectables_AnimusFragment_044_Seranilla]	None	Havana	183	13
+Start Bureau Under Attack	Templar Hunt Start	0x7D890CA17 started (entry exists in save)	None	Havana	13	13
+Bureau Under Attack	Templar Hunts	0x7D890CA17 sync>=100 [AVT02_M10]	None	Havana	13	13
+Start A Thief in the Market	Templar Hunt Start	0x7D890CA18 started (entry exists in save)	None	Havana	14	14
+Shanty 4 Havana	Shanty	0x8051829C1 collected [ACGA_Collectables_Song_004_Havana]	None	Havana	21	4
+Chest 14 Havana	Chest	0x7B5DD8795 collected [ACGA_Collectables_TreasureChest_Havana_008] (guess: order)	None	Havana	320	14
+Manuscript 4 Havana	Manuscripts	0x81AF1988B collected [ACGA_Collectables_Manuscript_009_Kingston]	None	Havana	16	16
+Chest 15 Havana	Chest	0x7B5DD8791 collected [ACGA_Collectables_TreasureChest_Havana_006] (guess: order)	None	Havana	321	15
+Spanish Commander	Assassin Contracts	0x7E2A46A74 sync>=100 [ASC09_HAV_C2_T1]	None	Havana	28	28
+Get Unliscensed Dealer	Assassin Contract Start	0x84F144874 started (entry exists in save)	None	Havana	30	30
+A Thief in the Market	Templar Hunts	0x7D890CA18 sync>=100 [AVT02_M20]	None	Havana	14	14
+Viewpoint 6 RichSouth_02 Havana	Viewpoint	0x79CA1529D sync>=100 [RHP_Havana_RichSouth_02]	None	Havana	52	6
+Unliscensed Dealer	Assassin Contracts	0x84F144874 sync>=100 [ASC10_HAV_C2_T2]	None	Havana	29	29
+Fast travel south viewpoint -> Start Arm's Race	Templar Hunt Start	0x7D890CA19 started (entry exists in save)	None	Havana	15	15
+Manuscript 5 Havana	Manuscripts	0x81AF19887 collected [ACGA_Collectables_Manuscript_008_Kingston]	None	Havana	17	17
+Viewpoint 7 Commercial Havana	Viewpoint	0x7A24CFFD1 sync>=100 [RHP_Havana_Commercial]	None	Havana	53	7
+Fragment 14 Havana	Animus Fragment	0x7FC0F1F12 collected [ACGA_Collectables_AnimusFragment_062_Observatory]	None	Havana	184	14
+Shanty 5 Havana	Shanty	0xC7E2F0588 collected [ACGA_Collectables_Song_022_Havana]	None	Havana	22	5
+Chest 16 Havana	Chest	0x7B5DD87A9 collected [ACGA_Collectables_TreasureChest_Havana_009] (guess: order)	None	Havana	322	16
+Arm's Race	Templar Hunts	0x7D890CA19 sync>=100 [AVT02_M30]	None	Havana	15	15
+Cheat reload -> fast travel south east viewpoint -> Start Flints End	Templar Hunt Start	0x7DDCF3143 started (entry exists in save)	None	Havana	16	16
+Flints End	Templar Hunts	0x7DDCF3143 sync>=100 [AVT02_M40]	None	Havana	16	16
+A Shipment of Powder	Assassin Contracts	0x84F1447A4 sync>=100 [ASC08_HAV_C1_T2]	None	Havana	30	30
+Shanty 6 Havana	Shanty	0x8051829B9 collected [ACGA_Collectables_Song_006_Havana]	None	Havana	23	6
+Chest 17 Havana	Chest	0xAB4E780AB collected [ACGA_Collectables_TreasureChest_Havana_015] (guess: order)	None	Havana	323	17
+Fast travel to Charolotte -> Start The Observatory	Story Start	0x669E09FF3 started (entry exists in save)	None	Long Bay	36	36
+Chest 1 LongBay	Chest	0x805C11C68 collected [ACGA_Collectables_TreasureChest_Observatory_002] (guess: order)	None	Long Bay	324	1
+Fragment 1 LongBay	Animus Fragment	0x7FC0F1FAA collected [ACGA_Collectables_AnimusFragment_061_Observatory]	None	Long Bay	185	1
+Chest 2 LongBay	Chest	0xAE6D0F71F collected [ACGA_Collectables_TreasureChest_Observatory_007] (guess: order)	None	Long Bay	325	2
+Chest 3 LongBay	Chest	0x805C11C6C collected [ACGA_Collectables_TreasureChest_Observatory_003] (guess: order)	None	Long Bay	326	3
+Letter 20 LongBay	Letters	0x820F6F6C6 collected [ACGA_Collectables_LetterBottle_019_LongBay]	None	Long Bay	20	20
+Chest 4 LongBay	Chest	0x805C11C70 collected [ACGA_Collectables_TreasureChest_Observatory_004] (guess: order)	None	Long Bay	327	4
+Fragment 2 LongBay	Animus Fragment	0x7FC0F1F9A collected [ACGA_Collectables_AnimusFragment_076_Observatory]	None	Long Bay	186	2
+Fragment 3 LongBay	Animus Fragment	0x7FC0F1F62 collected [ACGA_Collectables_AnimusFragment_081_Observatory]	None	Long Bay	187	3
+Chest 5 LongBay	Chest	0x7B5DD85D9 collected [ACGA_Collectables_TreasureChest_Observatory_001] (guess: order)	None	Long Bay	328	5
+Viewpoint 1 Beach LongBay	Viewpoint	0x7CF73B842 sync>=100 [RHP_Observatory_Beach]	None	Long Bay	54	1
+Myan Stone LongBay	Myan Stones	0x7B5DD8852 collected [ACGA_Collectables_MayanSteles_Observatory_001]	None	Long Bay	16	16
+(On way out of Observatory) Fragment 4 LongBay	Animus Fragment	0x7FC0F1EBA collected [ACGA_Collectables_AnimusFragment_058_Kingston]	None	Long Bay	188	4
+The Observatory	Story	0x669E09FF3 sync>=102	None	Long Bay	36	36
+Start The Bunker	Modern Day Start	0x669E09F8D started (entry exists in save)	None	Abstergo Industries	4	4
+The Bunker(passcode 1: 3577)(passcode 2: 3777)	Modern Day	0x669E09F8D sync>=100	None	Abstergo Industries	4	4
+Start To Suffer Without Dying	Story Start	0x669E09FFB started (entry exists in save)	None	Kingston	37	37
+Fragment 13 Kingston	Animus Fragment	0x7FC0F1F7E collected [ACGA_Collectables_AnimusFragment_069_Cozumel]	None	Kingston	189	13
+Viewpoint 9 PortRoyal Kingston	Viewpoint	0x849E749CE sync>=100 [RHP_Kingston_PortRoyal]	None	Kingston	55	9
+Prison -> Manuscript 5 Kingston	Manuscripts	0x81AF1989F collected [ACGA_Collectables_Manuscript_014_Jiguey]	None	Kingston	18	18
+Manuscript 6 Kingston	Manuscripts	0x81AF1989B collected [ACGA_Collectables_Manuscript_013_NanCaves]	None	Kingston	19	19
+To Suffer Without Dying	Story	0x669E09FFB sync>=102	None	Kingston	37	37
+Start Delirium	Story Start	0x669E09FFC started (entry exists in save)	None	Kingston	38	38
+Delirium	Story	0x669E09FFC sync>=100	None	Kingston	38	38
+Fast travel to The Blue Hole -> Chest 44 Uncharted	Chest	0x7B5DD86C9 collected [ACGA_Collectables_TreasureChest_Uncharted04_01] (guess: order)	(394,199)	Uncharted	329	44
+Swim until u enter restricted zone -> Quit warp -> Destroy Defenses Serranilla	Fort Defenses	0x81DF6F818 sync>=100 [NGL_F_Seranillia_Naval]	None	Serranilla	10	10
+Chest 1 Serranilla	Chest	0x8B19BA684 collected [ACGA_Collectables_TreasureChest_Seranilla_001]	None	Serranilla	330	1
+Fragment 1 Serranilla	Animus Fragment	0x7FC0F1F86 collected [ACGA_Collectables_AnimusFragment_071_Cozumel]	None	Serranilla	190	1
+Chest 2 Serranilla	Chest	0x8B19BA688 collected [ACGA_Collectables_TreasureChest_Seranilla_002]	None	Serranilla	331	2
+Fragment 2 Serranilla	Animus Fragment	0x7FC0F1FA2 collected [ACGA_Collectables_AnimusFragment_078_Principe]	None	Serranilla	191	2
+Capture Serranilla	Forts	0x78A271D39 sync>=100 [NGL_F_Seranillia_Land]	None	Serranilla	10	10
+Get Final Contract	Naval Contract Start	0x7C4A545DD started (entry exists in save)	None	Serranilla	15	15
+Final Contract	Naval Contracts	0x7C4A545DD sync>=100 [NVC_CAR09]	None	Serranilla	15	15
+fast travel to Santanillas -> Fragment 30 Uncharted	Animus Fragment	0x7FC0F1F9E collected [ACGA_Collectables_AnimusFragment_077_Principe]	(278,293)	Uncharted	192	30
+fast travel tulum viewpoint -> Chest 7 Tulum	Chest	0x7B5DD860D collected [ACGA_Collectables_TreasureChest_Cozumel_003]	None	Tulum	332	7
+Start Everything Is Permitted	Story Start	0x669E0A004 started (entry exists in save)	None	Tulum	39	39
+Fragment 4 Tulum	Animus Fragment	0x7FC0F1F16 collected [ACGA_Collectables_AnimusFragment_080_Principe]	None	Tulum	193	4
+Fragment 5 Tulum	Animus Fragment	0x7FC0F1F5A collected [ACGA_Collectables_AnimusFragment_082_Principe]	None	Tulum	194	5
+Buried Treasure Tulum	Burired Treasure	0x903EC79E6 collected [ACGA_BuriedTreasure_Bidon_04]	None	Tulum	21	21
+Everything Is Permitted	Story	0x669E0A004 sync>=102	None	Tulum	39	39
+Start A Governor No Longer	Story Start	0x669E0A005 started (entry exists in save)	None	Kingston	40	40
+A Governor No Longer	Story	0x669E0A005 sync>=102	None	Kingston	40	40
+Fast travel to Tortuga -> Chest 45 Uncharted	Chest	0xA66AD6122 collected [ACGA_Collectables_TreasureChest_Uncharted33_01] (guess: order)	(951,364)	Uncharted	333	45
+Start Royal Misfortune	Story Start	0x669E0A085 started (entry exists in save)	None	Principe	41	41
+Fragment 2 Principe	Animus Fragment	0x311B4032E collected [ACGA_Collectables_AnimusFragment_001_Havana]	None	Principe	195	2
+Fragment 3 Principe	Animus Fragment	0x7FC0F1FFA collected [ACGA_Collectables_AnimusFragment_004_Havana]	None	Principe	196	3
+Start chase -> Fragment 4 Principe	Animus Fragment	0x7FC0F2096 collected [ACGA_Collectables_AnimusFragment_174_Uncharted]	None	Principe	197	4
+Reload checkpoint -> Fragment 5 Principe	Animus Fragment	0x7FC0F2132 collected [ACGA_Collectables_AnimusFragment_173_Uncharted]	None	Principe	198	5
+Royal Misfortune	Story	0x669E0A085 sync>=102	None	Principe	41	41
+Start Tainted Blood	Story Start	0x669E0A00C started (entry exists in save)	None	Havana	42	42
+Chest 18 Havana	Chest	0xAB4E780A7 collected [ACGA_Collectables_TreasureChest_Havana_012] (guess: order)	None	Havana	334	18
+Manuscript 6 Havana	Manuscripts	0x81AF1986F collected [ACGA_Collectables_Manuscript_002_Havana]	None	Havana	20	20
+Chest 19 Havana	Chest	0x7B5DD877D collected [ACGA_Collectables_TreasureChest_Havana_004] (guess: order)	None	Havana	335	19
+Chest 20 Havana	Chest	0xAB4E7809F collected [ACGA_Collectables_TreasureChest_Havana_013] (guess: order)	None	Havana	336	20
+Shanty 7 Havana	Shanty	0x805182980 collected [ACGA_Collectables_Song_001_Havana]	None	Havana	24	7
+Viewpoint 8 Fortress Havana	Viewpoint	0x7A4B50232 sync>=100 [RHP_Havana_Fortress]	None	Havana	56	8
+Fragment 15 Havana	Animus Fragment	0x7FC0F1FBA collected [ACGA_Collectables_AnimusFragment_006_Havana]	None	Havana	199	15
+Tainted Blood	Story	0x669E0A00C sync>=102	None	Havana	42	42
+Fast Travel Anotto Bay -> Chest 46 Uncharted	Chest	0x7B5DD8731 collected [ACGA_Collectables_TreasureChest_Uncharted24_01] (guess: order)	(627,331)	Uncharted	337	46
+Start Ever A Splinter	Story Start	0x669E0A084 started (entry exists in save)	None	Long Bay	43	43
+Chest 6 LongBay	Chest	0xAE6D0F727 collected [ACGA_Collectables_TreasureChest_Observatory_008] (guess: order)	None	Long Bay	338	6
+Viewpoint 2 Cave LongBay	Viewpoint	0x7CF73B843 sync>=100 [RHP_Observatory_Cave]	None	Long Bay	57	2
+Chest 7 LongBay	Chest	0xAE6D0F71B collected [ACGA_Collectables_TreasureChest_Observatory_005] (guess: order)	None	Long Bay	339	7
+Buried Treasure LongBay	Burired Treasure	0x903EC7A02 collected [ACGA_BuriedTreasure_Bidon_13]	None	Long Bay	22	22
+Fragment 5 LongBay	Animus Fragment	0x7FC0F1F1A collected [ACGA_Collectables_AnimusFragment_063_Observatory]	None	Long Bay	200	5
+Viewpoint 3 Observatory LongBay	Viewpoint	0x7CF73B844 sync>=100 [RHP_Observatory_Observatory]	None	Long Bay	58	3
+Chest 8 LongBay	Chest	0xAE6D0F723 collected [ACGA_Collectables_TreasureChest_Observatory_006] (guess: order)	None	Long Bay	340	8
+Ever A Splinter	Story	0x669E0A084 sync>=102	None	Long Bay	43	43
+Start A Face From The Past	Modern Day Start	0x669E09FFD started (entry exists in save)	None	Abstergo Industries	5	5
+A Face From The Past	Modern Day	0x669E09FFD sync>=100	None	Abstergo Industries	5	5
+Start ...The End	Story Start	0x669E0A08D started (entry exists in save)	None	Great Igauna	44	44
+...The End	Story	0x669E0A08D sync>=100	None	Great Igauna	44	44
+Start How Grand, Master Kenway 100% WOOOOOOOO!	Story Start	0x669E0A08E started (entry exists in save)	None	Great Igauna	45	45
+How Grand, Master Kenway 100% WOOOOOOOO!	Story	0x669E0A08E sync>=100	None	Great Igauna	45	45

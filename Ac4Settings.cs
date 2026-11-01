@@ -4,8 +4,8 @@ using System.Text.Json;
 namespace Route_AC4
 {
     /// <summary>
-    ///  The plugin's own settings, stored next to the plugin as ac4-settings.json. Until the host has a plugin
-    ///  options window, edit the file by hand.
+    ///  The plugin's own settings, stored next to the plugin as ac4-settings.json. They are changed from the
+    ///  Options button of the Plugins window; the file can still be edited by hand.
     /// </summary>
     internal sealed class Ac4Settings
     {
@@ -43,6 +43,18 @@ namespace Route_AC4
             }
 
             return new Ac4Settings();
+        }
+
+        public void Save(string pluginDirectory, Action<string> log)
+        {
+            try
+            {
+                File.WriteAllText(Path.Combine(pluginDirectory, FileName), JsonSerializer.Serialize(this, JsonOptions));
+            }
+            catch (Exception ex) when (ex is IOException or UnauthorizedAccessException)
+            {
+                log($"Could not save {FileName}: {ex.Message}");
+            }
         }
     }
 }

@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.11.12328.437 stable
+VisualStudioVersion = 18.11.12328.437
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Route-AC4", "Route-AC4.csproj", "{796F0CE4-4998-4ECD-BDDE-55E4FA083861}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Route-Plugin-Base", "..\Route-Plugin-Base\Route-Plugin-Base.csproj", "{5144C127-3BA8-8337-A05D-34D607E9EEBD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Route-Plugin-Base", "..\..\Route-Plugin-Base\Route-Plugin-Base.csproj", "{7E5ECD81-BBAE-E10E-E39B-476797FB8282}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcSaveLib", "..\..\ACSaveLib\src\AcSaveLib\AcSaveLib.csproj", "{845379AB-FD98-0BFB-1E01-3AC7461A20D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcSaveLib", "..\..\..\..\ACSaveLib\src\AcSaveLib\AcSaveLib.csproj", "{0307D3FB-20BC-8159-C96B-2ECB79731A36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{796F0CE4-4998-4ECD-BDDE-55E4FA083861}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{796F0CE4-4998-4ECD-BDDE-55E4FA083861}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{796F0CE4-4998-4ECD-BDDE-55E4FA083861}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5144C127-3BA8-8337-A05D-34D607E9EEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5144C127-3BA8-8337-A05D-34D607E9EEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5144C127-3BA8-8337-A05D-34D607E9EEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5144C127-3BA8-8337-A05D-34D607E9EEBD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{845379AB-FD98-0BFB-1E01-3AC7461A20D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{845379AB-FD98-0BFB-1E01-3AC7461A20D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{845379AB-FD98-0BFB-1E01-3AC7461A20D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{845379AB-FD98-0BFB-1E01-3AC7461A20D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E5ECD81-BBAE-E10E-E39B-476797FB8282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E5ECD81-BBAE-E10E-E39B-476797FB8282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E5ECD81-BBAE-E10E-E39B-476797FB8282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E5ECD81-BBAE-E10E-E39B-476797FB8282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0307D3FB-20BC-8159-C96B-2ECB79731A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0307D3FB-20BC-8159-C96B-2ECB79731A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0307D3FB-20BC-8159-C96B-2ECB79731A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0307D3FB-20BC-8159-C96B-2ECB79731A36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

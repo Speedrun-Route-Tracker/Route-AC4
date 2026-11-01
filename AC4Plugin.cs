@@ -7,13 +7,14 @@ namespace Route_AC4
     public class AC4Plugin : IPluginBase
     {
         private const string ProcessName = "AC4BFSP";
-        private const string RouteFileName = "ac4_route_plugin_v2.tsv";
+        private const string RouteFileName = "ac4_route_plugin_v5.tsv";
 
         private static readonly IReadOnlyDictionary<string, object> NoStats = new Dictionary<string, object>();
 
         private readonly GameConnection _connection = new(ProcessName);
         private GameStats? _gameStats;
         private Ac4SaveReader? _saveReader;
+        private Ac4Settings? _settings;
         private IReadOnlyDictionary<string, object> _lastStats = NoStats;
 
         public AC4Plugin()
@@ -37,18 +38,53 @@ namespace Route_AC4
             : _connection.Status;
         public override IReadOnlyDictionary<string, object> Stats => _lastStats;
 
+        private static readonly string[] SlotNames = ["Top slot", "Middle slot", "Bottom slot"];
+
+        private static string PluginDirectory => Path.GetDirectoryName(typeof(AC4Plugin).Assembly.Location) is { Length: > 0 } dir
+            ? dir
+            : AppContext.BaseDirectory;
+
+        // Loaded on first use so the options window works before the plugin has been started.
+        private Ac4Settings Settings => _settings ??= Ac4Settings.Load(PluginDirectory, Log);
+
+        public override IReadOnlyList<PluginOption> Options =>
+        [
+            new PluginOption("slot", "Save slot", PluginOptionKind.Choice, SlotNames[Math.Clamp(Settings.Slot, 0, 2)],
+                "Which of the three save slots in the game's load menu to follow. The newest save of that slot is used.",
+                SlotNames),
+            new PluginOption("saveFolder", "Save folder", PluginOptionKind.Folder, Settings.SaveFolder,
+                "Leave empty to find the folder automatically. Set it if you keep your saves somewhere else.")
+        ];
+
+        public override void ApplyOptions(IReadOnlyList<PluginOption> options)
+        {
+            foreach (PluginOption option in options)
+            {
+                switch (option.Key)
+                {
+                    case "slot":
+                        Settings.Slot = Math.Max(0, Array.IndexOf(SlotNames, option.Value));
+                        break;
+                    case "saveFolder":
+                        Settings.SaveFolder = option.Value.Trim();
+                        break;
+                }
+            }
+
+            Settings.Save(PluginDirectory, Log);
+            _saveReader?.Reset();
+            Log($"Options changed: {SlotNames[Settings.Slot]}, folder '{(Settings.SaveFolder.Length == 0 ? "automatic" : Settings.SaveFolder)}'.");
+        }
+
         public override void Initialize()
         {
-            string pluginDirectory = Path.GetDirectoryName(typeof(AC4Plugin).Assembly.Location) is { Length: > 0 } dir
-                ? dir
-                : AppContext.BaseDirectory;
+            string pluginDirectory = PluginDirectory;
 
             Route.Clear();
             Route.AddRange(Ac4RouteLoader.Load(Path.Combine(pluginDirectory, "Routes", RouteFileName), Log));
             Log($"Loaded {Route.Count} route entries.");
 
-            Ac4Settings settings = Ac4Settings.Load(pluginDirectory, Log);
-            _saveReader = new Ac4SaveReader(settings, Log);
+            _saveReader = new Ac4SaveReader(Settings, Log);
 
             IsInitialized = true;
         }
@@ -81,17 +117,10 @@ namespace Route_AC4
             _saveReader.Refresh();
             Ac4SaveSnapshot? save = _saveReader.Snapshot;
 
-            bool gameFinished = stats.TryGetValue("Exact Percentage", out object? percent)
-                && percent is float exact
-                && Math.Round(exact, 2) >= 100f;
-
-            if (save != null || gameFinished)
+            if (save != null)
             {
                 foreach (RoutePart part in Route)
-                {
-                    bool done = gameFinished || (part is Ac4RoutePart ac4Part && save != null && ac4Part.Parsed.IsMet(save));
-                    part.ApplyGameCompletion(done);
-                }
+                    part.ApplyGameCompletion(part is Ac4RoutePart ac4Part && ac4Part.Parsed.IsMet(save));
             }
 
             AddRouteCounts(stats);
