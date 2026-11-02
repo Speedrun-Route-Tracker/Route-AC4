@@ -46,7 +46,7 @@ namespace Route_AC4
         {
             get
             {
-                string status = _connection.IsConnected && _saveReader != null
+                string status = _saveReader != null && _routeHasConditions
                     ? $"{_connection.Status} - save: {_saveReader.Status}"
                     : _connection.Status;
                 if (!_routeHasConditions && IsInitialized)
@@ -299,32 +299,33 @@ namespace Route_AC4
                 LoadRoute(force: false);
             }
 
-            if (!_connection.EnsureConnected())
-                return;
+            // The save file is read whether or not the game is running; the game's memory is only read once it is connected.
+            bool connected = _connection.EnsureConnected();
+            Dictionary<string, object> stats = [];
+            bool saveUsable = true;
 
-            _gameStats ??= new GameStats(_connection.Memory!);
-
-            Borderless.Update(_connection.Memory!, Settings.Borderless);
-
-            Dictionary<string, object> stats = _gameStats.GetStatsAsDictionary();
-
-            // The save is only trusted during gameplay: while the game loads or sits in the main menu the file may be
-            // mid-write or belong to another slot, so the route is left alone until gameplay resumes.
-            (bool isLoading, bool isMainMenu) = _gameStats.GetGameStatus();
-            if (isLoading || isMainMenu || _saveReader == null)
+            if (connected)
             {
-                _lastStats = stats;
-                return;
+                _gameStats ??= new GameStats(_connection.Memory!);
+
+                Borderless.Update(_connection.Memory!, Settings.Borderless);
+
+                stats = _gameStats.GetStatsAsDictionary();
+
+                // While the game is running the save is only trusted during gameplay: while it loads or sits in the main
+                // menu the file may be mid-write or belong to another slot, so the route is left alone until gameplay resumes.
+                (bool isLoading, bool isMainMenu) = _gameStats.GetGameStatus();
+                saveUsable = !isLoading && !isMainMenu;
             }
 
-            if (_routeHasConditions)
-                _saveReader.Refresh();
-            Ac4SaveSnapshot? save = _saveReader.Snapshot;
-
-            if (save != null && _routeHasConditions)
+            if (saveUsable && _saveReader != null && _routeHasConditions)
             {
-                foreach (RoutePart part in Route)
-                    part.ApplyGameCompletion(part is Ac4RoutePart ac4Part && ac4Part.Parsed.IsMet(save));
+                _saveReader.Refresh();
+                if (_saveReader.Snapshot is { } save)
+                {
+                    foreach (RoutePart part in Route)
+                        part.ApplyGameCompletion(part is Ac4RoutePart ac4Part && ac4Part.Parsed.IsMet(save));
+                }
             }
 
             AddRouteCounts(stats);
