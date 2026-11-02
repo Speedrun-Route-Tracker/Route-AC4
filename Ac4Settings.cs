@@ -18,6 +18,12 @@ namespace Route_AC4
         /// <summary>Folder that holds the .save files. Empty means find it automatically.</summary>
         public string SaveFolder { get; set; } = "";
 
+        /// <summary>File name of the route in the Routes folder. Empty means the route that comes with the plugin.</summary>
+        public string RouteFile { get; set; } = "";
+
+        /// <summary>Reload the route when its file changes on disk.</summary>
+        public bool AutoReloadRoute { get; set; }
+
         /// <summary>Make the game window borderless while the tracker is connected.</summary>
         public bool Borderless { get; set; }
 
