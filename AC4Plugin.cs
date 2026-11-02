@@ -7,7 +7,7 @@ namespace Route_AC4
     public class AC4Plugin : IPluginBase
     {
         private const string ProcessName = "AC4BFSP";
-        private const string RouteFileName = "ac4_route_plugin_v7.tsv";
+        private const string RouteFileName = "AC4 100 % Route - Main Route.tsv";
 
         private static readonly IReadOnlyDictionary<string, object> NoStats = new Dictionary<string, object>();
 
